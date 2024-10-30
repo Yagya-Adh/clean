@@ -10,7 +10,14 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="e.g. John Doe "
-              className="rounded-full py-2 px-3 border-transparent shadow focus:border focus:border-black outline-none"
+              className="
+              rounded-full
+              py-2 px-3 
+              border-transparent
+              shadow 
+              focus:border 
+              :border-black 
+              outline-none"
             />
           </div>
           <div className="py-2 flex flex-col w-full">
@@ -20,7 +27,13 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="e.g. johndoe@email.com"
-              className="rounded-full py-2 px-3 border-transparent shadow focus:border focus:border-black outline-none"
+              className="
+              rounded-full 
+              py-2 px-3 
+              border-transparent 
+              shadow focus:border 
+              focus:border-black 
+              outline-none"
             />
           </div>
           <div className="py-2 flex flex-col w-full">
@@ -30,7 +43,15 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="(123) - 456 - 789"
-              className="rounded-full py-2 px-3 border-transparent shadow focus:border focus:border-black outline-none"
+              className="
+              rounded-full 
+              py-2 
+              px-3 
+              border-transparent 
+              shadow 
+              focus:border 
+              focus:border-black 
+              outline-none"
             />
           </div>
           <div className="py-2 flex flex-col w-full">
@@ -39,7 +60,15 @@ const ContactForm = () => {
               name="message"
               id="message"
               placeholder="Write Your Message Here"
-              className="rounded-2xl py-2 px-3 border-transparent shadow focus:border focus:border-black outline-none"
+              className="
+              rounded-2xl 
+              py-2 
+              px-3 
+              border-transparent 
+              shadow 
+              focus:border 
+              focus:border-black 
+              outline-none"
               rows={3}
             ></textarea>
           </div>
