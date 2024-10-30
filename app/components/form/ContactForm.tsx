@@ -44,6 +44,28 @@ const ContactForm = () => {
             ></textarea>
           </div>
         </div>
+
+        <div className="my-2">
+          <button
+            className="
+              bg-clean-green-10
+               hover:bg-black 
+               text-black
+               hover:text-white 
+               rounded-xl
+               text-sm 
+               shadow-sm
+               px-2 
+               py-3 
+               duration-300
+               transition-all
+               ease-in-out
+              "
+            type="button"
+          >
+            Send Message{" "}
+          </button>
+        </div>
       </form>
     </section>
   );
