@@ -1,0 +1,49 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const data = [
+  { id: 1, path: "/", name: "Home" },
+  { id: 2, path: "/about", name: "About" },
+  { id: 3, path: "/services", name: "Services" },
+  { id: 4, path: "/blog", name: "Blog" },
+  { id: 5, path: "/contact", name: "Contact" },
+];
+const Navbar = () => {
+  return (
+    <nav>
+      <div className="mx-auto max-w-screen-2xl px-20">
+        <div className="flex items-center justify-between">
+          <Image
+            src="/assets/logo/cleanlogo.png"
+            alt="logo_nav_"
+            height={120}
+            width={120}
+          />
+          <ul className="flex items-center">
+            {data?.slice(0, 5).map((list) => (
+              <li
+                key={list.id}
+                className="text-2xl uppercase font-mono font-thin text-clean-black-10 py-4 px-4"
+              >
+                <div className="overflow-hidden group">
+                  <div
+                    className={`translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500`}
+                  >
+                    <Link href={list.path}>{list.name}</Link>
+                  </div>
+                  <div
+                    className={`translate-y-10 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500`}
+                  >
+                    <Link href={list.path}>{list.name}</Link>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

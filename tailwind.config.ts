@@ -8,9 +8,44 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(25px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+
+        fadeOut: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1.5s ease-in",
+        fadeOut: "fadeOut 1.5s ease-out",
+        fadeInUp: "fadeInUp .8s ease-in",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        clean: {
+          black: {
+            10: "#050505",
+          },
+          sliver: {
+            10: "#e7e7e9",
+          },
+          green: {
+            10: "#c1e4c4",
+          },
+          yellow: {
+            10: "#dbec62",
+          },
+        },
       },
     },
   },

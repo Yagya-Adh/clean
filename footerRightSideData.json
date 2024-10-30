@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "MAIN",
+    "innerItem": [
+      { "id": 1, "item": "Home" },
+      { "id": 2, "item": "About" },
+      { "id": 3, "item": "Services" },
+      { "id": 4, "item": "Blog" }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "PAGES",
+    "innerItem": [
+      { "id": 1, "item": "Contact" },
+      { "id": 2, "item": "Terms & Conditions" },
+      { "id": 3, "item": "Privacy Policy" }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "UTILITIES",
+    "innerItem": [
+      { "id": 1, "item": "Style Guide" },
+      { "id": 2, "item": "Instructions" },
+      { "id": 3, "item": "Licenses" },
+      { "id": 4, "item": "ChangeLog" }
+    ]
+  }
+]
