@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "cardImage": "/assets/images/guidClean.jpg",
+    "cardImage": "/assets/images/guideClean.webp",
     "cardDescription": "Guide to Keeping Your Home Spotless",
     "cardTag": "CLEANING TIP",
     "cardDate": "OCT 9",
     "user": {
       "name": "ALEX WAYNE",
-      "image": "/assets/images/alex.png"
+      "image": "/assets/images/alex.jpg"
     },
     "mainTitle": "Cleaning Tips",
     "mainDescription": "Explore essential tips and tricks to keep your home spotless, ensuring a fresh environment.",
@@ -47,13 +47,13 @@
   },
   {
     "id": 2,
-    "cardImage": "/assets/images/dailyRoutine.jpg",
+    "cardImage": "/assets/images/dailyClean.webp",
     "cardDescription": "Effective Daily Cleaning Routines",
     "cardTag": "CLEANING HACKS",
     "cardDate": "OCT 9",
     "user": {
       "name": "JOE MORGAN",
-      "image": "/assets/images/joe.png"
+      "image": "/assets/images/joe.jpg"
     },
     "mainTitle": "Cleaning Hacks",
     "mainDescription": "Busy schedules can make it challenging to keep up with household cleaning.",
@@ -93,13 +93,13 @@
   },
   {
     "id": 3,
-    "cardImage": "/assets/images/officeClean.jpg",
+    "cardImage": "/assets/images/officeClean.webp",
     "cardDescription": "Keep Your Office Clean For Productivity",
     "cardTag": "OFFICE CLEANING",
     "cardDate": "OCT 9",
     "user": {
       "name": "SARA SMITH",
-      "image": "/assets/images/sara.png"
+      "image": "/assets/images/sara.jpg"
     },
     "mainTitle": "Office Cleaning",
     "mainDescription": "A clean and organized environment is essential for productivity, whether at home or in the office.",
@@ -139,13 +139,13 @@
   },
   {
     "id": 4,
-    "cardImage": "/assets/images/healthierHome.jpg",
+    "cardImage": "/assets/images/homeClean.webp",
     "cardDescription": "Tips for a Healthier Home",
     "cardTag": "HYGIENE PRACTICES",
     "cardDate": "OCT 9",
     "user": {
       "name": "JAMIE LEE",
-      "image": "/assets/images/jamie.png"
+      "image": "/assets/images/jamie.jpg"
     },
     "mainTitle": "Hygiene Practices",
     "mainDescription": "A clean home is not just about aesthetics—it's also crucial for your health and well-being.",

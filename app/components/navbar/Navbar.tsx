@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaBars } from "react-icons/fa";
 
 const data = [
   { id: 1, path: "/", name: "Home" },
@@ -11,15 +12,15 @@ const data = [
 const Navbar = () => {
   return (
     <nav>
-      <div className="mx-auto max-w-screen-2xl px-20">
-        <div className="flex items-center justify-between">
+      <div className="mx-auto max-w-screen-2xl px-4 md:px-20">
+        <div className="flex items-center justify-between w-full">
           <Image
             src="/assets/logo/cleanlogo.png"
             alt="logo_nav_"
-            height={120}
-            width={120}
+            height={150}
+            width={150}
           />
-          <ul className="flex items-center">
+          <ul className="hidden lg:flex items-center">
             {data?.slice(0, 5).map((list) => (
               <li
                 key={list.id}
@@ -40,6 +41,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          <div className="md:hidden">
+            <FaBars className="size-8" />
+          </div>
         </div>
       </div>
     </nav>
