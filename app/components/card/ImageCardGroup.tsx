@@ -2,6 +2,7 @@ import blogData from "@/blogData.json";
 import Image from "next/image";
 import CardBadge from "../badge/CardBadge";
 import Link from "next/link";
+import ArrowBadge from "../badge/ArrowBadge";
 interface IUser {
   name: string;
   image: string;
@@ -37,11 +38,16 @@ const ImageCardGroup = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {data?.slice(0, 4).map((list) => (
           <Link
-            className="flex flex-col overflow-hidden py-10"
+            className="
+            flex             
+            flex-col 
+            overflow-hidden 
+            py-10 
+            group"
             key={list.id}
             href={`/blog/${list.id}`}
           >
-            <div className="h-full">
+            <div className="h-full relative">
               <Image
                 src={list.cardImage}
                 alt="card_image_"
@@ -49,6 +55,7 @@ const ImageCardGroup = () => {
                 height={400}
                 className="object-center object-cover w-full h-full rounded-2xl"
               />
+              <ArrowBadge />
             </div>
             <div className="relative flex justify-between items-center py-4">
               <CardBadge text={list.cardTag} />

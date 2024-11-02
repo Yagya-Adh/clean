@@ -14,17 +14,19 @@ const Navbar = () => {
     <nav>
       <div className="mx-auto max-w-screen-2xl px-4 md:px-20">
         <div className="flex items-center justify-between w-full">
-          <Image
-            src="/assets/logo/cleanlogo.png"
-            alt="logo_nav_"
-            height={150}
-            width={150}
-          />
+          <Link href="/">
+            <Image
+              src="/assets/logo/cleanlogo.png"
+              alt="logo_nav_"
+              height={200}
+              width={200}
+            />
+          </Link>
           <ul className="hidden lg:flex items-center">
             {data?.slice(0, 5).map((list) => (
               <li
                 key={list.id}
-                className="text-2xl uppercase font-mono font-thin text-clean-black-10 py-4 px-4"
+                className="text-xl uppercase font-mono font-thin text-clean-black-10 py-4 px-4"
               >
                 <div className="overflow-hidden group">
                   <div

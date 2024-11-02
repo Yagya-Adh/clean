@@ -14,8 +14,8 @@ const FooterLeft = () => {
       <Link href="/">
         <Image
           src="/assets/logo/cleanlogo.png"
-          width={120}
-          height={120}
+          width={200}
+          height={200}
           alt="footer_logo_"
         />
       </Link>

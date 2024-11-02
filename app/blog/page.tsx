@@ -6,13 +6,13 @@ const BlogPage = () => {
   return (
     <main>
       <CustomHeader
-        icon="/assets/logo/happyPlus.svg"
+        icon="/assets/icon/happyPlus.svg"
         slug="News & Insights"
         title="Blog"
         describe="Stay tuned for helpful guides and inspiring content."
         descriptionMaxwidth="max-w-72"
         isdescribeCapital={true}
-        fadeAnimation="animate-fadeInLeft"
+        fadeAnimation="animate-fadeInUp"
       />
       <SectionBanner
         heading="Latest Posts"

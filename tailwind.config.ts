@@ -18,14 +18,13 @@ const config: Config = {
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         fadeInRight: {
-          "0%": { opacity: "0", transform: "translateX(-25px)" },
+          "0%": { opacity: "0", transform: "-translateX(25px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-
         fadeOut: {
           "0%": { opacity: "1" },
           "100%": { opacity: "0" },
