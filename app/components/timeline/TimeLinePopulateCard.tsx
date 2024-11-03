@@ -1,4 +1,5 @@
 import serviceTimeLineData from "@/cleanServiceTimeLineData.json";
+import ArticleLayout from "../article/ArticleLayout";
 
 interface IserviceTimeLineData {
   id: number;
@@ -9,25 +10,19 @@ interface IserviceTimeLineData {
 const data: IserviceTimeLineData[] = serviceTimeLineData;
 const TimeLinePopulateCard = () => {
   return (
-    <div className="h-full px-10">
+    <div className="px-4 py-4">
       {data?.map((list) => (
-        <article
+        <div
           key={list.id}
-          className="
-          flex flex-col
-          justify-center
-          rounded-[62px]         
-          text-clean-black-10
-          bg-white/20
-           shadow-xl 
-           font-sans
-           px-20 py-10 my-4 
-           "
+          className="bg-white/40 rounded-[62px] py-10 px-10 my-4"
         >
-          <h3 className="uppercase text-xl">{list.cleanType}</h3>
-          <h4 className="text-5xl  py-2">{list.CleaningTitle}</h4>
-          <p className="text-xl max-w-xl">{list.cleanDescribe}</p>
-        </article>
+          <ArticleLayout
+            head={list.cleanType}
+            title={list.CleaningTitle}
+            describe={list.cleanDescribe}
+            variant="article-without-button"
+          />
+        </div>
       ))}
     </div>
   );

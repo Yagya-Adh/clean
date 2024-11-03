@@ -12,6 +12,7 @@ const ServicesPage = () => {
         descriptionMaxwidth="max-w-72"
         isdescribeCapital={true}
         fadeAnimation="animate-fadeInUp"
+        variant="without-button"
       />
       <CardTimeLine />
     </main>

@@ -17,10 +17,10 @@ const FrequentlyAsk = () => {
   };
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-10 my-20">
+    <section className="max-w-screen-2xl mx-auto md:px-10 my-20">
       {data?.slice(0, 6).map((list) => (
         <div
-          className="flex flex-col justify-center items-center py-4 md:px-20 animate-fadeInUp"
+          className="flex flex-col justify-center items-center py-4 px-4 md:px-20 animate-fadeInUp"
           key={list.id}
         >
           <article
@@ -33,7 +33,7 @@ const FrequentlyAsk = () => {
           hover:bg-transparent 
           shadow-lg 
           animate-fadeInUp 
-          w-1/2         
+          md:w-1/2         
           px-10 py-10       
             ${
               openQuestion === list.id

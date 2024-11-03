@@ -10,7 +10,7 @@ const socialIcon: IsocialIcon[] = footerIconData;
 
 const FooterLeft = () => {
   return (
-    <>
+    <div className="text-center md:text-start flex flex-col justify-center  items-center md:items-start">
       <Link href="/">
         <Image
           src="/assets/logo/cleanlogo.png"
@@ -19,7 +19,7 @@ const FooterLeft = () => {
           alt="footer_logo_"
         />
       </Link>
-      <div className="flex flex-row  items-center py-2">
+      <div className="flex flex-row items-center py-2">
         {socialIcon?.slice(0, 3).map((list) => (
           <Image
             src={list.icon}
@@ -31,10 +31,10 @@ const FooterLeft = () => {
           />
         ))}
       </div>
-      <p className="text-sm font-mono max-w-60">
+      <p className="text-sm font-mono max-w-60 ">
         Efficient Cleaning, Exceptional Results.
       </p>
-    </>
+    </div>
   );
 };
 

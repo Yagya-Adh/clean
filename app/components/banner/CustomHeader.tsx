@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PillButton from "../button/PillButton";
 
 interface IcustomHeader {
   title: string;
@@ -11,6 +12,8 @@ interface IcustomHeader {
     | "animate-fadeInUp"
     | "animate-fadeInRight"
     | "animate-fadeInLeft";
+
+  variant: "with-button" | "without-button";
 }
 const CustomHeader = ({
   title,
@@ -20,8 +23,9 @@ const CustomHeader = ({
   descriptionMaxwidth,
   isdescribeCapital,
   fadeAnimation,
-}: IcustomHeader) => {
-  return (
+  variant,
+}: IcustomHeader) =>
+  variant === "without-button" ? (
     <section className="max-w-screen-2xl mx-auto px-10 py-20">
       <div
         className={`flex flex-col justify-center items-center 
@@ -53,7 +57,39 @@ const CustomHeader = ({
         </article>
       </div>
     </section>
-  );
-};
+  ) : variant === "with-button" ? (
+    <section className="max-w-screen-2xl mx-auto px-10 py-20">
+      <div
+        className={`flex flex-col justify-center items-center 
+           
+          
+          ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}`}
+      >
+        <header
+          className={`flex flex-row items-center ${
+            fadeAnimation ? fadeAnimation : ""
+          }`}
+        >
+          <Image src={icon} alt="header_logo_" width={36} height={36} />
+          <h5 className="font-mono uppercase text-sm ml-4">{slug}</h5>
+        </header>
+        <article
+          className={`p-4 text-center ${fadeAnimation ? fadeAnimation : ""}`}
+        >
+          <h1 className="text-7xl font-light py-4">{title}</h1>
+          <p
+            className={`             
+              text-base 
+              font-mono              
+              ${isdescribeCapital ? "uppercase" : ""}
+              ${descriptionMaxwidth ? descriptionMaxwidth : "max-w-72"}`}
+          >
+            {describe}
+          </p>
+          <PillButton text="EXPLORE" />
+        </article>
+      </div>
+    </section>
+  ) : null;
 
 export default CustomHeader;

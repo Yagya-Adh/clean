@@ -44,7 +44,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <FaBars className="size-8" />
           </div>
         </div>
