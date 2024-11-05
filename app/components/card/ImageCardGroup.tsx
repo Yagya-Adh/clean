@@ -34,7 +34,7 @@ const data: IblogData[] = blogData;
 
 const ImageCardGroup = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-10 ">
+    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {data?.slice(0, 4).map((list) => (
           <Link
@@ -47,15 +47,18 @@ const ImageCardGroup = () => {
             key={list.id}
             href={`/blog/${list.id}`}
           >
-            <div className="h-full relative">
+            <div className="relative">
               <Image
                 src={list.cardImage}
                 alt="card_image_"
-                width={400}
-                height={400}
-                className="object-center object-cover w-full h-full rounded-2xl"
+                width={800}
+                height={800}
+                className="object-center object-cover rounded-2xl"
               />
-              <ArrowBadge />
+
+              <div className="absolute rig lg:bottom-4 lg:right-4">
+                <ArrowBadge />
+              </div>
             </div>
             <article
               className="

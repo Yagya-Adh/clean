@@ -4,17 +4,15 @@ const ArrowBadge = () => {
   return (
     <div
       className="
-overflow-hidden  
-rounded-full 
-absolute 
-right-4 
-bottom-4 
-rotate-45
-bg-white              
-group-hover:bg-black
-group-hover:text-white
-p-5  
-"
+      overflow-hidden  
+      rounded-full     
+      rotate-45
+      bg-white              
+      group-hover:text-white
+      items-center
+      px-4 
+      py-2
+    "
     >
       <div
         className={`translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500`}
@@ -34,7 +32,7 @@ p-5
         />
       </div>
       <div
-        className={`translate-y-10 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500`}
+        className={`translate-y-16 transform group-hover:-translate-y-0 ease-in-out transition-all duration-500`}
       >
         <Image
           src="/assets/icon/arrow_outward.svg"
