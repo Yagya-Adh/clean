@@ -13,7 +13,20 @@ const RequestAFreeQuote = () => {
     relative
     "
     >
-      <div className="px-40">
+      <Image
+        src="/assets/images/requestcard.webp"
+        alt="request_card_"
+        width={900}
+        height={900}
+        className=" rounded-[62px] h-full  w-full relative"
+      />
+      {/*  <div
+        className=" 
+        bg-no-repeat
+        bg-footer-card-image
+        bg-cover px-52 py-40 sm:px-80 sm:py-64 lg:px-96 lg:py-72 
+        "
+      >
         <Image
           src="/assets/images/requestcard.webp"
           alt="request_card_"
@@ -21,7 +34,7 @@ const RequestAFreeQuote = () => {
           height={900}
           className=" rounded-[62px] relative"
         />
-      </div>
+      </div> */}
 
       <article
         className="
@@ -43,23 +56,23 @@ const RequestAFreeQuote = () => {
         <form className="py-10 px-2">
           <div
             className="
-       bg-black 
-        rounded-xl 
-        flex flex-row
-        items-center
-        p-3
-        w-full
-        "
+            bg-black 
+            rounded-xl 
+            flex flex-row
+            items-center
+            w-full
+            p-3
+            "
           >
             <input
               type="text"
               className="
-          px-10 
-          pe-20
-          bg-transparent
-          outline-none
-          text-base
-          text-white
+              px-10 
+              pe-20
+              bg-transparent
+              outline-none
+              text-base
+              text-white
           "
               placeholder="Enter your email"
             />

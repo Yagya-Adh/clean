@@ -1,0 +1,5 @@
+[
+  { "id": 1, "valueAmount": "5K", "hasSup": "", "valueType": "Customers" },
+  { "id": 2, "valueAmount": "4.5K", "hasSup": "", "valueType": "Repeat" },
+  { "id": 3, "valueAmount": "99", "hasSup": "%", "valueType": "Satisfaction" }
+]

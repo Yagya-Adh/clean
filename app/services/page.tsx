@@ -9,7 +9,7 @@ const ServicesPage = () => {
         slug="Expert Cleaning"
         title="Services"
         describe="Quality & Expert Cleaning for individuals and companies."
-        descriptionMaxwidth="max-w-72"
+        descriptionMaxwidth="max-w-sm"
         isdescribeCapital={true}
         fadeAnimation="animate-fadeInUp"
         variant="without-button"

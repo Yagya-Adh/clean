@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: "var(--font-inter)",
+      },
       keyframes: {
         fadeInUp: {
           "0%": { opacity: "0", transform: "translateY(25px)" },
@@ -37,11 +40,18 @@ const config: Config = {
         faceInLeft: "faceInLeft .8 ease-in",
         fadeInRight: "fadeInRight .8 ease-in",
       },
+      backgroundImage: {
+        "about-banner": "url('/assets/images/aboutCleanMain.webp')",
+        "footer-card-image": "url('/assets/images/requestcard.webp')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
 
         clean: {
+          gray: {
+            10: "#c7c7c7",
+          },
           black: {
             10: "#050505",
           },
@@ -56,6 +66,9 @@ const config: Config = {
           },
           smoke: {
             white: "#F5F5F5F5",
+          },
+          blue: {
+            10: "#c1dbe4",
           },
         },
       },

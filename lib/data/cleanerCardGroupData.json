@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "QUALITY",
+    "describe": "Every space is spotless and well-maintained.",
+    "logo": "/assets/icon/vash.svg",
+    "color": "bg-clean-smoke-white"
+  },
+  {
+    "id": 2,
+    "title": "REFRESH",
+    "describe": "Every room feels fresh and rejuvenated.",
+    "logo": "/assets/icon/loveHome.svg",
+    "color": "bg-clean-gray-10"
+  },
+  {
+    "id": 3,
+    "title": "SANITIZE",
+    "describe": "Top-grade sanitization techniques.",
+    "logo": "/assets/icon/handwash.svg",
+    "color": "bg-clean-green-10"
+  },
+  {
+    "id": 4,
+    "title": "AWARDS",
+    "describe": "Accolades that highlight our service.",
+    "logo": "/assets/icon/certificatemark.svg",
+    "color": "bg-clean-blue-10"
+  }
+]

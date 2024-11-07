@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "isActive": true,
+    "name": "Amy Lee",
+    "job": "Cleaning Specialist",
+    "describe": "Amy ensures every space is spotless and clean.",
+    "photo": "/assets/images/amylee.webp"
+  },
+  {
+    "id": 2,
+    "isActive": false,
+    "name": "Eva Kim",
+    "job": "Sanitation Technician",
+    "describe": "Eva provides top-notch disinfection services.",
+    "photo": "/assets/images/evakim.webp"
+  },
+  {
+    "id": 3,
+    "isActive": false,
+    "name": "Ana Cole",
+    "job": "Residential Cleaner",
+    "describe": "Ana is known for her meticulous cleaning.",
+    "photo": "/assets/images/anacole.webp"
+  },
+  {
+    "id": 4,
+    "isActive": false,
+    "name": "Lily Ray",
+    "job": "Quality Inspector",
+    "describe": "Lily oversees the highest quality control.",
+    "photo": "/assets/images/lilyray.webp"
+  }
+]
