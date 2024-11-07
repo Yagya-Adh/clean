@@ -10,12 +10,13 @@ const BlogPage = () => {
         slug="News & Insights"
         title="Blog"
         describe="Stay tuned for helpful guides and inspiring content."
-        descriptionMaxwidth="max-w-72"
+        descriptionMaxwidth="max-w-sm"
         isdescribeCapital={true}
         fadeAnimation="animate-fadeInUp"
         variant="without-button"
       />
       <SectionBanner
+        variant="blog"
         heading="Latest Posts"
         topic="Our recent articles"
         slug="Simplify your tasks and maintaining the cleanliness."

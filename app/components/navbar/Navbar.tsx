@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="mx-auto max-w-screen-2xl px-4 md:px-20">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full py-4">
           <Link href="/">
             <Image
               src="/assets/logo/cleanlogo.png"
@@ -26,7 +26,7 @@ const Navbar = () => {
             {data?.slice(0, 5).map((list) => (
               <li
                 key={list.id}
-                className="text-xl uppercase font-mono font-thin text-clean-black-10 py-4 px-4"
+                className="text-xl uppercase font-mono font-thin text-clean-black-10 px-4"
               >
                 <div className="overflow-hidden group">
                   <div

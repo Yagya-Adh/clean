@@ -28,8 +28,7 @@ const CustomHeader = ({
   variant === "without-button" ? (
     <section className="max-w-screen-2xl mx-auto px-10 py-20">
       <div
-        className={`flex flex-col justify-center items-center 
-           
+        className={`flex flex-col justify-center items-center          
           
           ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}`}
       >
@@ -39,16 +38,19 @@ const CustomHeader = ({
           }`}
         >
           <Image src={icon} alt="header_logo_" width={36} height={36} />
-          <h5 className="font-mono uppercase text-sm ml-4">{slug}</h5>
+          <h5 className="font-inter uppercase text-sm ml-4">{slug}</h5>
         </header>
         <article
-          className={`p-4 text-center ${fadeAnimation ? fadeAnimation : ""}`}
+          className={`p-4 text-center flex flex-col justify-center items-center ${
+            fadeAnimation ? fadeAnimation : ""
+          }`}
         >
-          <h1 className="text-7xl font-light py-4">{title}</h1>
+          <h4 className="text-8xl font-light font-inter py-4">{title}</h4>
           <p
-            className={`             
-              text-base 
-              font-mono              
+            className={`text-clean-black-10/60             
+              text-xl 
+              font-inter
+              font-normal              
               ${isdescribeCapital ? "uppercase" : ""}
               ${descriptionMaxwidth ? descriptionMaxwidth : "max-w-72"}`}
           >
@@ -60,10 +62,9 @@ const CustomHeader = ({
   ) : variant === "with-button" ? (
     <section className="max-w-screen-2xl mx-auto px-10 py-20">
       <div
-        className={`flex flex-col justify-center items-center 
-           
-          
-          ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}`}
+        className={`flex flex-col justify-center items-center          
+       ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}
+       `}
       >
         <header
           className={`flex flex-row items-center ${
@@ -71,16 +72,25 @@ const CustomHeader = ({
           }`}
         >
           <Image src={icon} alt="header_logo_" width={36} height={36} />
-          <h5 className="font-mono uppercase text-sm ml-4">{slug}</h5>
+          <h5 className="font-mono uppercase text-sm ml-4 text-clean-black-10/60">
+            {slug}
+          </h5>
         </header>
         <article
-          className={`p-4 text-center ${fadeAnimation ? fadeAnimation : ""}`}
+          className={`p-4 text-center flex flex-col justify-center items-center ${
+            fadeAnimation ? fadeAnimation : ""
+          }`}
         >
-          <h1 className="text-7xl font-light py-4">{title}</h1>
+          <h4 className="text-8xl font-light font-inter py-4 text-clean-black-10">
+            {title}
+          </h4>
           <p
-            className={`             
-              text-base 
-              font-mono              
+            className={`
+              text-clean-black-10/60
+              py-10
+              text-lg 
+              font-inter
+              font-normal               
               ${isdescribeCapital ? "uppercase" : ""}
               ${descriptionMaxwidth ? descriptionMaxwidth : "max-w-72"}`}
           >
