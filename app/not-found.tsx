@@ -1,47 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const PageNotFound = () => {
   return (
-    <main>
-      <Image
-        src="/assets/images/pagenotfound.webp"
-        alt="not-found"
-        width={1000}
-        height={1000}
-        className="-z-10"
-      />
-
-      <div className="absolute top-0 left-0 z-10">
-        <div className="bg-black/40 w-screen h-screen">
-          <article className="flex flex-col justify-center items-center">
+    <main className="absolute top-0 left-0">
+      <div className="fixed inset-0 bg-[url('/assets/images/pagenotfound.webp')] bg-no-repeat bg-cover z-30">
+        <div className="bg-black/70 w-screen h-screen flex flex-col justify-center items-center">
+          <article className="flex flex-col items-center text-white">
             <Image
               src="/assets/icon/warnchat.png"
-              alt="not-found"
+              alt="Warning icon for page not found"
               width={150}
               height={150}
-              className="bg-transparent bg-white"
+              className="object-contain fill-white invert scale-150 my-20"
             />
-
-            <h1 className="text-7xl max-w-96 text-center text-clean-green-10">
+            <h4
+              role="heading"
+              className="text-4xl md:text-5xl max-w-sm text-center"
+            >
               Page Not Found
-            </h1>
-            <p>
-              The page you are looking for doesn&apos;t exist or has been moved
+            </h4>
+            <p className="text-center my-4">
+              The page you are looking for doesn&apos;t exist or has been moved.
             </p>
-
             <Link
               href="/"
-              className="
-            px-4 py-2 
-            text-xl
-            text-black 
-            hover:text-white
-            rounded-xl
-            bg-clean-green-10
-            hover:bg-black
-            "
+              aria-label="Go back to homepage"
+              className="px-4 py-2 text-xl text-black hover:text-white rounded-xl bg-clean-green-10 hover:bg-black"
             >
               Back To Home
             </Link>
