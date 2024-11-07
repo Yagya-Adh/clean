@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "cardImage": "/assets/images/guideClean.webp",
+    "cardDescription": "Guide to Keeping Your Home Spotless",
+    "cardTag": "CLEANING TIP",
+    "cardDate": "OCT 9",
+    "user": {
+      "name": "ALEX WAYNE",
+      "image": "/assets/images/alex.jpg"
+    },
+    "mainTitle": "Cleaning Tips",
+    "mainDescription": "Explore essential tips and tricks to keep your home spotless, ensuring a fresh environment.",
+    "author": {
+      "name": "Alex Wayne",
+      "publishDate": "Sep 14, 2024"
+    },
+    "conclusion": "Keeping your home spotless is a continuous process, but with these tips, you can make it a more manageable and enjoyable task. Implement these strategies to create a clean, organized, and inviting space for you and your loved ones.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Create a Cleaning Schedule",
+        "describe": "Establishing a cleaning schedule is crucial for staying on top of household chores. Divide tasks into daily, weekly, and monthly categories to ensure nothing gets overlooked. Regular cleaning not only keeps your home looking great but also prevents the buildup of dust and dirt."
+      },
+      {
+        "id": 2,
+        "title": "Use the Right Tools",
+        "describe": "Invest in quality cleaning tools and products. Microfiber cloths, high-efficiency vacuums, and eco-friendly cleaning agents can make a significant difference in your cleaning routine. Ensure that you have the appropriate tools for each task to achieve the best results."
+      },
+      {
+        "id": 3,
+        "title": "Declutter Regularly",
+        "describe": "A clutter-free home is easier to clean and maintain. Take time to declutter your spaces regularly. Donate or discard items you no longer need, and organize remaining items to make cleaning more efficient."
+      },
+      {
+        "id": 4,
+        "title": "Focus on High-Traffic Areas",
+        "describe": "Certain areas of your home, such as the kitchen and bathrooms, receive more foot traffic and require more frequent attention. Pay extra attention to these high-traffic areas to prevent grime and stains from accumulating."
+      },
+      {
+        "id": 5,
+        "title": "Practice Good Hygiene",
+        "describe": "In addition to cleaning, practicing good hygiene is essential. Regularly wash your hands, keep kitchen surfaces sanitized, and ensure proper ventilation to maintain a healthy living environment."
+      }
+    ],
+    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere. Morbi id magna at arcu tempus ornare. Fusce mauris purus, rhoncus a sollicitudin sit amet, placerat vitae nisl. Morbi feugiat est in accumsan facilisis."
+  },
+  {
+    "id": 2,
+    "cardImage": "/assets/images/dailyClean.webp",
+    "cardDescription": "Effective Daily Cleaning Routines",
+    "cardTag": "CLEANING HACKS",
+    "cardDate": "OCT 9",
+    "user": {
+      "name": "JOE MORGAN",
+      "image": "/assets/images/joe.jpg"
+    },
+    "mainTitle": "Cleaning Hacks",
+    "mainDescription": "Busy schedules can make it challenging to keep up with household cleaning.",
+    "author": {
+      "name": "Joe Morgan",
+      "publishDate": "Sep 14, 2024"
+    },
+    "conclusion": "A clean home is more than just an aesthetic choice; it's a lifestyle. By following these daily cleaning routines, you can create a sustainable habit that keeps your home looking and feeling fresh every day.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Create a Cleaning Schedule",
+        "describe": "Establishing a cleaning schedule is crucial for staying on top of household chores. Divide tasks into daily, weekly, and monthly categories to ensure nothing gets overlooked."
+      },
+      {
+        "id": 2,
+        "title": "Use the Right Tools",
+        "describe": "Quality tools simplify cleaning tasks. Ensure you have microfiber cloths, high-efficiency vacuums, and eco-friendly cleaners that help get the job done effectively."
+      },
+      {
+        "id": 3,
+        "title": "Declutter Regularly",
+        "describe": "Less clutter means less to clean. Frequently declutter and organize items, which reduces cleaning time and enhances space utility."
+      },
+      {
+        "id": 4,
+        "title": "Focus on High-Traffic Areas",
+        "describe": "Kitchen and bathrooms demand extra attention due to their frequent use. A quick clean-up each day keeps these areas looking tidy and hygienic."
+      },
+      {
+        "id": 5,
+        "title": "Practice Good Hygiene",
+        "describe": "Good hygiene practices go hand in hand with cleaning. Frequent hand washing and sanitized surfaces prevent germs and keep spaces healthier."
+      }
+    ],
+    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere."
+  },
+  {
+    "id": 3,
+    "cardImage": "/assets/images/officeClean.webp",
+    "cardDescription": "Keep Your Office Clean For Productivity",
+    "cardTag": "OFFICE CLEANING",
+    "cardDate": "OCT 9",
+    "user": {
+      "name": "SARA SMITH",
+      "image": "/assets/images/sara.jpg"
+    },
+    "mainTitle": "Office Cleaning",
+    "mainDescription": "A clean and organized environment is essential for productivity, whether at home or in the office.",
+    "author": {
+      "name": "Sara Smith",
+      "publishDate": "Sep 14, 2024"
+    },
+    "conclusion": "A tidy workspace fosters productivity and focus. Make cleanliness a habit to create an environment where you can work effectively and comfortably.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Create a Cleaning Schedule",
+        "describe": "Even in an office setting, a cleaning schedule can help manage daily and weekly upkeep, ensuring a workspace that feels fresh and orderly."
+      },
+      {
+        "id": 2,
+        "title": "Use the Right Tools",
+        "describe": "Keep essential tools like disinfecting wipes, microfiber cloths, and air fresheners at hand for quick and efficient office cleaning."
+      },
+      {
+        "id": 3,
+        "title": "Declutter Regularly",
+        "describe": "An organized office is an efficient one. Dispose of unneeded paperwork and tidy up your desk regularly to boost productivity."
+      },
+      {
+        "id": 4,
+        "title": "Focus on High-Traffic Areas",
+        "describe": "Spaces like the break room and conference areas need regular cleaning due to frequent use. Maintain cleanliness to foster a comfortable office atmosphere."
+      },
+      {
+        "id": 5,
+        "title": "Practice Good Hygiene",
+        "describe": "Encourage hand hygiene and surface disinfection in communal spaces to minimize the spread of germs and promote a healthier workplace."
+      }
+    ],
+    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere."
+  },
+  {
+    "id": 4,
+    "cardImage": "/assets/images/homeClean.webp",
+    "cardDescription": "Tips for a Healthier Home",
+    "cardTag": "HYGIENE PRACTICES",
+    "cardDate": "OCT 9",
+    "user": {
+      "name": "JAMIE LEE",
+      "image": "/assets/images/jamie.jpg"
+    },
+    "mainTitle": "Hygiene Practices",
+    "mainDescription": "A clean home is not just about aesthetics—it's also crucial for your health and well-being.",
+    "author": {
+      "name": "Jamie Lee",
+      "publishDate": "Sep 14, 2024"
+    },
+    "conclusion": "Health starts at home. By implementing these hygiene practices, you create a living space that promotes well-being and comfort for everyone.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Create a Cleaning Schedule",
+        "describe": "Set a schedule that works for you. Break down tasks by frequency to ensure no areas of your home are neglected."
+      },
+      {
+        "id": 2,
+        "title": "Use the Right Tools",
+        "describe": "Eco-friendly cleaning products and high-quality tools can contribute to a cleaner and more sustainable home environment."
+      },
+      {
+        "id": 3,
+        "title": "Declutter Regularly",
+        "describe": "An organized space is easier to keep clean and maintain. Remove excess items to improve cleanliness and airflow."
+      },
+      {
+        "id": 4,
+        "title": "Focus on High-Traffic Areas",
+        "describe": "Rooms like the kitchen and bathrooms should be prioritized for frequent cleaning to keep bacteria and allergens at bay."
+      },
+      {
+        "id": 5,
+        "title": "Practice Good Hygiene",
+        "describe": "Good hygiene practices, such as regular hand washing and disinfecting surfaces, help prevent the spread of illness in your home."
+      }
+    ],
+    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere."
+  }
+]

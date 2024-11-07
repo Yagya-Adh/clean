@@ -13,11 +13,18 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(25px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        fadeInLeft: {
+          "0%": { opacity: "0", transform: "translateX(25px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        fadeInRight: {
+          "0%": { opacity: "0", transform: "-translateX(25px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-
         fadeOut: {
           "0%": { opacity: "1" },
           "100%": { opacity: "0" },
@@ -27,6 +34,8 @@ const config: Config = {
         fadeIn: "fadeIn 1.5s ease-in",
         fadeOut: "fadeOut 1.5s ease-out",
         fadeInUp: "fadeInUp .8s ease-in",
+        faceInLeft: "faceInLeft .8 ease-in",
+        fadeInRight: "fadeInRight .8 ease-in",
       },
       colors: {
         background: "var(--background)",
@@ -44,6 +53,9 @@ const config: Config = {
           },
           yellow: {
             10: "#dbec62",
+          },
+          smoke: {
+            white: "#F5F5F5F5",
           },
         },
       },

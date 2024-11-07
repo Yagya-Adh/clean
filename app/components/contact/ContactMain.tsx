@@ -11,6 +11,7 @@ const ContactMain = () => {
         title="Contact"
         describe="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         descriptionMaxwidth="max-w-72"
+        variant="without-button"
       />
       <ContactForm />
 
@@ -20,6 +21,7 @@ const ContactMain = () => {
         title="Have Questions?"
         describe="We’re committed to making your experience as smooth and straightforward as possible."
         descriptionMaxwidth="max-w-lg"
+        variant="without-button"
       />
 
       <FrequentlyAsk />

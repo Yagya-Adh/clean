@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "cleanType": "Refresh",
+    "CleaningTitle": "Home Cleaning",
+    "cleanDescribe": "Living space stays spotless, so you can enjoy a clean and comfortable environment without the hassle."
+  },
+  {
+    "id": 2,
+    "cleanType": "Weekly",
+    "CleaningTitle": "Recurrent Cleaning",
+    "cleanDescribe": "Keep your space consistently clean with our flexible recurrent cleaning services. Whether weekly or monthly."
+  },
+  {
+    "id": 3,
+    "cleanType": "Focus on your work",
+    "CleaningTitle": "Office Cleaning",
+    "cleanDescribe": "Maintain a professional and hygienic workspace with our office cleaning services."
+  },
+  {
+    "id": 4,
+    "cleanType": "The essentials",
+    "CleaningTitle": "General Cleaning",
+    "cleanDescribe": "Our general cleaning service covers all the basics, ensuring your space is fresh, clean, and clutter-free."
+  }
+]
