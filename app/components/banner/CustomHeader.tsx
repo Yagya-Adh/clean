@@ -30,13 +30,15 @@ const CustomHeader = ({
       <div className="flex flex-col justify-center items-center">
         <header className="flex flex-row items-center animate-fadeInLeft">
           <Image src={icon} alt="header_logo_" width={36} height={36} />
-          <h5 className="font-inter uppercase text-base ml-4">{slug}</h5>
+          <h5 className="uppercase text-base ml-4 font-light font-inter text-clean-black-10 ">
+            {slug}
+          </h5>
         </header>
         <div className="p-4 text-center flex flex-col justify-center items-center">
           <h4
             className={` ${
               fadeAnimation && fadeAnimation
-            } text-5xl lg:text-8xl font-light font-inter py-4 `}
+            } text-5xl lg:text-8xl font-light font-inter text-clean-black-10 py-4 `}
           >
             {title}
           </h4>
@@ -58,12 +60,12 @@ const CustomHeader = ({
   ) : variant === "with-button" ? (
     <section className="max-w-screen-2xl mx-auto px-10 py-20">
       <div
-        className={`flex flex-col justify-center items-center          
+        className={`flex flex-col justify-center items-center text-clean-black-10       
        ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}
        `}
       >
         <header
-          className={`flex flex-row items-center ${
+          className={`flex flex-row items-center text-clean-black-10 ${
             fadeAnimation ? fadeAnimation : ""
           }`}
         >
