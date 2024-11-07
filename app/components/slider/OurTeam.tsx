@@ -44,10 +44,10 @@ const OurTeam = () => {
             </article>
           ))}
         </div>
-
         <section className="py-5">
           {data?.slice(0, 4).map((click) => (
             <button
+              type="button"
               className={`rounded-full p-2 mx-0.5
               ${click.isActive ? "bg-clean-black-10" : "bg-clean-gray-10"}
               `}

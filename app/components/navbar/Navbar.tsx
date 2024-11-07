@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
+import navbarData from "@/lib/data/navbarData.json";
+interface InavabarData {
+  id: number;
+  path: string;
+  name: string;
+}
+const data: InavabarData[] = navbarData;
 
-const data = [
-  { id: 1, path: "/", name: "Home" },
-  { id: 2, path: "/about", name: "About" },
-  { id: 3, path: "/services", name: "Services" },
-  { id: 4, path: "/blog", name: "Blog" },
-  { id: 5, path: "/contact", name: "Contact" },
-];
 const Navbar = () => {
   return (
     <nav>
@@ -42,8 +42,7 @@ const Navbar = () => {
                 </div>
               </li>
             ))}
-          </ul>
-
+          </ul>{" "}
           <div className="lg:hidden">
             <FaBars className="size-8" />
           </div>
