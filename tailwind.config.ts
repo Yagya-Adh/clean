@@ -12,16 +12,20 @@ const config: Config = {
         inter: "var(--font-inter)",
       },
       keyframes: {
+        flipLeftIn: {
+          "0%": { opacity: "0", transform: "rotateY(180deg)" },
+          "100%": { opacity: "1", transform: "rotateY(0)" },
+        },
         fadeInUp: {
           "0%": { opacity: "0", transform: "translateY(25px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         fadeInLeft: {
-          "0%": { opacity: "0", transform: "translateX(25px)" },
+          "0%": { opacity: "0", transform: "translateX(-25px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         fadeInRight: {
-          "0%": { opacity: "0", transform: "-translateX(25px)" },
+          "0%": { opacity: "0", transform: "translateX(25px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         fadeIn: {
@@ -37,8 +41,9 @@ const config: Config = {
         fadeIn: "fadeIn 1.5s ease-in",
         fadeOut: "fadeOut 1.5s ease-out",
         fadeInUp: "fadeInUp .8s ease-in",
-        faceInLeft: "faceInLeft .8 ease-in",
-        fadeInRight: "fadeInRight .8 ease-in",
+        fadeInLeft: "fadeInLeft .9s ease-in",
+        fadeInRight: "fadeInRight .9s ease-in",
+        fadeflipLeftIn: "flipLeftIn 0.8s ease-in",
       },
       backgroundImage: {
         "about-banner": "url('/assets/images/aboutCleanMain.webp')",

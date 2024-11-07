@@ -15,7 +15,7 @@ const About = () => {
         describe="we’re passionate about Delivering exceptional cleaning that go beyond expectations."
         descriptionMaxwidth="max-w-sm"
         isdescribeCapital={true}
-        fadeAnimation="animate-fadeInUp"
+        fadeAnimation="animate-fadeInLeft"
         variant="with-button"
       />
       <CleanImageCard />

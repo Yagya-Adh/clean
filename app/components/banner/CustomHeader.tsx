@@ -27,27 +27,23 @@ const CustomHeader = ({
 }: IcustomHeader) =>
   variant === "without-button" ? (
     <section className="max-w-screen-2xl mx-auto px-10 py-20">
-      <div
-        className={`flex flex-col justify-center items-center          
-          
-          ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}`}
-      >
-        <header
-          className={`flex flex-row items-center ${
-            fadeAnimation ? fadeAnimation : ""
-          }`}
-        >
+      <div className="flex flex-col justify-center items-center">
+        <header className="flex flex-row items-center animate-fadeInLeft">
           <Image src={icon} alt="header_logo_" width={36} height={36} />
-          <h5 className="font-inter uppercase text-sm ml-4">{slug}</h5>
+          <h5 className="font-inter uppercase text-base ml-4">{slug}</h5>
         </header>
-        <article
-          className={`p-4 text-center flex flex-col justify-center items-center ${
-            fadeAnimation ? fadeAnimation : ""
-          }`}
-        >
-          <h4 className="text-8xl font-light font-inter py-4">{title}</h4>
+        <div className="p-4 text-center flex flex-col justify-center items-center">
+          <h4
+            className={` ${
+              fadeAnimation && fadeAnimation
+            } text-5xl lg:text-8xl font-light font-inter py-4 `}
+          >
+            {title}
+          </h4>
           <p
-            className={`text-clean-black-10/60             
+            className={`
+              animate-fadeInRight
+              text-clean-black-10             
               text-xl 
               font-inter
               font-normal              
@@ -56,7 +52,7 @@ const CustomHeader = ({
           >
             {describe}
           </p>
-        </article>
+        </div>
       </div>
     </section>
   ) : variant === "with-button" ? (
@@ -72,21 +68,21 @@ const CustomHeader = ({
           }`}
         >
           <Image src={icon} alt="header_logo_" width={36} height={36} />
-          <h5 className="font-mono uppercase text-sm ml-4 text-clean-black-10/60">
+          <h5 className="font-mono uppercase text-sm ml-4 text-clean-black-10">
             {slug}
           </h5>
         </header>
-        <article
+        <div
           className={`p-4 text-center flex flex-col justify-center items-center ${
             fadeAnimation ? fadeAnimation : ""
           }`}
         >
-          <h4 className="text-8xl font-light font-inter py-4 text-clean-black-10">
+          <h4 className="text-5xl lg:text-8xl font-light font-inter py-4 text-clean-black-10">
             {title}
           </h4>
           <p
             className={`
-              text-clean-black-10/60
+              text-clean-black-10
               py-10
               text-lg 
               font-inter
@@ -97,7 +93,7 @@ const CustomHeader = ({
             {describe}
           </p>
           <PillButton text="EXPLORE" />
-        </article>
+        </div>
       </div>
     </section>
   ) : null;

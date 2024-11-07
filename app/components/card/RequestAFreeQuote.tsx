@@ -6,7 +6,8 @@ const RequestAFreeQuote = () => {
     <section
       className="
     rounded-[62px]       
-    flex flex-col 
+    flex 
+    flex-col 
     justify-center 
     items-center
     overflow-hidden   
@@ -39,18 +40,20 @@ const RequestAFreeQuote = () => {
       <article
         className="
         absolute
-        flex flex-col
+        flex
+        flex-col
         justify-center 
         items-center
         p-4 
         lg:p-40 
-        lg:pt-20"
+        lg:pt-2
+        "
       >
-        <h1 className="text-4xl py-4">
+        <h4 className="text-7xl py-4 text-clean-black-10 font-inter">
           <span className="font-light">Request A </span>
-          <span className="font-mono italic"> Free Quote</span>
-        </h1>
-        <p className="tex-sm text-center">
+          <span className="font-inter font-thin italic"> Free Quote</span>
+        </h4>
+        <p className="max-w-xl text-2xl text-center font-light text-clean-black-10 font-inter">
           Find out how affordable clean can be — Request your free quote today!
         </p>
         <form className="py-10 px-2">
@@ -73,21 +76,22 @@ const RequestAFreeQuote = () => {
               outline-none
               text-base
               text-white
-          "
+              "
               placeholder="Enter your email"
             />
             <button
               type="button"
               className="
-          bg-clean-green-10
-          hover:bg-white
-          rounded-sm 
-          text-center
-          items-center
-          px-5 py-2
-          transition-all
-          duration-700
-          ease-linear
+              px-5
+              py-2
+              bg-clean-green-10
+              hover:bg-white
+              rounded-sm 
+              text-center
+              items-center
+              transition-all
+              duration-700
+              ease-linear
            "
             >
               <GoArrowRight className="size-6" />

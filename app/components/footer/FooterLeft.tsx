@@ -19,7 +19,7 @@ const FooterLeft = () => {
           alt="footer_logo_"
         />
       </Link>
-      <div className="flex flex-row items-center py-2">
+      <div className="flex flex-row items-center py-4">
         {socialIcon?.slice(0, 3).map((list) => (
           <Image
             src={list.icon}
@@ -31,7 +31,7 @@ const FooterLeft = () => {
           />
         ))}
       </div>
-      <p className="text-sm font-mono max-w-60 ">
+      <p className="text-2xl font-inter font-light max-w-60 text-clean-black-10">
         Efficient Cleaning, Exceptional Results.
       </p>
     </div>

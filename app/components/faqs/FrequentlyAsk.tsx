@@ -25,9 +25,10 @@ const FrequentlyAsk = () => {
         >
           <article
             className={`
-          flex flex-col 
-          justify-between 
+          flex 
+          flex-col 
           items-center 
+          justify-between 
           rounded-3xl 
           bg-white 
           hover:bg-transparent 
@@ -35,26 +36,26 @@ const FrequentlyAsk = () => {
           animate-fadeInUp 
           md:w-1/2         
           px-10 py-10       
-            ${
-              openQuestion === list.id
-                ? "translate-y-1 transition-all ease-linear duration-500"
-                : "-translate-y-0 transition-all ease-linear duration-500"
-            }
+          ${
+            openQuestion === list.id
+              ? "translate-y-1 transition-all ease-linear duration-500"
+              : "-translate-y-0 transition-all ease-linear duration-500"
+          }
               `}
           >
             <div
               className="flex flex-row justify-between w-full"
               onClick={() => handleQuestionToggle(list.id)}
             >
-              <h1 className="text-3xl text-clean-black-10 py-4">
+              <h4 className="text-3xl text-clean-black-10 py-4">
                 {list.question}
-              </h1>
+              </h4>
 
               <span
                 className="text-4xl text-clean-black-10 cursor-pointer"
                 onClick={() => handleQuestionToggle(list.id)}
               >
-                {openQuestion === list.id ? "-" : "+"}
+                {openQuestion === list.id ? <span>- </span> : <span>+</span>}
               </span>
             </div>
 

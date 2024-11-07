@@ -11,7 +11,7 @@ const ServicesPage = () => {
         describe="Quality & Expert Cleaning for individuals and companies."
         descriptionMaxwidth="max-w-sm"
         isdescribeCapital={true}
-        fadeAnimation="animate-fadeInUp"
+        fadeAnimation="animate-fadeInLeft"
         variant="without-button"
       />
       <CardTimeLine />
