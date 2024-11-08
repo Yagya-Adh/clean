@@ -25,6 +25,7 @@ const About = () => {
         topic="GET TO KNOW"
         slug="Meet the dedicated professionals behind our top-tier cleaning services. Relax on the weekends."
       />
+
       <OurTeam />
       <ValueNumber />
       <CleanCardGroup />

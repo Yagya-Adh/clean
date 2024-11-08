@@ -16,6 +16,10 @@ const config: Config = {
           "0%": { opacity: "0", transform: "rotateY(180deg)" },
           "100%": { opacity: "1", transform: "rotateY(0)" },
         },
+        flipTopDownIn: {
+          "0%": { opacity: "0", transform: "rotateX(-180deg)" },
+          "100%": { opacity: "1", transform: "rotateY(0)" },
+        },
         fadeInUp: {
           "0%": { opacity: "0", transform: "translateY(25px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
@@ -44,6 +48,7 @@ const config: Config = {
         fadeInLeft: "fadeInLeft .9s ease-in",
         fadeInRight: "fadeInRight .9s ease-in",
         fadeflipLeftIn: "flipLeftIn 0.8s ease-in",
+        flipTopDownIn: "flipTopDownIn 0.8s ease-in",
       },
       backgroundImage: {
         "about-banner": "url('/assets/images/aboutCleanMain.webp')",

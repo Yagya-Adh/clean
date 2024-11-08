@@ -7,11 +7,11 @@ interface IcardheroProps {
   italicTitle: string;
   describe: string;
   textOrder: string;
-
+  imagePath: string;
+  iconPath: string;
   cleanCycle: string;
   cleanType: string;
 }
-
 const CardHeroBlock = ({
   head,
   preTitle,
@@ -20,6 +20,8 @@ const CardHeroBlock = ({
   textOrder,
   cleanCycle,
   cleanType,
+  imagePath,
+  iconPath,
 }: IcardheroProps) => {
   return (
     <section className="max-w-screen-xl mx-auto px-10 py-10">
@@ -27,13 +29,13 @@ const CardHeroBlock = ({
         <aside className={textOrder}>
           <div className="flex flex-row items-center">
             <Image
-              src="/assets/icon/happyPlus.svg"
+              src={iconPath}
               alt="Cleaning spray icon"
               width={52}
               height={52}
               className="object-center object-cover"
             />
-            <h3 className="ml-5 font-inter font-light text-xl text-clean-black-10">
+            <h3 className="ml-5 font-inter font-light text-xl text-clean-black-10 uppercase">
               {head}
             </h3>
           </div>
@@ -49,7 +51,7 @@ const CardHeroBlock = ({
         <aside>
           <div className="relative">
             <Image
-              src="/assets/images/cleanhomerefresh.webp"
+              src={imagePath}
               alt="Cleaning spray icon"
               width={400}
               height={400}

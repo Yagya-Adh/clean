@@ -18,11 +18,11 @@ const MainHeroBanner = () => {
               Go-to Cleaners
             </h4>
           </div>
-          <h1 className="font-inter font-normal text-4xl md:text-6xl lg:text-8xl py-6 md:py-50">
+          <h1 className="font-inter font-light text-4xl md:text-6xl lg:text-8xl py-6 md:py-50 uppercase animate-flipTopDownIn">
             Expert <br />
-            <span className="font-thin italic">Cleaning</span>
+            <span className="font-thin italic ">Cleaning</span>
           </h1>
-          <p className="text-center text-base md:text-lg lg:text-xl text-clean-black-10 font-inter max-w-md md:max-w-xl">
+          <p className="text-center text-xl md:text-lg lg:text-xl text-clean-black-10 font-inter font-light max-w-md md:max-w-xl animate-flipTopDownIn">
             Creating cleaner, healthier spaces so you can focus on what matters
             most and relax on the weekends.
           </p>
