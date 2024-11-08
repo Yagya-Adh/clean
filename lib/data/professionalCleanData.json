@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "topic": "Regular Cleaning",
+    "describe": "For regular maintenance, our services are tailored to keep your living spaces immaculate.",
+    "image": "/assets/images/yoy.webp"
+  },
+  {
+    "id": 2,
+    "topic": "Deep Cleaning",
+    "describe": "Consistent cleaning solutions that keep your workspace organized and professional.",
+    "image": "/assets/images/pinkbrush.webp"
+  },
+  {
+    "id": 3,
+    "topic": "Move in-out Cleaning",
+    "describe": "Helping you transition smoothly into a new space or leave a lasting impression on your old one.",
+    "image": "/assets/images/cleansingLiquid.webp"
+  }
+]

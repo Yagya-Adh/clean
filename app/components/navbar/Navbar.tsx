@@ -26,17 +26,13 @@ const Navbar = () => {
             {data?.slice(0, 5).map((list) => (
               <li
                 key={list.id}
-                className="text-xl uppercase font-mono font-thin text-clean-black-10 px-4"
+                className="text-xl uppercase font-inter font-light text-clean-black-10 px-4"
               >
                 <div className="overflow-hidden group">
-                  <div
-                    className={`translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500`}
-                  >
+                  <div className="translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500">
                     <Link href={list.path}>{list.name}</Link>
                   </div>
-                  <div
-                    className={`translate-y-10 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500`}
-                  >
+                  <div className="translate-y-10 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500">
                     <Link href={list.path}>{list.name}</Link>
                   </div>
                 </div>

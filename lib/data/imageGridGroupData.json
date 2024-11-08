@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "span": "row-span-2",
+    "image": "/assets/images/sink.webp"
+  },
+  {
+    "id": 2,
+    "span": " row-span-1",
+    "image": "/assets/images/wipe.webp"
+  },
+  {
+    "id": 3,
+    "span": " row-span-1",
+    "image": "/assets/images/tablesink.webp"
+  },
+  {
+    "id": 4,
+    "span": " row-span-2",
+    "image": "/assets/images/pagenotfound.webp"
+  }
+]

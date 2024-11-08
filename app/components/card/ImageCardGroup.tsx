@@ -60,7 +60,7 @@ const ImageCardGroup = () => {
                 <ArrowBadge />
               </div>
             </div>
-            <article
+            <div
               className="
             relative 
             flex 
@@ -108,7 +108,7 @@ const ImageCardGroup = () => {
                   <span className="border-b border-black w-1/2 py-1"></span>
                 </h2>
               </div>
-            </article>
+            </div>
             <h1
               className="
               font-thin 

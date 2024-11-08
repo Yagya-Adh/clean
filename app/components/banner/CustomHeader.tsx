@@ -34,11 +34,11 @@ const CustomHeader = ({
             {slug}
           </h5>
         </header>
-        <div className="p-4 text-center flex flex-col justify-center items-center">
+        <div className="text-center flex flex-col justify-center items-center">
           <h4
             className={` ${
               fadeAnimation && fadeAnimation
-            } text-5xl lg:text-8xl font-light font-inter text-clean-black-10 py-4 `}
+            } text-5xl lg:text-7xl font-light font-inter text-clean-black-10 py-4`}
           >
             {title}
           </h4>
@@ -79,7 +79,7 @@ const CustomHeader = ({
             fadeAnimation ? fadeAnimation : ""
           }`}
         >
-          <h4 className="text-5xl lg:text-8xl font-light font-inter py-4 text-clean-black-10">
+          <h4 className="text-5xl lg:text-8xl font-light font-inter text-clean-black-10 py-4">
             {title}
           </h4>
           <p

@@ -14,7 +14,6 @@ const ContactMain = () => {
         variant="without-button"
       />
       <ContactForm />
-
       <CustomHeader
         icon="/assets/logo/faq.svg"
         slug="FAQS"

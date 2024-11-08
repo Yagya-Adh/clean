@@ -1,4 +1,7 @@
 import CustomHeader from "../components/banner/CustomHeader";
+import ImageGridGroup from "../components/section/ImageGridGroup";
+import ProfessionalCleaning from "../components/section/ProfessionalCleaning";
+import Testimonials from "../components/section/Testimonials";
 import CardTimeLine from "../components/timeline/CardTimeLine";
 
 const ServicesPage = () => {
@@ -15,6 +18,9 @@ const ServicesPage = () => {
         variant="without-button"
       />
       <CardTimeLine />
+      <ProfessionalCleaning />
+      <Testimonials />
+      <ImageGridGroup />
     </main>
   );
 };

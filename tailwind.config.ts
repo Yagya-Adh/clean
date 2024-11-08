@@ -48,6 +48,8 @@ const config: Config = {
       backgroundImage: {
         "about-banner": "url('/assets/images/aboutCleanMain.webp')",
         "footer-card-image": "url('/assets/images/requestcard.webp')",
+        "curves-wave": "url('/assets/icon/wave.svg')",
+        "hero-main": "url('/assets/images/hero.webp')",
       },
       colors: {
         background: "var(--background)",

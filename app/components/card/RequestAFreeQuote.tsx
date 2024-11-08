@@ -37,7 +37,7 @@ const RequestAFreeQuote = () => {
         />
       </div> */}
 
-      <article
+      <div
         className="
         absolute
         flex
@@ -98,7 +98,7 @@ const RequestAFreeQuote = () => {
             </button>
           </div>
         </form>
-      </article>
+      </div>
     </section>
   );
 };

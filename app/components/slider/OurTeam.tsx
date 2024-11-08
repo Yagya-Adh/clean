@@ -15,10 +15,10 @@ const OurTeam = () => {
   return (
     <section className="max-w-screen-2xl px-10">
       <div className="flex flex-col justify-center items-center py-20">
-        <div className="grid grid-cols-4 gap-10 items-center py-5">
+        <div className="grid grid-cols-4 gap-10 items-center py-5 overflow-x-scroll">
           {data?.slice(0, 4).map((list) => (
-            <article
-              className="flex flex-col justify-center text-center h-full"
+            <div
+              className="flex flex-col justify-center text-center h-full "
               key={list.id}
             >
               <Image
@@ -28,20 +28,17 @@ const OurTeam = () => {
                 height={800}
                 className="object-center object-cover rounded-2xl"
               />
-
               <h2 className="text-5xl text-clean-black-10 ">{list.name}</h2>
               <h2 className="text-clean-black-10 text-xl uppercase py-4">
                 {list.job}
               </h2>
-
               <p className="text-clean-black-10/60 text-xl max-w-sm uppercase">
                 {list.describe}
               </p>
-
               <div className="flex flex-col items-center justify-center py-4">
                 <SocialGroup />
               </div>
-            </article>
+            </div>
           ))}
         </div>
         <section className="py-5">

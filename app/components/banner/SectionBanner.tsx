@@ -13,7 +13,7 @@ const SectionBanner = ({
 }: IsectionBannerProps) =>
   variant == "blog" ? (
     <section className="max-w-screen-2xl mx-auto px-10">
-      <article className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center sm:text-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center sm:text-start">
         <h3 className="text-5xl font-light capitalize font-inter text-clean-black-10">
           {heading}
         </h3>
@@ -25,11 +25,11 @@ const SectionBanner = ({
             {slug}
           </p>
         </div>
-      </article>
+      </div>
     </section>
   ) : variant == "about" ? (
     <section className="max-w-screen-2xl mx-auto px-10 py-20">
-      <article className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         <div className="flex flex-col justify-center text-center md:items-start items-center md:text-start ">
           <h4 className="font-inter text-sm lg:text-base uppercase py-4 text-clean-black-10">
             {topic}
@@ -41,7 +41,7 @@ const SectionBanner = ({
         <p className="font-inter lg:text-start text-center text-base min-w-60 max-w-sm py-4 text-clean-black-10">
           {slug}
         </p>
-      </article>
+      </div>
     </section>
   ) : null;
 

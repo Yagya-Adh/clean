@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "message": "“Clean Office, Happy Team! We’ve received nothing but compliments from both staff and clients on how clean and organized our office. It’s made such a difference in our workplace morale.”",
+    "author": {
+      "name": "John DOE",
+      "job": "Tech Global Co.",
+      "image": "/assets/images/john.webp"
+    },
+    "cardBackground": "bg-clean-smoke-white"
+  },
+  {
+    "id": 2,
+    "message": "“Stress-Free and Sparkling Clean! I have never been more impressed with a cleaning service! It feels amazing to come home to a clean house without having to worry about it!”",
+    "author": {
+      "name": "Jane Peterson",
+      "job": "Home Owner",
+      "image": "/assets/images/jane.webp"
+    },
+    "cardBackground": "bg-clean-blue-10"
+  },
+  {
+    "id": 3,
+    "message": "“Professional and Detailed! Our office has never looked better! The cleaners are punctual, and their attention to high-traffic areas is exactly what we needed. Great value and service!”",
+    "author": {
+      "name": "Carlo Martinez",
+      "job": "Innovate Group",
+      "image": "/assets/images/carlo.webp"
+    },
+    "cardBackground": "bg-clean-green-10"
+  },
+  {
+    "id": 4,
+    "message": "“Impeccable Service! We’ve been using this cleaning service for our office for over a year now, and the results are always impressive. Highly recommend!”",
+    "author": {
+      "name": "Jane Roberts",
+      "job": "Brightech Co.",
+      "image": "/assets/images/janeroberts.webp"
+    },
+    "cardBackground": "bg-clean-smoke-white"
+  },
+  {
+    "id": 5,
+    "message": "“A Life-Changer for Our Home! As a busy dad, keeping up with the housework can be overwhelming, but this cleaning service has been a lifesaver and the team is so friendly and respectful.”",
+    "author": {
+      "name": "Mark Harrison",
+      "job": "Home Owner",
+      "image": "/assets/images/mark.webp"
+    },
+    "cardBackground": "bg-clean-blue-10"
+  },
+  {
+    "id": 6,
+    "message": "“Thorough and Trustworthy! I was hesitant to hire a cleaning service, but after seeing the results, I’m so glad I did. They take care of my house with such care.”",
+    "author": {
+      "name": "Rachel Davis",
+      "job": "Home Owner",
+      "image": "/assets/images/rachel.webp"
+    },
+    "cardBackground": "bg-clean-green-10"
+  }
+]

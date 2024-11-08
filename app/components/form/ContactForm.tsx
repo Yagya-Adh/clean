@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-96">
+    <section className="max-w-screen-xl mx-auto px-10 sm:px-40 md:px-60 lg:px-80">
       <form>
         <div className="flex flex-col justify-center items-center animate-fadeInUp">
           <div className="py-2 flex flex-col w-full">
@@ -11,13 +11,15 @@ const ContactForm = () => {
               type="text"
               placeholder="e.g. John Doe "
               className="
-              rounded-full
-              py-2 px-3 
-              border-transparent
+              px-4 
+              py-3 
+              rounded-xl
               shadow 
+              border-transparent
               focus:border 
-              :border-black 
-              outline-none"
+              focus:border-black 
+              outline-none
+              "
             />
           </div>
           <div className="py-2 flex flex-col w-full">
@@ -28,10 +30,12 @@ const ContactForm = () => {
               type="text"
               placeholder="e.g. johndoe@email.com"
               className="
-              rounded-full 
-              py-2 px-3 
-              border-transparent 
-              shadow focus:border 
+               px-4 
+              py-3 
+              rounded-xl
+              border-transparent
+              shadow 
+              focus:border 
               focus:border-black 
               outline-none"
             />
@@ -44,11 +48,11 @@ const ContactForm = () => {
               type="text"
               placeholder="(123) - 456 - 789"
               className="
-              rounded-full 
-              py-2 
-              px-3 
-              border-transparent 
+              px-4 
+              py-3 
+              rounded-xl
               shadow 
+              border-transparent
               focus:border 
               focus:border-black 
               outline-none"
@@ -64,32 +68,32 @@ const ContactForm = () => {
               rounded-2xl 
               py-2 
               px-3 
-              border-transparent 
               shadow 
+              border-transparent 
               focus:border 
               focus:border-black 
-              outline-none"
-              rows={3}
+              outline-none
+              "
+              rows={4}
             ></textarea>
           </div>
         </div>
-
         <div className="my-2">
           <button
             className="
-              bg-clean-green-10
-               hover:bg-black 
-               text-black
-               hover:text-white 
-               rounded-xl
-               text-sm 
-               shadow-sm
-               px-2 
-               py-3 
-               duration-300
-               transition-all
-               ease-in-out
-              "
+            px-4 
+            py-3 
+            bg-clean-green-10
+            hover:bg-black 
+            text-black
+            hover:text-white 
+            rounded-xl
+            text-sm 
+            shadow-sm
+            duration-300
+            transition-all
+            ease-in-out
+            "
             type="button"
           >
             Send Message{" "}

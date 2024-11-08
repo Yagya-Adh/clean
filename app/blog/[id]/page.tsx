@@ -39,7 +39,7 @@ const BlogDetails = () => {
 
   useEffect(() => {
     const blogPost = blogData.find(
-      (item) => item.id === parseInt<number | null>(id, 10)
+      (item) => item.id === parseInt(id as string, 10)
     );
     setBlog(blogPost || null);
   }, [id]);
@@ -51,7 +51,7 @@ const BlogDetails = () => {
   return (
     <main className="max-w-screen-2xl mx-auto md:px-10">
       <section>
-        <article className="flex flex-col justify-center items-center py-10">
+        <div className="flex flex-col justify-center items-center py-10">
           <CardBadge text={blog.mainTitle} />
           <p className="text-4xl capitalize py-3">{blog.cardDescription}</p>
           <p className="text-base text-center uppercase max-w-screen-sm py-2">
@@ -67,7 +67,7 @@ const BlogDetails = () => {
           />
           <h5 className="text-sm uppercase py-2"> {blog.author.name}</h5>
           <h6 className="text-base uppercase">{blog.author.publishDate}</h6>
-        </article>
+        </div>
         <div className="flex justify-center items-center py-10">
           <Image
             src={blog.cardImage}
@@ -79,14 +79,14 @@ const BlogDetails = () => {
         </div>
         <summary className="py-10 md:px-2 lg:px-40 list-none">
           {blog.pages?.map((pageArticle) => (
-            <article key={pageArticle.id} className="py-2">
+            <div key={pageArticle.id} className="py-2">
               <h4 className="text-5xl font-semibold py-1">
                 {pageArticle.title}
               </h4>
               <p className="text-clean-black-10/80 text-xl font-sans">
                 {pageArticle.describe}
               </p>
-            </article>
+            </div>
           ))}
         </summary>
       </section>
