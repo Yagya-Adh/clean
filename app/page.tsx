@@ -16,6 +16,7 @@ const Home = () => {
         cleanType="Deep Cleaning"
         iconPath="/assets/icon/happyPlus.svg"
         imagePath="/assets/images/cleanhomerefresh.webp"
+        positionCard="absolute top-20 right-40"
       />
       <CardHeroBlock
         head="Regular"
@@ -27,6 +28,7 @@ const Home = () => {
         cleanType="Maintenance"
         iconPath="/assets/icon/brush.svg"
         imagePath="/assets/images/officeMaintenance.webp"
+        positionCard="absolute top-20 -left-24"
       />
       <FrequentlyAsk />
     </main>
