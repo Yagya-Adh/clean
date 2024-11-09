@@ -21,22 +21,6 @@ const RequestAFreeQuote = () => {
         height={900}
         className=" rounded-[62px] h-full  w-full relative"
       />
-      {/*  <div
-        className=" 
-        bg-no-repeat
-        bg-footer-card-image
-        bg-cover px-52 py-40 sm:px-80 sm:py-64 lg:px-96 lg:py-72 
-        "
-      >
-        <Image
-          src="/assets/images/requestcard.webp"
-          alt="request_card_"
-          width={900}
-          height={900}
-          className=" rounded-[62px] relative"
-        />
-      </div> */}
-
       <div
         className="
         absolute
@@ -44,16 +28,17 @@ const RequestAFreeQuote = () => {
         flex-col
         justify-center 
         items-center
-        p-4 
+        p-20 
+        py-40
         lg:p-40 
         lg:pt-2
         "
       >
-        <h4 className="text-7xl py-4 text-clean-black-10 font-inter">
+        <h4 className="text-4xl lg:text-7xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4">
           <span className="font-light">Request A </span>
           <span className="font-inter font-thin italic"> Free Quote</span>
         </h4>
-        <p className="max-w-xl text-2xl text-center font-light text-clean-black-10 font-inter">
+        <p className="max-w-60 md:max-w-sm text-base md:text-xl text-center -tracking-widest font-light text-clean-black-10 font-inter">
           Find out how affordable clean can be — Request your free quote today!
         </p>
         <form className="py-10 px-2">
@@ -61,9 +46,10 @@ const RequestAFreeQuote = () => {
             className="
             bg-black 
             rounded-xl 
-            flex flex-row
+            flex 
+            flex-row
             items-center
-            w-full
+            lg:w-full
             p-3
             "
           >
@@ -82,8 +68,9 @@ const RequestAFreeQuote = () => {
             <button
               type="button"
               className="
-              px-5
-              py-2
+              px-8
+              py-5
+              text-clean-black-10
               bg-clean-green-10
               hover:bg-white
               rounded-sm 
@@ -94,7 +81,7 @@ const RequestAFreeQuote = () => {
               ease-linear
            "
             >
-              <GoArrowRight className="size-6" />
+              <GoArrowRight className="size-4" />
             </button>
           </div>
         </form>

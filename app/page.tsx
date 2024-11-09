@@ -20,7 +20,7 @@ const Home = () => {
       <CardHeroBlock
         head="Regular"
         preTitle="Office"
-        italicTitle="Cleaners."
+        italicTitle=" Cleaners."
         describe="The cleaning team that cares — Experts in creating pristine homes and productive workspaces."
         textOrder="order-0"
         cleanCycle="24/7"
