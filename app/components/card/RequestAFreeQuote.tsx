@@ -38,7 +38,7 @@ const RequestAFreeQuote = () => {
           <span className="font-light">Request A </span>
           <span className="font-inter font-thin italic"> Free Quote</span>
         </h4>
-        <p className="max-w-60 md:max-w-sm text-base md:text-xl text-center -tracking-widest font-light text-clean-black-10 font-inter">
+        <p className="max-w-60 md:max-w-sm text-xl md:text-xl text-center tracking-wider font-light text-clean-black-10 font-inter">
           Find out how affordable clean can be — Request your free quote today!
         </p>
         <form className="py-10 px-2">
