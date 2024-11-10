@@ -3,7 +3,7 @@ import React from "react";
 
 const MainHeroBanner = () => {
   return (
-    <section className="max-w-screen-3xl mx-auto px-6 md:px-10 py-10">
+    <section className="max-w-screen-2xl mx-auto px-6 md:px-4 py-10">
       <div className="rounded-[64px] bg-hero-main bg-no-repeat bg-cover p-10 sm:p-52 md:px-72 md:py-52 lg:p-96 lg:py-80 flex flex-col justify-center">
         <div className="flex flex-col justify-center items-center text-center font-inter z-10 backdrop:blur-0 rounded-[42px] shadow shadow-white p-10 lg:p-10 bg-transparent backdrop-blur-lg">
           <div className="flex flex-row items-center mb-4">
