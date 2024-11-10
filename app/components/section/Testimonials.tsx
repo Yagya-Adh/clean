@@ -1,12 +1,11 @@
 "use client";
-
 import { useState } from "react";
-import testimonialData from "@/lib/data/testimonialsData.json";
 import Image from "next/image";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import testimonialData from "@/lib/data/testimonialsData.json";
 
 interface IAuthorTestimonials {
   name: string;
@@ -61,9 +60,10 @@ const Testimonials = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-10 py-4 px-4">
         {currentTestimonials.map((list, index) => (
           <div
-            className={`relative rounded-[42px] flex flex-col justify-center items-center text-center py-10 px-10 ${
-              list.cardBackground
-            } ${index === 1 ? "lg:h-[500px]" : "lg:h-[450px]"}`}
+            className={`relative rounded-[42px] flex flex-col justify-center items-center text-center py-10 px-10
+              ${list.cardBackground ? list.cardBackground : ""} ${
+              index === 1 ? "lg:h-[500px]  bg-clean-blue-10" : "lg:h-[450px]"
+            }`}
             key={list.id}
           >
             <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">

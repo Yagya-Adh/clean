@@ -1,52 +1,55 @@
-import Image from "next/image";
+"use client";
+import { ArrowRight } from "@/app/icons";
 
 const ArrowBadge = () => {
   return (
     <div
       className="
-      overflow-hidden  
-      rounded-full     
-      rotate-45
-      bg-white              
-      group-hover:text-white
-      items-center
-      px-4 
-      py-2
-    "
+        overflow-hidden  
+        rounded-full     
+        rotate-45
+        bg-white              
+        group-hover:text-white         
+        text-white
+        flex
+        flex-col
+        items-center
+        justify-between
+        w-12
+        h-12
+        "
     >
       <div
-        className={`translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500`}
+        className="
+        flex
+        items-center
+        justify-centers
+        transform 
+        translate-y-5
+        group-hover:-translate-y-5 
+        ease-in-out 
+        transition-all 
+        duration-500
+        "
       >
-        <Image
-          src="/assets/icon/arrow_outward.svg"
-          alt="card_arrow_"
-          width={22}
-          height={22}
-          className="
-            -rotate-45
-            transition-all
-            duration-500
-            translate-y-0
-            group-hover:-translate-y-4                              
-            "
-        />
+        <ArrowRight className="-rotate-45" />
       </div>
+
       <div
-        className={`translate-y-16 transform group-hover:-translate-y-0 ease-in-out transition-all duration-500`}
+        className="
+        flex
+        items-center
+        justify-centers
+        transform 
+        group-hover:-translate-y-5 
+        translate-y-20
+        ease-in-out 
+        transition-all 
+        duration-500
+        
+        "
       >
-        <Image
-          src="/assets/icon/arrow_outward.svg"
-          alt="card_arrow_"
-          width={22}
-          height={22}
-          className="
-    -rotate-45
-    transition-all
-    duration-500
-    translate-y-0
-    group-hover:-translate-y-4                              
-    "
-        />
+        <ArrowRight className="-rotate-45" />
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const ProfessionalCleaning = () => {
   return (
     <section className="bg-no-repeat bg-curves-wave h-full bg-clean-green-10 object-cover bg-contain py-40 rounded-b-[62px] px-10">
       <div className="mx-auto max-w-screen-2xl px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-end px-10">
+        <div className="columns-2">
           <aside className="flex flex-col justify-between py-10">
             <Image
               src="/assets/icon/efficient.svg"
@@ -67,7 +67,7 @@ const ProfessionalCleaning = () => {
               alt="team_photo"
               width={500}
               height={200}
-              className="w-full object-cover rounded-[42px]"
+              className="w-full object-cover !h-[650px] rounded-[42px]"
             />
           </aside>
         </div>

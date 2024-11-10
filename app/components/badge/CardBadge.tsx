@@ -8,7 +8,10 @@ const CardBadge = ({ text }: ICardBadge) => {
   bg-clean-smoke-white 
   text-black 
     rounded-full 
-    px-2 md:px-4 py-2 md:py-2 
+    px-2
+     md:px-4 
+    py-2
+     md:py-2 
     text-sm  
     md:text-xl 
     text-center

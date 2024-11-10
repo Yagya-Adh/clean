@@ -55,6 +55,7 @@ const config: Config = {
         "footer-card-image": "url('/assets/images/requestcard.webp')",
         "curves-wave": "url('/assets/icon/wave.svg')",
         "hero-main": "url('/assets/images/hero.webp')",
+        "arrow-right": "url('/assets/icon/arrow_outward.svg')",
       },
       colors: {
         background: "var(--background)",
