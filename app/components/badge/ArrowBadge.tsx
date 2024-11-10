@@ -34,7 +34,6 @@ const ArrowBadge = () => {
       >
         <ArrowRight className="-rotate-45" />
       </div>
-
       <div
         className="
         flex
@@ -45,8 +44,7 @@ const ArrowBadge = () => {
         translate-y-20
         ease-in-out 
         transition-all 
-        duration-500
-        
+        duration-500        
         "
       >
         <ArrowRight className="-rotate-45" />
