@@ -12,7 +12,7 @@ interface InavabarData {
 const data: InavabarData[] = navbarData;
 
 const Navbar = () => {
-  const [navOpen, setNavOpen] = useState(true);
+  const [navOpen, setNavOpen] = useState(false);
 
   const handleNavBarToggle = () => {
     setNavOpen(!false);
@@ -47,7 +47,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>{" "}
-          <div className="lg:hidden" onClick={() => handleNavBarToggle}>
+          <div className="lg:hidden" onClick={handleNavBarToggle}>
             <FaBars className="size-8" />
           </div>
         </div>

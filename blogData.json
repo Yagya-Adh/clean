@@ -15,7 +15,6 @@
       "name": "Alex Wayne",
       "publishDate": "Sep 14, 2024"
     },
-    "conclusion": "Keeping your home spotless is a continuous process, but with these tips, you can make it a more manageable and enjoyable task. Implement these strategies to create a clean, organized, and inviting space for you and your loved ones.",
     "pages": [
       {
         "id": 1,
@@ -41,6 +40,11 @@
         "id": 5,
         "title": "Practice Good Hygiene",
         "describe": "In addition to cleaning, practicing good hygiene is essential. Regularly wash your hands, keep kitchen surfaces sanitized, and ensure proper ventilation to maintain a healthy living environment."
+      },
+      {
+        "id": 6,
+        "title": "Conclusion:",
+        "describe": "A clean home is more than just an aesthetic choice; it's a lifestyle. By following these daily cleaning routines, you can create a sustainable habit that keeps your home looking and feeling fresh every day."
       }
     ],
     "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere. Morbi id magna at arcu tempus ornare. Fusce mauris purus, rhoncus a sollicitudin sit amet, placerat vitae nisl. Morbi feugiat est in accumsan facilisis."
@@ -61,7 +65,6 @@
       "name": "Joe Morgan",
       "publishDate": "Sep 14, 2024"
     },
-    "conclusion": "A clean home is more than just an aesthetic choice; it's a lifestyle. By following these daily cleaning routines, you can create a sustainable habit that keeps your home looking and feeling fresh every day.",
     "pages": [
       {
         "id": 1,
@@ -87,9 +90,14 @@
         "id": 5,
         "title": "Practice Good Hygiene",
         "describe": "Good hygiene practices go hand in hand with cleaning. Frequent hand washing and sanitized surfaces prevent germs and keep spaces healthier."
+      },
+      {
+        "id": 6,
+        "title": "Conclusion:",
+        "describe": "A clean home is more than just an aesthetic choice; it's a lifestyle. By following these daily cleaning routines, you can create a sustainable habit that keeps your home looking and feeling fresh every day."
       }
     ],
-    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere."
+    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere. Morbi id magna at arcu tempus ornare. Fusce mauris purus, rhoncus a sollicitudin sit amet, placerat vitae nisl. Morbi feugiat est in accumsan facilisis."
   },
   {
     "id": 3,
@@ -107,7 +115,7 @@
       "name": "Sara Smith",
       "publishDate": "Sep 14, 2024"
     },
-    "conclusion": "A tidy workspace fosters productivity and focus. Make cleanliness a habit to create an environment where you can work effectively and comfortably.",
+
     "pages": [
       {
         "id": 1,
@@ -133,9 +141,14 @@
         "id": 5,
         "title": "Practice Good Hygiene",
         "describe": "Encourage hand hygiene and surface disinfection in communal spaces to minimize the spread of germs and promote a healthier workplace."
+      },
+      {
+        "id": 6,
+        "title": "Conclusion:",
+        "describe": "A clean home is more than just an aesthetic choice; it's a lifestyle. By following these daily cleaning routines, you can create a sustainable habit that keeps your home looking and feeling fresh every day."
       }
     ],
-    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere."
+    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere. Morbi id magna at arcu tempus ornare. Fusce mauris purus, rhoncus a sollicitudin sit amet, placerat vitae nisl. Morbi feugiat est in accumsan facilisis."
   },
   {
     "id": 4,
@@ -153,7 +166,6 @@
       "name": "Jamie Lee",
       "publishDate": "Sep 14, 2024"
     },
-    "conclusion": "Health starts at home. By implementing these hygiene practices, you create a living space that promotes well-being and comfort for everyone.",
     "pages": [
       {
         "id": 1,
@@ -179,8 +191,13 @@
         "id": 5,
         "title": "Practice Good Hygiene",
         "describe": "Good hygiene practices, such as regular hand washing and disinfecting surfaces, help prevent the spread of illness in your home."
+      },
+      {
+        "id": 6,
+        "title": "Conclusion:",
+        "describe": "A clean home is more than just an aesthetic choice; it's a lifestyle. By following these daily cleaning routines, you can create a sustainable habit that keeps your home looking and feeling fresh every day."
       }
     ],
-    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere."
+    "extraText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis interdum posuere. Morbi id magna at arcu tempus ornare. Fusce mauris purus, rhoncus a sollicitudin sit amet, placerat vitae nisl. Morbi feugiat est in accumsan facilisis."
   }
 ]

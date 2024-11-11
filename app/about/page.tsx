@@ -1,9 +1,15 @@
+import { Metadata } from "next";
 import CustomHeader from "../components/banner/CustomHeader";
 import SectionBanner from "../components/banner/SectionBanner";
 import CleanCardGroup from "../components/card/CleanCardGroup";
 import CleanImageCard from "../components/card/CleanImageCard";
 import ValueNumber from "../components/card/ValueNumber";
 import OurTeam from "../components/slider/OurTeam";
+
+export const metadata: Metadata = {
+  title: "About Us -  Cleaners",
+  description: "About us page next app",
+};
 
 const About = () => {
   return (

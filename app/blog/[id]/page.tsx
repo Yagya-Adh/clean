@@ -1,9 +1,8 @@
-"use client";
+import type { Metadata } from "next";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 import CardBadge from "@/app/components/badge/CardBadge";
 import blogData from "@/blogData.json";
-import Image from "next/image";
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
 
 interface IUser {
   name: string;
@@ -33,63 +32,101 @@ interface IblogData {
   extraText: string;
 }
 
-const BlogDetails = () => {
-  const { id } = useParams();
-  const [blog, setBlog] = useState<IblogData | null>(null);
+type Props = {
+  params: { id: string };
+};
 
-  useEffect(() => {
-    const blogPost = blogData.find(
-      (item) => item.id === parseInt(id as string, 10)
-    );
-    setBlog(blogPost || null);
-  }, [id]);
+const blogFetch = (itemId: number): IblogData | undefined => {
+  const blog = blogData.find((item) => item.id === itemId);
+  return blog;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const id = await parseInt(params.id);
+
+  const blog = await blogFetch(id);
 
   if (!blog) {
-    return <div>Loading...</div>;
+    return {
+      title: "Blog not found",
+      description: "The blog you are looking for does not exist!",
+      openGraph: {
+        title: "Blog not found",
+        description: "The blog you are looking for does not exist!",
+      },
+    };
+  }
+
+  return {
+    title: `${blog?.cardDescription} - Cleaner`,
+    description: blog?.mainDescription,
+    openGraph: {
+      title: `${blog?.cardDescription} - Cleaner`,
+      description: blog?.mainDescription,
+      images: blog?.cardImage,
+    },
+  };
+}
+
+const BlogDetails = async ({ params }: Props) => {
+  const id = parseInt(params.id);
+  const blog = await blogFetch(id);
+
+  if (!blog) {
+    return notFound();
   }
 
   return (
-    <main className="max-w-screen-2xl mx-auto md:px-10">
-      <section>
-        <div className="flex flex-col justify-center items-center py-10">
-          <CardBadge text={blog.mainTitle} />
-          <p className="text-4xl capitalize py-3">{blog.cardDescription}</p>
-          <p className="text-base text-center uppercase max-w-screen-sm py-2">
-            {" "}
-            {blog.mainDescription}
-          </p>
-          <Image
-            src={blog.user.image}
-            alt="card_image_"
-            width={60}
-            height={60}
-            className="object-center object-cover rounded-full"
-          />
-          <h5 className="text-sm uppercase py-2"> {blog.author.name}</h5>
-          <h6 className="text-base uppercase">{blog.author.publishDate}</h6>
-        </div>
-        <div className="flex justify-center items-center py-10">
-          <Image
-            src={blog.cardImage}
-            alt="card_image_"
-            width={800}
-            height={400}
-            className="object-center object-cover rounded-2xl"
-          />
-        </div>
-        <summary className="py-10 md:px-2 lg:px-40 list-none">
-          {blog.pages?.map((pageArticle) => (
-            <div key={pageArticle.id} className="py-2">
-              <h4 className="text-5xl font-semibold py-1">
-                {pageArticle.title}
-              </h4>
-              <p className="text-clean-black-10/80 text-xl font-sans">
-                {pageArticle.describe}
-              </p>
-            </div>
-          ))}
-        </summary>
-      </section>
+    <main className="max-w-screen-xl mx-auto md:px-10">
+      <div className="flex flex-col justify-center items-center py-10">
+        <CardBadge text={blog.mainTitle} />
+        <p className="py-3 lg:text-5xl capitalize text-center font-inter font-light">
+          {blog.cardDescription}
+        </p>
+        <p className="lg:text-2xl text-center max-w-screen-sm font-inter font-light  py-2 ">
+          {" "}
+          {blog.mainDescription}
+        </p>
+        <Image
+          src={blog.user.image}
+          alt="card_image_"
+          width={100}
+          height={100}
+          className="object-center object-cover rounded-full"
+        />
+        <h5 className="lg:text-xl font-inter font-normal uppercase py-2">
+          {" "}
+          {blog.author.name}
+        </h5>
+        <h6 className="text-2xl font-inter font-light">
+          {blog.author.publishDate}
+        </h6>
+      </div>
+      <div className="flex justify-center items-center py-10">
+        <Image
+          src={blog.cardImage}
+          alt="card_image_"
+          width={1200}
+          height={400}
+          className="object-center object-cover rounded-2xl w-full h-auto"
+        />
+      </div>
+      <div className="py-10 md:px-2  lg:px-10 list-none">
+        {blog.pages?.map((pageArticle) => (
+          <div key={pageArticle.id} className="py-2 px-10">
+            <h4 className="text-2xl lg:text-5xl capitalize font-inter font-bold py-1">
+              {pageArticle.title}
+            </h4>
+            <p className="text-clean-black-10/80 font-inter lg:text-2xl font-light">
+              {pageArticle.describe}
+            </p>
+          </div>
+        ))}
+
+        <h3 className="border-l-8 border-l-black text-clean-black-10/80 font-inter font-normal lg:text-2xl my-4 py-4 p-10 mx-10">
+          {blog.extraText}
+        </h3>
+      </div>
     </main>
   );
 };
