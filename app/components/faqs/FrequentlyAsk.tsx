@@ -50,7 +50,7 @@ const FrequentlyAsk = () => {
               </h4>
 
               <span
-                className="text-2xl font-inter font-light text-clean-black-10 cursor-pointer flex justify-center items-center "
+                className="text-2xl font-inter font-semibold text-clean-black-10 cursor-pointer flex justify-center items-center "
                 onClick={() => handleQuestionToggle(list.id)}
               >
                 {openQuestion === list.id ? "-" : "+"}

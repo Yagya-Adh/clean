@@ -9,7 +9,7 @@ interface IarticleLayOut {
 
 const ArticleLayout = ({ head, title, describe, variant }: IarticleLayOut) =>
   variant === "article-with-button" ? (
-    <article className="text-center text-clean-black-10 sm:text-start">
+    <div className="text-center text-clean-black-10 sm:text-start">
       <h6 className="uppercase text-sm py-1 font-inter font-normal">{head}</h6>
       <h1 className="text-2xl md:text-3xl lg:text-5xl py-1 md:py-2 font-inter font-normal">
         {title}
@@ -18,9 +18,9 @@ const ArticleLayout = ({ head, title, describe, variant }: IarticleLayOut) =>
         {describe}
       </p>
       <PillButton text="Explore" />
-    </article>
+    </div>
   ) : variant === "article-without-button" ? (
-    <article className="text-center sm:text-start text-clean-black-10 font-inter">
+    <div className="text-center sm:text-start text-clean-black-10 font-inter">
       <h5 className="uppercase text-base md:py-1 font-inter font-normal">
         {head}
       </h5>
@@ -30,7 +30,7 @@ const ArticleLayout = ({ head, title, describe, variant }: IarticleLayOut) =>
       <p className="text-xl lg:text-xl max-w-xl py-2 md:py-4 font-inter font-light">
         {describe}
       </p>
-    </article>
+    </div>
   ) : null;
 
 export default ArticleLayout;

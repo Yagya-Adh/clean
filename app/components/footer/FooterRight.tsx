@@ -14,7 +14,7 @@ const FooterRight = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-x-20 text-center md:text-start  md:items-start py-10">
       {data?.slice(0, 3).map((list) => (
-        <article key={list.id}>
+        <div key={list.id}>
           <h3 className="text-clean-black-10 text-xl text-center font-normal font-inter mb-1">
             {list.title}
           </h3>
@@ -28,7 +28,7 @@ const FooterRight = () => {
               </div>
             </h2>
           ))}
-        </article>
+        </div>
       ))}
     </section>
   );

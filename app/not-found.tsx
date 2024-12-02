@@ -6,7 +6,7 @@ const PageNotFound = () => {
     <main className="absolute top-0 left-0">
       <div className="fixed inset-0 bg-[url('/assets/images/pagenotfound.webp')] bg-no-repeat bg-cover z-30">
         <div className="bg-black/70 w-full h-full flex flex-col justify-center items-center">
-          <article className="flex flex-col items-center text-white">
+          <div className="flex flex-col items-center text-white">
             <Image
               src="/assets/icon/warnchat.png"
               alt="Warning icon for page not found"
@@ -30,7 +30,7 @@ const PageNotFound = () => {
             >
               Back To Home
             </Link>
-          </article>
+          </div>
         </div>
       </div>
     </main>

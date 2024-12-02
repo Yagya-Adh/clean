@@ -44,10 +44,10 @@ const ImageCardGroup = () => {
               flex             
               flex-col 
               overflow-hidden 
+              row-span-1
               py-10 
               group
               h-full   
-              row-span-1
             "
             key={list.id}
             href={`/blog/${list.id}`}
