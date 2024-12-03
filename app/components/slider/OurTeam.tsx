@@ -15,10 +15,10 @@ const OurTeam = () => {
   return (
     <section className="max-w-screen-2xl px-10">
       <div className="flex flex-col justify-center items-center py-20">
-        <div className="grid grid-cols-4 gap-10 items-center py-5 overflow-x-scroll">
+        <div className="grid grid-cols-4 gap-10 place-items-center py-5 overflow-x-scroll max-h-full">
           {data?.slice(0, 4).map((list) => (
             <div
-              className="flex flex-col justify-center text-center h-full "
+              className="flex flex-col justify-center text-center h-full"
               key={list.id}
             >
               <Image
@@ -26,13 +26,15 @@ const OurTeam = () => {
                 alt="team_photo"
                 width={800}
                 height={800}
-                className="object-center object-cover rounded-2xl"
+                className="object-center object-cover rounded-2xl h-auto w-auto"
               />
-              <h2 className="text-5xl text-clean-black-10 ">{list.name}</h2>
-              <h2 className="text-clean-black-10 text-xl uppercase py-4">
-                {list.job}
+              <h2 className="text-3xl lg:text-5xl text-clean-black-10">
+                {list.name}
               </h2>
-              <p className="text-clean-black-10/60 text-xl max-w-sm uppercase">
+              <h3 className="text-clean-black-10 lg:text-xl uppercase py-4">
+                {list.job}
+              </h3>
+              <p className="text-clean-black-10/60 lg:text-xl max-w-sm uppercase">
                 {list.describe}
               </p>
               <div className="flex flex-col items-center justify-center py-4">

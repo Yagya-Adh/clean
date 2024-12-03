@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 const RequestAFreeQuote = () => {
   return (
     <section>
-      <div className="bg-footer-card-image bg-no-repeat bg-cover bg-center rounded-3xl">
+      <div className="bg-footer-card-image bg-no-repeat bg-cover bg-center rounded-3xl p-2 md:p-4 lg:p-10">
         <div
           className="
           flex
@@ -11,6 +11,7 @@ const RequestAFreeQuote = () => {
           justify-center 
           items-center         
           relative
+          sm:p-10
           p-4
           "
         >

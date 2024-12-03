@@ -12,47 +12,34 @@ const data: IcleanerCardData[] = cleanerCardData;
 
 const CleanCardGroup = () => {
   return (
-    <section className="max-w-screen-sm md:max-w-screen-2xl  md:max-w-screen-3xl mx-auto px-10  md:px-4 lg:px-4 py-20">
-      <div
-        className="
-        grid 
-        grid-cols-1 
-        sm:grid-cols-2 
-        md:grid-cols-3 
-        lg:grid-cols-4
-        items-center
-        justify-center        
-        gap-10
-        "
-      >
+    <section className="max-w-screen-sm md:max-w-screen-2xl lg:max-w-screen-3xl mx-auto px-4 md:px-4 lg:px-4 py-20">
+      <div className="flex flex-col flex-wrap sm:grid sm:grid-cols-2 md:flex md:flex-row md:gap-8 lg:grid lg:grid-cols-4 justify-center gap-4 px-10 items-center">
         {data?.slice(0, 4).map((list) => (
           <div
             className={`
-                rounded-2xl
-                 flex 
-                 flex-col 
-                 justify-center
-                 py-20
-                 px-10
-                 md:px-4
-                 h-full
-                 shadow-sm 
-                animate-fadeInUp
-                 ${list.color ? list.color : ""}
-                 `}
+            flex 
+            flex-col 
+            rounded-2xl
+            justify-center
+            py-10 md:py-20
+            px-10
+            md:px-4            
+            shadow-sm 
+            animate-fadeInUp             
+            ${list.color ? list.color : ""}
+            `}
             key={list.id}
           >
             <Image
               src={list.logo}
-              width={50}
-              height={50}
+              width={70}
+              height={70}
               alt="clean_card_group"
             />
-
-            <h4 className="font-normal font-inter uppercase text-5xl text-clean-black-10 py-7">
+            <h4 className="font-light font-inter uppercase text-5xl text-clean-black-10 py-7">
               {list.title}
             </h4>
-            <p className="text-clean-black-10 max-w-sm text-xl font-light font-inter">
+            <p className="text-clean-black-10 max-w-sm text-center text-sm sm:text-start lg:text-xl font-light font-inter tracking-wider uppercase">
               {list.describe}
             </p>
           </div>
