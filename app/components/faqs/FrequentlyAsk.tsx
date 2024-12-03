@@ -18,19 +18,20 @@ const FrequentlyAsk = () => {
 
   return (
     <section className="max-w-screen-2xl mx-auto px-4 lg:px10 my-20">
-      <div className=" flex flex-col justify-center items-center">
+      <div className=" flex flex-col items-center">
         {data?.slice(0, 6).map((list) => (
           <div
             key={list.id}
             className={`
               flex 
               flex-col           
-              rounded-[42px] 
+              rounded-3xl 
               hover:bg-transparent 
               shadow-lg 
               animate-fadeInUp 
               bg-white   
-              sm:w-1/2                
+              w-full  
+              sm:w-2/3            
               px-7
               py-4
               my-4
@@ -41,7 +42,7 @@ const FrequentlyAsk = () => {
               }
         `}
           >
-            <div className="flex flex-row items-center justify-between w-full">
+            <div className="flex flex-row place-items-start justify-between w-full">
               <h4
                 className="text-2xl lg:text-3xl text-clean-black-10 py-4 font-inter font-normal"
                 onClick={() => handleQuestionToggle(list.id)}
@@ -50,7 +51,7 @@ const FrequentlyAsk = () => {
               </h4>
 
               <span
-                className="text-5xl font-inter font-normal text-clean-black-10 cursor-pointer flex justify-center items-center"
+                className="text-5xl font-inter font-normal text-clean-black-10 cursor-pointer flex justify-center place-items-start"
                 onClick={() => handleQuestionToggle(list.id)}
               >
                 {openQuestion === list.id ? "-" : "+"}
