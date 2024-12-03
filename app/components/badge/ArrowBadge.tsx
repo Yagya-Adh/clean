@@ -17,6 +17,8 @@ const ArrowBadge = () => {
         justify-between
         w-12
         h-12
+        group-hover:bg-black 
+        group-hover:fill-white  
         "
     >
       <div
@@ -44,7 +46,8 @@ const ArrowBadge = () => {
         translate-y-20
         ease-in-out 
         transition-all 
-        duration-500        
+        duration-500   
+           
         "
       >
         <ArrowRight className="-rotate-45" />

@@ -17,7 +17,7 @@ const FrequentlyAsk = () => {
   };
 
   return (
-    <section className="max-w-screen-3xl mx-auto px-4 lg:px10 my-20">
+    <section className="max-w-screen-2xl mx-auto px-4 lg:px10 my-20">
       <div className=" flex flex-col justify-center items-center">
         {data?.slice(0, 6).map((list) => (
           <div
@@ -50,7 +50,7 @@ const FrequentlyAsk = () => {
               </h4>
 
               <span
-                className="text-2xl font-inter font-semibold text-clean-black-10 cursor-pointer flex justify-center items-center "
+                className="text-5xl font-inter font-normal text-clean-black-10 cursor-pointer flex justify-center items-center"
                 onClick={() => handleQuestionToggle(list.id)}
               >
                 {openQuestion === list.id ? "-" : "+"}

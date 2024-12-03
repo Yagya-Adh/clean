@@ -50,6 +50,14 @@ const config: Config = {
         fadeflipLeftIn: "flipLeftIn 0.8s ease-in",
         flipTopDownIn: "flipTopDownIn 0.8s ease-in",
       },
+      maxWidth: {
+        "screen-3xl": "1500px",
+      },
+      borderRadius: {
+        "3xl": "42px",
+        "4xl": "52px",
+        "5xl": "62px",
+      },
       backgroundImage: {
         "about-banner": "url('/assets/images/aboutCleanMain.webp')",
         "footer-card-image": "url('/assets/images/requestcard.webp')",

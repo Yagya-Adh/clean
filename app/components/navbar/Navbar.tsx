@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="mx-auto max-w-screen-2xl px-4 relative">
+      <div className="mx-auto max-w-screen-xl px-4 lg:px-10">
         <div className="flex items-center justify-between w-full lg:py-4 relative">
           <Link href="/">
             <Image

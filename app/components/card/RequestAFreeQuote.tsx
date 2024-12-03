@@ -5,22 +5,25 @@ const RequestAFreeQuote = () => {
   return (
     <section
       className="
-    rounded-[62px]       
-    flex 
-    flex-col 
-    justify-center 
-    items-center
-    overflow-hidden   
-    relative
-    "
+      rounded-3xl      
+      flex 
+      flex-col 
+      justify-center 
+      items-center
+      overflow-hidden   
+      relative
+      px-4
+    
+      "
     >
-      <Image
+      <div className=" bg-footer-card-image bg-no-repeat bg-cover bg-center p-42 px-52 md:p-52 md:px-72 lg:p-72 lg:px-96    " />
+      {/*  <Image
         src="/assets/images/requestcard.webp"
         alt="request_card_"
         width={900}
         height={900}
-        className=" rounded-[62px] h-full  w-full relative"
-      />
+        className="rounded-3xl h-full w-full relative"
+      /> */}
       <div
         className="
         absolute

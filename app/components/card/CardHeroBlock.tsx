@@ -26,9 +26,9 @@ const CardHeroBlock = ({
   positionCard,
 }: IcardheroProps) => {
   return (
-    <section className="max-w-screen-xl mx-auto py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <aside className={`${textOrder} py-4`}>
+    <section className="max-w-screen-xl mx-auto py-10  px-6 lg:px-10">
+      <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
+        <div className={`${textOrder} py-4`}>
           <div className="flex flex-row items-center">
             <Image
               src={iconPath}
@@ -62,8 +62,7 @@ const CardHeroBlock = ({
               overflow-hidden
               backdrop-blur-lg 
               rounded-full 
-              bg-clean-smoke-white
-              text-clean-black-10 
+              bg-clean-smoke-white              
               text-2xl
               font-inter
               font-light
@@ -72,33 +71,35 @@ const CardHeroBlock = ({
               h-12
               w-45
               my-10
+                         
               "
             >
               <div className="overflow-hidden group">
-                <div className="translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500  text-clean-black-10 ">
+                <p className="translate-y-5 transform group-hover:-translate-y-10 ease-in-out transition-all duration-500 text-clean-black-10">
                   EXPLORE
-                </div>
-                <div className="translate-y-10 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500  text-clean-black-10 ">
+                </p>
+                <p className="translate-y-9 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500 text-clean-black-10">
                   EXPLORE
-                </div>
+                </p>
+                {/* <div className="translate-y-9 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500  bg-clean-green-10/60 rounded-t-full group-hover:rounded-full group-hover:bg-clean-green-10 scale-50 group-hover:scale-110 p-0 group-hover:p-4" /> */}
               </div>
             </a>
           </div>
-        </aside>
-        <aside>
+        </div>
+        <div>
           <div className="relative">
             <Image
               src={imagePath}
               alt="Cleaning spray icon"
               width={380}
               height={380}
-              className="object-center object-cover rounded-[52px]"
+              className="object-center object-cover rounded-3xl w-auto h-auto"
             />
             <div className={positionCard}>
               <CardTag cleanCycle={cleanCycle} cleanType={cleanType} />
             </div>
           </div>
-        </aside>
+        </div>
       </div>
     </section>
   );

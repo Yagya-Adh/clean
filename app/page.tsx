@@ -3,7 +3,6 @@ import MainHeroBanner from "./components/banner/MainHeroBanner";
 import SectionBanner from "./components/banner/SectionBanner";
 import CardHeroBlock from "./components/card/CardHeroBlock";
 import ImageCardGroup from "./components/card/ImageCardGroup";
-import ValueNumber from "./components/card/ValueNumber";
 import FrequentlyAsk from "./components/faqs/FrequentlyAsk";
 import ProfessionalCleaning from "./components/section/ProfessionalCleaning";
 import Testimonials from "./components/section/Testimonials";
@@ -22,27 +21,20 @@ const Home = () => {
         cleanType="Deep Cleaning"
         iconPath="/assets/icon/happyPlus.svg"
         imagePath="/assets/images/cleanhomerefresh.webp"
-        positionCard="absolute top-20 right-40"
+        positionCard="absolute top-10 right-10 lg:top-20 lg:-right-20"
       />
       <CardHeroBlock
         head="Regular"
         preTitle="Office"
         italicTitle=" Cleaners."
         describe="The cleaning team that cares — Experts in creating pristine homes and productive workspaces."
-        textOrder="order-0"
+        textOrder="lg:order-none order-1"
         cleanCycle="24/7"
         cleanType="Maintenance"
         iconPath="/assets/icon/brush.svg"
         imagePath="/assets/images/officeMaintenance.webp"
-        positionCard="absolute top-20 -left-24"
+        positionCard="absolute top-10 lg:top-20 left-10 lg:-left-24"
       />
-      <SectionBanner
-        variant="blog"
-        heading="Latest Posts"
-        topic="Our recent articles"
-        slug="Simplify your tasks and maintaining the cleanliness."
-      />
-      <ValueNumber />
       <ProfessionalCleaning />
       <Testimonials />
       <SectionBanner
