@@ -17,13 +17,14 @@ const PillButton = ({ text }: IbuttonProps) => {
       rounded-full   
       overflow-hidden     
       px-10
+      hover:bg-clean-green-10
       "
     >
       <div className="overflow-hidden group">
         <div className="translate-y-3 group-hover:-translate-y-16 ease-in-out transition-all duration-500 font-inter font-normal">
           {text}
         </div>
-        <div className="translate-y-11 rounded-t-full bg-clean-green-10 group-hover:-translate-y-4 ease-in-out transition-all duration-500 font-inter font-normal">
+        <div className="translate-y-11 rounded-t-full group-hover:-translate-y-4 ease-in-out transition-all duration-500 font-inter font-normal">
           {text}
         </div>
       </div>

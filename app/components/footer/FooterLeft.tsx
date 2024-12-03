@@ -27,11 +27,11 @@ const FooterLeft = () => {
             height={20}
             alt="footer_logo_"
             key={list.id}
-            className="mx-1"
+            className="mx-3"
           />
         ))}
       </div>
-      <p className="text-2xl font-inter font-light max-w-60 text-clean-black-10">
+      <p className="text-xl font-inter font-light max-w-60 text-clean-black-10">
         Efficient Cleaning, Exceptional Results.
       </p>
     </div>

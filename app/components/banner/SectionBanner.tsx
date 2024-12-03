@@ -28,7 +28,7 @@ const SectionBanner = ({
       </div>
     </section>
   ) : variant == "about" ? (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 py-20">
+    <section className="max-w-screen-xl mx-auto px-4 lg:px-10 py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         <div className="flex flex-col justify-center text-center md:items-start items-center md:text-start ">
           <h2 className="font-inter text-sm lg:text-base uppercase py-4 text-clean-black-10">
