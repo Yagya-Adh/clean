@@ -4,8 +4,8 @@ import FooterRight from "./FooterRight";
 
 const Footer = () => {
   return (
-    <footer className="bg-clean-green-10 flex flex-col justify-center items-center mt-96">
-      <div className="relative -top-44 animate-fadeInUp">
+    <footer className="bg-clean-green-10 flex flex-col justify-center items-center mt-96 w-full">
+      <div className="relative -top-44 left-0 animate-fadeInUp">
         <RequestAFreeQuote />
       </div>
       <section className="max-w-screen-2xl px-10 mx-auto">

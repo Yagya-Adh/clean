@@ -1,76 +1,57 @@
-import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
 
 const RequestAFreeQuote = () => {
   return (
-    <section
-      className="
-      rounded-3xl      
-      flex 
-      flex-col 
-      justify-center 
-      items-center
-      overflow-hidden   
-      relative
-      px-4
-    
-      "
-    >
-      <div className=" bg-footer-card-image bg-no-repeat bg-cover bg-center p-42 px-52 md:p-52 md:px-72 lg:p-72 lg:px-96    " />
-      {/*  <Image
-        src="/assets/images/requestcard.webp"
-        alt="request_card_"
-        width={900}
-        height={900}
-        className="rounded-3xl h-full w-full relative"
-      /> */}
-      <div
-        className="
-        absolute
-        flex
-        flex-col
-        justify-center 
-        items-center
-        p-20 
-        py-40
-        lg:p-40 
-        lg:pt-2
-        "
-      >
-        <h4 className="text-4xl lg:text-7xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4">
-          <span className="font-light">Request A </span>
-          <span className="font-inter font-thin italic"> Free Quote</span>
-        </h4>
-        <p className="max-w-60 md:max-w-sm text-xl md:text-xl text-center tracking-wider font-light text-clean-black-10 font-inter">
-          Find out how affordable clean can be — Request your free quote today!
-        </p>
-        <form className="py-10 px-2">
-          <div
-            className="
-            bg-black 
-            rounded-xl 
-            flex 
-            flex-row
-            items-center
-            lg:w-full
-            p-3
-            "
-          >
-            <input
-              type="text"
+    <section>
+      <div className="bg-footer-card-image bg-no-repeat bg-cover bg-center rounded-3xl">
+        <div
+          className="
+          flex
+          flex-col
+          justify-center 
+          items-center         
+          relative
+          p-4
+          "
+        >
+          <h4 className="text-4xl lg:text-7xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4 lg:py-10">
+            <span className="font-light">Request A </span>
+            <span className="font-inter font-thin italic"> Free Quote</span>
+          </h4>
+          <p className="max-w-60 md:max-w-sm text-xl md:text-xl text-center tracking-wider font-light text-clean-black-10 font-inter">
+            Find out how affordable clean can be — Request your free quote
+            today!
+          </p>
+          <form className="py-10 px-4">
+            <div
               className="
-              px-10 
-              pe-20
-              bg-transparent
-              outline-none
-              text-base
-              text-white
+              bg-black 
+              rounded-xl 
+              flex
+              flex-col
+              justify-center 
+              items-center
+              lg:flex-row
+              lg:w-full
+              p-3
+              my-2
               "
-              placeholder="Enter your email"
-            />
-            <button
-              type="button"
-              className="
+            >
+              <input
+                type="text"
+                className="
+                lg:px-10 
+                lg:pe-20
+                bg-transparent
+                outline-none
+                text-base
+                text-white
+              "
+                placeholder="Enter your email"
+              />
+              <button
+                type="button"
+                className="
               px-8
               py-5
               text-clean-black-10
@@ -83,11 +64,12 @@ const RequestAFreeQuote = () => {
               duration-700
               ease-linear
            "
-            >
-              <GoArrowRight className="size-4" />
-            </button>
-          </div>
-        </form>
+              >
+                <GoArrowRight className="size-4" />
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   );

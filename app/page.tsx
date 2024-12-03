@@ -4,7 +4,7 @@ import SectionBanner from "./components/banner/SectionBanner";
 import CardHeroBlock from "./components/card/CardHeroBlock";
 import ImageCardGroup from "./components/card/ImageCardGroup";
 import FrequentlyAsk from "./components/faqs/FrequentlyAsk";
-import ProfessionalCleaning from "./components/section/ProfessionalCleaning";
+// import ProfessionalCleaning from "./components/section/ProfessionalCleaning";
 import Testimonials from "./components/section/Testimonials";
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
         imagePath="/assets/images/officeMaintenance.webp"
         positionCard="absolute top-10 lg:top-20 left-10 lg:-left-24"
       />
-      <ProfessionalCleaning />
+      {/* <ProfessionalCleaning /> */}
       <Testimonials />
       <SectionBanner
         variant="blog"
