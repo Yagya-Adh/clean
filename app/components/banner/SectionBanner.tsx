@@ -30,15 +30,15 @@ const SectionBanner = ({
   ) : variant == "about" ? (
     <section className="max-w-screen-xl mx-auto px-4 lg:px-10 py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
-        <div className="flex flex-col justify-center text-center md:items-start items-center md:text-start ">
-          <h2 className="font-inter text-sm lg:text-base uppercase py-4 text-clean-black-10">
+        <div className="flex flex-col justify-center text-center md:items-start place-items-center md:text-start ">
+          <h2 className="font-inter font-light text-xl lg:text-xl uppercase py-4 text-clean-black-10">
             {topic}
           </h2>
           <h3 className="text-5xl lg:text-7xl font-light capitalize font-inter text-clean-black-10">
             {heading}
           </h3>
         </div>
-        <p className="font-inter lg:text-start text-center text-base min-w-60 max-w-sm py-4 text-clean-black-10">
+        <p className="font-inter font-light text-lg lg:text-start text-center min-w-sm max-w-lg py-4 text-clean-black-10">
           {slug}
         </p>
       </div>
