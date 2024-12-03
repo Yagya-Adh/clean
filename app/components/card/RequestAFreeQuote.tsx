@@ -11,19 +11,20 @@ const RequestAFreeQuote = () => {
           justify-center 
           items-center         
           relative
+          md:px-14
           sm:p-10
-          p-4
+          p-7
           "
         >
           <h4 className="text-4xl lg:text-7xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4 lg:py-10">
             <span className="font-light">Request A </span>
             <span className="font-inter font-thin italic"> Free Quote</span>
           </h4>
-          <p className="max-w-60 md:max-w-sm text-xl md:text-xl text-center tracking-wider font-light text-clean-black-10 font-inter">
+          <p className="max-w-60 md:max-w-sm text-center tracking-wider font-light text-clean-black-10 font-inter">
             Find out how affordable clean can be — Request your free quote
             today!
           </p>
-          <form className="py-10 px-4">
+          <form className="py-10 px-4 flex">
             <div
               className="
               bg-black 
@@ -41,30 +42,33 @@ const RequestAFreeQuote = () => {
               <input
                 type="text"
                 className="
+                px-2 py-2 
                 lg:px-10 
                 lg:pe-20
                 bg-transparent
                 outline-none
                 text-base
-                text-white
+                text-white                
+                text-center
+                lg:text-start
               "
                 placeholder="Enter your email"
               />
               <button
                 type="button"
                 className="
-              px-8
-              py-5
-              text-clean-black-10
-              bg-clean-green-10
-              hover:bg-white
-              rounded-sm 
-              text-center
-              items-center
-              transition-all
-              duration-700
-              ease-linear
-           "
+                py-5
+                px-8
+                text-clean-black-10
+                bg-clean-green-10
+                hover:bg-white
+                rounded-sm 
+                text-center
+                items-center
+                transition-all
+                duration-700
+                ease-linear
+                "
               >
                 <GoArrowRight className="size-4" />
               </button>
