@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${blog.cardDescription} - Cleaner`,
       description: blog.mainDescription,
-      images: [{ url: blog.cardImage }], // Ensure this is a valid OpenGraph image structure
+      images: [{ url: blog.cardImage }],
     },
   };
 }
