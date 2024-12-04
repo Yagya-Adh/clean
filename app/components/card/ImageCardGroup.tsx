@@ -3,6 +3,7 @@ import Image from "next/image";
 import CardBadge from "../badge/CardBadge";
 import Link from "next/link";
 import ArrowBadge from "../badge/ArrowBadge";
+import Anchor from "../anchor/Anchor";
 
 interface IUser {
   name: string;
@@ -41,13 +42,13 @@ const ImageCardGroup = () => {
         {data?.slice(0, 4).map((list) => (
           <Link
             className="
-              flex             
-              flex-col 
-              overflow-hidden 
-              row-span-1
-              py-10 
-              group
-              h-full   
+            flex-col 
+            overflow-hidden 
+            row-span-1
+            py-10 
+            group
+            h-full   
+            flex             
             "
             key={list.id}
             href={`/blog/${list.id}`}
@@ -66,25 +67,25 @@ const ImageCardGroup = () => {
             </div>
             <div
               className="
-                relative 
-                flex 
-                flex-col 
-                md:flex-row
-                justify-center 
-                sm:justify-between 
-                items-center 
-                py-4
+              flex 
+              flex-col 
+              md:flex-row
+              justify-center 
+              sm:justify-between 
+              items-center 
+              py-4
+              relative 
               "
             >
               <div
                 className="
-                  flex 
-                  flex-col 
-                  md:flex-row 
-                  md:items-center 
-                  order-2 md:-order-none 
-                  text-center 
-                  md:text-start
+                flex 
+                flex-col 
+                md:flex-row 
+                md:items-center 
+                order-2 md:-order-none 
+                text-center 
+                md:text-start
                 "
               >
                 <CardBadge text={list.cardTag} />
@@ -101,13 +102,13 @@ const ImageCardGroup = () => {
                 />
                 <h2
                   className="
-                    uppercase 
-                    flex flex-col 
-                    items-center 
-                    justify-center 
-                    text-center  
-                    ml-8
-                    py-4 
+                  uppercase 
+                  flex flex-col 
+                  items-center 
+                  justify-center 
+                  text-center  
+                  ml-8
+                  py-4 
                   "
                 >
                   {list.author.name}
@@ -117,20 +118,24 @@ const ImageCardGroup = () => {
             </div>
             <h4
               className="
-                font-thin 
-                text-2xl 
-                md:text-4xl 
-                order-3 
-                md:-order-none
-                text-center 
-                md:text-start
-                md:py-4
+              font-thin 
+              text-2xl 
+              md:text-4xl 
+              order-3 
+              md:-order-none
+              text-center 
+              md:text-start
+              md:py-4
               "
             >
               {list.cardDescription}
             </h4>
           </Link>
         ))}
+      </div>
+
+      <div className="my-4 flex inset-0 justify-center items-center">
+        <Anchor link="/about" text="VIEW ALL" />
       </div>
     </section>
   );

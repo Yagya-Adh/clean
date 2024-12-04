@@ -14,11 +14,11 @@ const data: IOurTeamData[] = ourTeamData;
 const OurTeam = () => {
   return (
     <section className="max-w-screen-2xl px-10">
-      <div className="flex flex-col justify-center items-center py-20">
-        <div className="grid grid-cols-4 gap-10 place-items-center py-5 overflow-x-scroll max-h-full">
+      <div className="flex flex-col justify-center items-center py-20 overflow-hidden max-w-screen-xl">
+        <div className="grid grid-cols-4 gap-10 place-items-center py-5 overflow-x-auto">
           {data?.slice(0, 4).map((list) => (
             <div
-              className="flex flex-col justify-center text-center h-full"
+              className="flex flex-col justify-center text-center h-full "
               key={list.id}
             >
               <Image

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CardTag from "./CardTag";
+import Anchor from "../anchor/Anchor";
 
 interface IcardheroProps {
   head: string;
@@ -51,39 +52,7 @@ const CardHeroBlock = ({
           </p>
 
           <div className="flex inset-0">
-            <a
-              className="
-              relative
-              flex 
-              items-center 
-              justify-center 
-              cursor-pointer 
-              uppercase
-              overflow-hidden
-              backdrop-blur-lg 
-              rounded-full 
-              bg-clean-smoke-white              
-              text-2xl
-              font-inter
-              font-light
-              px-14 
-              py-5 
-              h-12
-              w-45
-              my-10
-                         
-              "
-            >
-              <div className="overflow-hidden group">
-                <p className="translate-y-5 transform group-hover:-translate-y-10 ease-in-out transition-all duration-500 text-clean-black-10">
-                  EXPLORE
-                </p>
-                <p className="translate-y-9 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500 text-clean-black-10">
-                  EXPLORE
-                </p>
-                {/* <div className="translate-y-9 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500  bg-clean-green-10/60 rounded-t-full group-hover:rounded-full group-hover:bg-clean-green-10 scale-50 group-hover:scale-110 p-0 group-hover:p-4" /> */}
-              </div>
-            </a>
+            <Anchor link="/about" text="EXPLORE" />
           </div>
         </div>
         <div>
