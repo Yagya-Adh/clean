@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import frequentlyAskData from "@/frequentlyAskData.json";
+import frequentlyAskData from "@/lib/data/frequentlyAskData.json";
 
 interface IfaqDATA {
   id: number;

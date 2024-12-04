@@ -1,9 +1,9 @@
-import blogData from "@/blogData.json";
+import Link from "next/link";
 import Image from "next/image";
 import CardBadge from "../badge/CardBadge";
-import Link from "next/link";
 import ArrowBadge from "../badge/ArrowBadge";
 import Anchor from "../anchor/Anchor";
+import blogData from "@/lib/data/blogData.json";
 
 interface IUser {
   name: string;

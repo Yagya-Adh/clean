@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import footerIconData from "@/footerIcon.json";
+import footerIconData from "@/lib/data/footerIcon.json";
 
 interface IsocialIcon {
   id: number;

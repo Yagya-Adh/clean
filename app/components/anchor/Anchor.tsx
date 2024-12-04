@@ -7,25 +7,25 @@ const Anchor = ({ text, link }: IAnchor) => {
     <a
       href={link}
       className="
-    relative
-    flex 
-    items-center 
-    justify-center 
-    cursor-pointer 
-    uppercase
-    overflow-hidden
-    backdrop-blur-lg 
-    rounded-full 
-    text-2xl
-    font-inter
-    font-light
-    px-14 
-    py-5 
-    h-12
-    w-45
-    my-10
-    bg-clean-smoke-white               
-    "
+      relative
+      flex 
+      items-center 
+      justify-center 
+      cursor-pointer 
+      uppercase
+      overflow-hidden
+      backdrop-blur-lg 
+      rounded-full 
+      text-2xl
+      font-inter
+      font-light
+      px-14 
+      py-5 
+      h-12
+      w-45
+      my-10
+      bg-clean-green-10               
+      "
     >
       <div className="group relative z-20 text-center flex flex-col justify-center items-center">
         <p className="translate-y-4 transform group-hover:-translate-y-10 ease-in-out transition-all duration-500 text-clean-black-10 z-20">

@@ -1,4 +1,4 @@
-import footerRightData from "@/footerRightSideData.json";
+import footerRightData from "@/lib/data/footerRightSideData.json";
 
 interface InnerItem {
   id: number;
