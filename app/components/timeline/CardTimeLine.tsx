@@ -15,5 +15,4 @@ const CardTimeLine = () => {
     </section>
   );
 };
-
 export default CardTimeLine;
