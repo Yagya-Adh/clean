@@ -27,7 +27,7 @@ interface IblogData {
   mainTitle: string;
   mainDescription: string;
   author: IAuthor;
-  conclusion: string;
+  conclusion?: string;
   pages: IPage[];
   extraText: string;
 }
@@ -37,14 +37,12 @@ type Props = {
 };
 
 const blogFetch = (itemId: number): IblogData | undefined => {
-  const blog = blogData.find((item) => item.id === itemId);
-  return blog;
+  return blogData.find((item) => item.id === itemId);
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const id = await parseInt(params.id);
-
-  const blog = await blogFetch(id);
+  const id = parseInt(params.id, 10);
+  const blog = blogFetch(id);
 
   if (!blog) {
     return {
@@ -58,12 +56,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${blog?.cardDescription} - Cleaner`,
-    description: blog?.mainDescription,
+    title: `${blog.cardDescription} - Cleaner`,
+    description: blog.mainDescription,
     openGraph: {
-      title: `${blog?.cardDescription} - Cleaner`,
-      description: blog?.mainDescription,
-      images: blog?.cardImage,
+      title: `${blog.cardDescription} - Cleaner`,
+      description: blog.mainDescription,
+      images: blog.cardImage,
     },
   };
 }
@@ -94,13 +92,13 @@ const BlogDetails = async ({ params }: Props) => {
           height={100}
           className="object-center object-cover rounded-full"
         />
-        <h5 className="lg:text-xl font-inter font-normal uppercase py-2">
+        <h3 className="lg:text-xl font-inter font-normal uppercase py-2">
           {" "}
           {blog.author.name}
-        </h5>
-        <h6 className="text-2xl font-inter font-light">
+        </h3>
+        <h4 className="text-2xl font-inter font-light">
           {blog.author.publishDate}
-        </h6>
+        </h4>
       </div>
       <div className="flex justify-center items-center py-10">
         <Image
@@ -114,10 +112,10 @@ const BlogDetails = async ({ params }: Props) => {
       <div className="py-10 md:px-2  lg:px-10 list-none">
         {blog.pages?.map((pageArticle) => (
           <div key={pageArticle.id} className="py-2 px-10">
-            <h4 className="text-2xl lg:text-5xl capitalize font-inter font-bold py-1">
+            <h4 className="text-2xl lg:text-5xl capitalize font-inter font-medium py-4">
               {pageArticle.title}
             </h4>
-            <p className="text-clean-black-10/80 font-inter lg:text-2xl font-light">
+            <p className="text-clean-black-10/80 font-inter lg:text-2xl font-light tracking-wide max-w-screen-xl">
               {pageArticle.describe}
             </p>
           </div>
