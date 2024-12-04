@@ -1,5 +1,3 @@
-import React from "react";
-
 const CopyRightFooter = () => {
   const currentYear = new Date().getFullYear();
   return (
