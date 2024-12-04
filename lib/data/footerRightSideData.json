@@ -20,7 +20,7 @@
         "item": "Terms & Conditions",
         "linkPath": "/terms-conditions"
       },
-      { "id": 3, "item": "Privacy Policy", "linkPath": "/" }
+      { "id": 3, "item": "Privacy Policy", "linkPath": "/privacy-policy" }
     ]
   },
 
