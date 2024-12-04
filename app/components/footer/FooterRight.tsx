@@ -1,8 +1,10 @@
+import Link from "next/link";
 import footerRightData from "@/lib/data/footerRightSideData.json";
 
 interface InnerItem {
   id: number;
   item: string;
+  linkPath: string;
 }
 interface IfooterRightData {
   id: number;
@@ -19,14 +21,16 @@ const FooterRight = () => {
             {list.title}
           </h3>
           {list.innerItem?.map((inner) => (
-            <h2 className="text-center overflow-hidden group" key={inner.id}>
-              <div className="translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0  ">
-                {inner.item}
+            <Link href={inner.linkPath} key={inner.id}>
+              <div className="text-center overflow-hidden group">
+                <div className="translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0  ">
+                  {inner.item}
+                </div>
+                <div className="translate-y-10 group-hover:-translate-y-4 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0  ">
+                  {inner.item}
+                </div>
               </div>
-              <div className="translate-y-10 group-hover:-translate-y-4 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0  ">
-                {inner.item}
-              </div>
-            </h2>
+            </Link>
           ))}
         </div>
       ))}

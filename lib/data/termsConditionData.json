@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Intellectual Property",
+    "describe": "All the content associated with the website template, encompassing text, graphics, logos, and images, is the intellectual property of [Your Company]. You must obtain our prior written consent to modify, reproduce, distribute, or exhibit any portion of the template."
+  },
+  {
+    "id": 2,
+    "title": "Use of the Template",
+    "describe": "You are granted a non-exclusive, non-transferable license to employ the website template for your personal or business purposes. The express written permission of [Your Company] is required for sublicensing, selling, or distributing the template to third parties."
+  },
+  {
+    "id": 3,
+    "title": "User Content",
+    "describe": "You are accountable for any content you post or upload to the website template. By submitting content, you provide us with a non-exclusive, global, royalty-free license to utilize, reproduce, adjust, adapt, publish, and exhibit the content for the purpose of operating and enhancing the template."
+  },
+  {
+    "id": 4,
+    "title": "Prohibited Activities",
+    "describe": "While utilizing the website template, you commit to refraining from harmful code or attempting to gain unauthorized access to the template or its related systems."
+  },
+  {
+    "id": 5,
+    "title": "Limitation of Liability",
+    "describe": "We make every effort to provide precise and current information within the website template. Nevertheless, we do not assure the accuracy, completeness, or reliability of any content. You acknowledge and agree to use the template at your own risk, and we disclaim any liability for damages arising from your template usage."
+  },
+  {
+    "id": 6,
+    "title": "Third-Party Links",
+    "describe": "The website template may include links to third-party websites or services. We neither control nor endorse the content or practices of these third-party sites. Accessing such sites is your responsibility, and we recommend reviewing their respective terms and privacy policies."
+  },
+  {
+    "id": 7,
+    "title": "Termination",
+    "describe": "We retain the authority to terminate or suspend your access to the website template at any time, with or without cause. Upon termination, you must cease all utilization of the template and delete any copies in your possession."
+  },
+  {
+    "id": 8,
+    "title": "Governing Law",
+    "describe": "These Terms and Conditions will be interpreted and governed in accordance with the laws of [Your Country]. Any disputes stemming from the website template's use will be subject to the exclusive jurisdiction of the courts in [Your Jurisdiction]."
+  },
+  {
+    "id": 9,
+    "title": "Modifications",
+    "describe": "We reserve the right to amend these Terms and Conditions at any time without prior notice. By continuing to use the website template following any modifications, you affirm your agreement to be bound by the revised Terms and Conditions."
+  }
+]

@@ -1,5 +1,5 @@
-import serviceTimeLineData from "@/lib/data/cleanServiceTimeLineData.json";
 import ArticleLayout from "../article/ArticleLayout";
+import serviceTimeLineData from "@/lib/data/cleanServiceTimeLineData.json";
 interface IserviceTimeLineData {
   id: number;
   cleanType: string;
