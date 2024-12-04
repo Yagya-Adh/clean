@@ -1,4 +1,5 @@
-import serviceTimeLineData from "@/cleanServiceTimeLineData.json";
+import serviceTimeLineData from "@/lib/data/cleanServiceTimeLineData.json";
+
 import ArticleLayout from "../article/ArticleLayout";
 
 interface IserviceTimeLineData {
