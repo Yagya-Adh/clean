@@ -133,7 +133,6 @@ const ImageCardGroup = () => {
           </Link>
         ))}
       </div>
-
       <div className="my-4 flex inset-0 justify-center items-center">
         <Anchor link="/about" text="VIEW ALL" />
       </div>
