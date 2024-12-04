@@ -11,10 +11,7 @@ const TimeLinePopulateCard = () => {
   return (
     <div className="px-4 py-4">
       {data?.map((list) => (
-        <div
-          key={list.id}
-          className="bg-white/40 rounded-[62px] py-10 px-10 my-4"
-        >
+        <div key={list.id} className="bg-white/40 rounded-3xl py-10 px-10 my-4">
           <ArticleLayout
             head={list.cleanType}
             title={list.CleaningTitle}
