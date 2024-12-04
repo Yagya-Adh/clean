@@ -4,3 +4,6 @@ export { default as CheckedIcon } from "./CheckedIcon";
 export { default as SprayIcon } from "./SprayIcon";
 export { default as PlusIcon } from "./PlusIcon";
 export { default as MinusIcon } from "./MinusIcon";
+export { default as InstaGramIcom } from "./InstaGramIcom";
+export { default as TiktokIcon } from "./TiktokIcon";
+export { default as YoutubeIcon } from "./YoutubeIcon";
