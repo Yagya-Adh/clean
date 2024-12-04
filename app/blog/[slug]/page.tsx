@@ -32,16 +32,16 @@ interface IblogData {
   extraText: string;
 }
 
-type Props = {
-  slug: { id: string };
-};
-
 const blogFetch = (itemId: number): IblogData | undefined => {
   return blogData.find((item) => item.id === itemId);
 };
 
-export async function generateMetadata({ slug }: Props): Promise<Metadata> {
-  const id = parseInt(slug.id, 10);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const id = parseInt((await params).slug, 10);
   const blog = blogFetch(id);
 
   if (!blog) {
@@ -66,8 +66,12 @@ export async function generateMetadata({ slug }: Props): Promise<Metadata> {
   };
 }
 
-const BlogDetails = async ({ slug }: Props) => {
-  const id = parseInt(slug.id, 10);
+const BlogDetails = async ({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) => {
+  const id = parseInt((await params).slug, 10);
   const blog = blogFetch(id);
 
   if (!blog) {
