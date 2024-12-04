@@ -28,7 +28,7 @@ interface IblogData {
   mainTitle: string;
   mainDescription: string;
   author: IAuthor;
-  conclusion: string;
+  conclusion?: string;
   pages: IPage[];
   extraText: string;
 }
