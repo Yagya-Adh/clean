@@ -1,7 +1,17 @@
+import { Metadata } from "next";
 import CustomHeader from "../components/banner/CustomHeader";
 import SectionBanner from "../components/banner/SectionBanner";
 import ImageCardGroup from "../components/card/ImageCardGroup";
 
+export const metadata: Metadata = {
+  title: "Blog - Cleaner",
+  description: "Created by Jamstackers",
+  openGraph: {
+    title: "Blog - Cleaner",
+    description: "Cleaning service template for your home, office, soon...",
+    images: ["/assets/logo/cleanlog.png"],
+  },
+};
 const BlogPage = () => {
   return (
     <main>

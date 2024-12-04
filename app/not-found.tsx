@@ -1,6 +1,16 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Services - Cleaner",
+  description: "Created by Jamstackers",
+  openGraph: {
+    title: "Services - Cleaner",
+    description: "Cleaning service template for your home, office, soon...",
+    images: ["/assets/logo/cleanlog.png"],
+  },
+};
 const PageNotFound = () => {
   return (
     <main className="absolute top-0 left-0">
