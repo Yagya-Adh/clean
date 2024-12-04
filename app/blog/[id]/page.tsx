@@ -61,14 +61,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${blog.cardDescription} - Cleaner`,
       description: blog.mainDescription,
-      images: blog.cardImage,
+      images: [{ url: blog.cardImage }], // Ensure this is a valid OpenGraph image structure
     },
   };
 }
 
 const BlogDetails = async ({ params }: Props) => {
-  const id = parseInt(params.id);
-  const blog = await blogFetch(id);
+  const id = parseInt(params.id, 10);
+  const blog = blogFetch(id);
 
   if (!blog) {
     return notFound();
@@ -82,7 +82,6 @@ const BlogDetails = async ({ params }: Props) => {
           {blog.cardDescription}
         </p>
         <p className="lg:text-2xl text-center max-w-screen-sm font-inter font-light  py-2 ">
-          {" "}
           {blog.mainDescription}
         </p>
         <Image
@@ -93,7 +92,6 @@ const BlogDetails = async ({ params }: Props) => {
           className="object-center object-cover rounded-full"
         />
         <h3 className="lg:text-xl font-inter font-normal uppercase py-2">
-          {" "}
           {blog.author.name}
         </h3>
         <h4 className="text-2xl font-inter font-light">
