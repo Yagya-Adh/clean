@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import CardBadge from "@/app/components/badge/CardBadge";
-import blogData from "@/blogData.json";
+import blogData from "@/lib/data/blogData.json";
 
 interface IUser {
   name: string;
