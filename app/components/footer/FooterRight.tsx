@@ -12,18 +12,18 @@ interface IfooterRightData {
 const data: IfooterRightData[] = footerRightData;
 const FooterRight = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-x-20 text-center md:text-start md:place-items-start py-10">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-x-16 text-center md:text-start md:place-items-start py-10 px-4 lg:px-10 w-full">
       {data?.slice(0, 3).map((list) => (
         <div key={list.id}>
-          <h3 className="text-clean-black-10 text-lg text-center font-normal font-inter mb-1">
+          <h3 className="text-clean-black-10 text-lg text-center font-normal font-inter md:mb-4">
             {list.title}
           </h3>
           {list.innerItem?.map((inner) => (
             <h2 className="text-center overflow-hidden group" key={inner.id}>
-              <div className="translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0 md:my-1">
+              <div className="translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0  ">
                 {inner.item}
               </div>
-              <div className="translate-y-10 group-hover:-translate-y-4 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0 md:my-1">
+              <div className="translate-y-10 group-hover:-translate-y-4 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter p-0  ">
                 {inner.item}
               </div>
             </h2>

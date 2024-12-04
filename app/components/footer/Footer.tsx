@@ -10,7 +10,7 @@ const Footer = () => {
         <RequestAFreeQuote />
       </div>
       <section className="max-w-screen-2xl px-4 lg:px-10 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start w-full">
           <div>
             <FooterLeft />
           </div>
