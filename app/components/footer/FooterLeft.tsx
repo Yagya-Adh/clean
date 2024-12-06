@@ -13,13 +13,14 @@ const socialIcon: IsocialIcon[] = footerIconData;
 
 const FooterLeft = () => {
   return (
-    <div className="text-center md:text-start flex flex-col justify-center  items-center md:items-start">
+    <div className="text-center md:text-start flex flex-col justify-center items-center md:items-start">
       <Link href="/">
         <Image
           src="/assets/logo/cleanlogo.png"
           width={200}
           height={200}
           alt="footer_logo_"
+          className="h-10 w-full"
         />
       </Link>
       <div className="flex flex-row items-center py-4">

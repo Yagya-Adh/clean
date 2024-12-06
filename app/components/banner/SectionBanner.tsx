@@ -12,23 +12,23 @@ const SectionBanner = ({
   variant,
 }: IsectionBannerProps) =>
   variant == "blog" ? (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center sm:text-start">
-        <h2 className="text-6xl font-light capitalize font-inter text-clean-black-10">
+    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 md:py-4 lg:py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center sm:text-start sm:flex sm:justify-center">
+        <h2 className="text-2xl sm:text-5xl font-light sm:max-w-40 capitalize font-inter text-clean-black-10">
           {heading}
         </h2>
         <div className="flex flex-col">
-          <h3 className="font-inter font-normal text-sm lg:text-base uppercase py-4 text-clean-black-10">
+          <h3 className="font-inter font-normal text-sm lg:text-base uppercase py-2 md:py-4 text-clean-black-10">
             {topic}
           </h3>
-          <p className="font-inter  font-light text-base lg:text-xl min-w-xl text-clean-black-10">
+          <p className="font-inter font-light text-base lg:text-xl min-w-xl text-clean-black-10">
             {slug}
           </p>
         </div>
       </div>
     </section>
   ) : variant == "about" ? (
-    <section className="max-w-screen-xl mx-auto px-4 lg:px-10 py-20">
+    <section className="max-w-screen-xl mx-auto px-4 lg:px-10 py-4 lg:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         <div className="flex flex-col justify-center text-center md:items-start place-items-center md:text-start ">
           <h2 className="font-inter font-light text-xl lg:text-xl uppercase py-4 text-clean-black-10">

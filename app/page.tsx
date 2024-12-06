@@ -16,7 +16,7 @@ const Home = () => {
         preTitle="Home"
         italicTitle=" Refresh."
         describe="Experience the ultimate expert cleaning — Creating spaces where comfort and productivity thrive."
-        textOrder="order-1"
+        textOrder="xl:order-1 order-1"
         cleanCycle="2X"
         cleanType="Deep Cleaning"
         iconPath="/assets/icon/happyPlus.svg"

@@ -22,11 +22,11 @@ const ProfessionalAccordion = () => {
   };
 
   return (
-    <div className="my-10 py-10 flex flex-col justify-center">
-      <div>
+    <div className="flex lg:flex-row lg:justify-between flex-col justify-center items-center lg:z-10 relative top-1 lg:-top-64 left-0 py-4">
+      <div className="md:py-10 py-4">
         {data.slice(0, 3).map((list) => (
           <div
-            className="flex flex-col justify-center items-center md:items-start md:justify-normal"
+            className="flex flex-col justify-center items-center lg:items-start lg:justify-normal"
             key={list.id}
           >
             <div
@@ -34,7 +34,7 @@ const ProfessionalAccordion = () => {
               onClick={() => handleOpentCheck(list.id)}
             >
               <CheckedIcon className="w-5 h-5" />
-              <h2 className="font-inter font-normal text-xl text-clean-black-10 uppercase ml-4 tracking-wider">
+              <h2 className="font-inter font-normal text-sm sm:text-xl text-clean-black-10 uppercase ml-4 tracking-wider">
                 {list.topic}
               </h2>
             </div>
@@ -46,16 +46,16 @@ const ProfessionalAccordion = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center py-10 md:py-4 w-full">
+      <div className="flex justify-center lg:justify-end lg:py-4 w-full">
         {data?.map((item) => (
           <div key={item.id}>
             {opentCheck === item.id && item.image && (
               <Image
                 src={item.image}
                 alt="team_photo"
-                width={500}
-                height={200}
-                className="w-auto h-auto object-cover object-center rounded-3xl"
+                width={400}
+                height={400}
+                className="xl:h-[300] h-auto w-auto object-cover object-center rounded-3xl"
               />
             )}
           </div>

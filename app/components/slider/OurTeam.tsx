@@ -28,8 +28,8 @@ const OurTeam = () => {
   };
 
   return (
-    <section className="max-w-screen-3xl px-10 mx-auto">
-      <div className="flex flex-col justify-center items-center py-20">
+    <section className="max-w-screen-2xl px-10 mx-auto">
+      <div className="flex flex-col justify-center items-center lg:py-20">
         <div
           ref={scrollContainerRef}
           className="flex gap-10 py-5 overflow-x-scroll scroll-smooth no-scrollbar"

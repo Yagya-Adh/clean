@@ -37,8 +37,8 @@ const data: IblogData[] = blogData;
 
 const ImageCardGroup = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
         {data?.slice(0, 4).map((list) => (
           <Link
             className="

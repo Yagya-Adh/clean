@@ -40,7 +40,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-20">
+    <section className="max-w-screen-xl mx-auto px-4 py-4 lg:py-20">
       <div className="flex justify-end py-10">
         <div className="flex items-center">
           <button
@@ -57,7 +57,7 @@ const Testimonials = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 lg:gap-10 py-10 px-4 h-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 lg:gap-10 md:py-10 px-4 h-full">
         {currentTestimonials.map((list, index) => (
           <div
             className={`relative rounded-3xl flex flex-col justify-center items-center text-center py-4 px-10 my-10
@@ -81,7 +81,6 @@ const Testimonials = () => {
               <p className="font-inter font-light text-clean-black-10 text-base lg:text-2xl max-w-xl py-10 px-4 text-center">
                 {list.message}
               </p>
-
               <h3 className="font-inter font-normal text-clean-black-10 text-base lg:text-base uppercase text-center">
                 {list.author.name}
               </h3>
@@ -92,7 +91,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      <div className="py-5 flex items-center justify-center w-full">
+      <div className="md:py-5 sm:flex items-center justify-center w-full hidden">
         {Array.from({ length: totalPages }).map((_, index) => (
           <button
             type="button"

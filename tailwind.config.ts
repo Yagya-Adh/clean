@@ -52,6 +52,7 @@ const config: Config = {
       },
       maxWidth: {
         "screen-3xl": "1500px",
+        "screen-4xl": "1905px",
       },
       borderRadius: {
         "3xl": "42px",

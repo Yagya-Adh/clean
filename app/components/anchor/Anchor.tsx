@@ -23,7 +23,8 @@ const Anchor = ({ text, link }: IAnchor) => {
       py-5 
       h-12
       w-45
-      my-10
+      my-4
+      md:my-10
       bg-clean-green-10               
       "
     >

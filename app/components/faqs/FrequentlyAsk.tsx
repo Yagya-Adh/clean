@@ -17,41 +17,41 @@ const FrequentlyAsk = () => {
   };
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px10 my-20">
-      <div className=" flex flex-col items-center">
+    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10">
+      <div className="flex flex-col items-center py-10">
         {data?.slice(0, 6).map((list) => (
           <div
             key={list.id}
             className={`
-              flex 
-              flex-col           
-              rounded-3xl 
-              hover:bg-transparent 
-              shadow-lg 
-              animate-fadeInUp 
-              bg-white   
-              w-full  
-              sm:w-2/3            
-              px-7
-              py-4
-              my-4
-              ${
-                openQuestion === list.id
-                  ? "translate-y-1 transition-all ease-linear duration-500"
-                  : "-translate-y-0 transition-all ease-linear duration-500"
-              }
-        `}
+            flex 
+            flex-col           
+            rounded-3xl 
+            hover:bg-transparent 
+            shadow-lg 
+            animate-fadeInUp 
+            bg-white   
+            w-full  
+            sm:w-2/3            
+            px-7
+            py-4
+            my-4
+            ${
+              openQuestion === list.id
+                ? "translate-y-1 transition-all ease-linear duration-500"
+                : "-translate-y-0 transition-all ease-linear duration-500"
+            }
+              `}
           >
-            <div className="flex flex-row place-items-start justify-between w-full">
+            <div className="flex flex-row place-items-center justify-between w-full h-full">
               <h4
-                className="text-2xl lg:text-3xl text-clean-black-10 py-4 font-inter font-normal"
+                className="text-xl lg:text-3xl text-clean-black-10 py-4 font-inter font-normal"
                 onClick={() => handleQuestionToggle(list.id)}
               >
                 {list.question}
               </h4>
 
               <span
-                className="text-5xl font-inter font-normal text-clean-black-10 cursor-pointer flex justify-center place-items-start"
+                className="text-5xl font-inter font-light text-clean-black-10 cursor-pointer flex justify-center place-items-start"
                 onClick={() => handleQuestionToggle(list.id)}
               >
                 {openQuestion === list.id ? "-" : "+"}
