@@ -20,16 +20,16 @@ const FooterRight = () => {
           className="flex flex-col justify-center w-full items-center"
           key={list.id}
         >
-          <h3 className="text-clean-black-10 text-sm sm:text-lg text-center font-semibold sm:font-medium font-inter">
+          <h3 className="text-clean-black-10 text-sm sm:text-lg text-center font-semibold sm:font-medium font-inter tracking-widest">
             {list.title}
           </h3>
           {list.innerItem?.map((inner) => (
             <Link href={inner.linkPath} key={inner.id}>
               <div className="text-center overflow-hidden h-10 group md:my-2">
-                <div className="translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter h-10">
+                <div className="tracking-widest translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter h-10">
                   {inner.item}
                 </div>
-                <div className="translate-y-9 group-hover:-translate-y-6 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter h-10">
+                <div className="tracking-widest translate-y-9 group-hover:-translate-y-6 ease-in-out transition-all duration-500 text-clean-black-10 text-lg font-normal font-inter h-10">
                   {inner.item}
                 </div>
               </div>
