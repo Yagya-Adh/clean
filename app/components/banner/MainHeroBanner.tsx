@@ -3,7 +3,7 @@ import { SprayIcon } from "@/app/icons";
 const MainHeroBanner = () => {
   return (
     <section className="max-w-screen-4xl mx-auto px-4 md:px-10 lg:px-20 py-4">
-      <div className="rounded-4xl bg-hero-main bg-no-repeat bg-cover p-10 sm:px-24 md:px-4 lg:py-80   w-full flex flex-col justify-center">
+      <div className="rounded-4xl bg-hero-main bg-no-repeat bg-cover p-10 sm:px-24 md:px-4 lg:py-80 max-w-full flex flex-col justify-center">
         <div className="relative lg:-top-72 left-0 flex flex-col justify-center items-center text-center font-inter z-10 border border-white/15 backdrop:blur-3xl rounded-3xl p-10 md:p-4 md:w-1/2 mx-auto bg-white/15 backdrop-blur-2xl">
           <div className="flex flex-row justify-center items-center mb-4 w-full">
             <SprayIcon className="w-8 h-10" />
@@ -11,7 +11,7 @@ const MainHeroBanner = () => {
               Go-to Cleaners
             </h3>
           </div>
-          <h1 className="font-inter font-light text-3xl sm:text-4xl md:text-8xl py-6 uppercase animate-flipTopDownIn">
+          <h1 className="font-inter font-light text-3xl sm:text-4xl md:text-7xl xl:text-8xl py-6 uppercase animate-flipTopDownIn">
             Expert <br />
             <span className="font-thin italic">Cleaning</span>
           </h1>

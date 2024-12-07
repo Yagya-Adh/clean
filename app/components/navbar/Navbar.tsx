@@ -21,24 +21,24 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="mx-auto max-w-screen-3xl px-4 pt-10 md:pt-4">
+      <div className="mx-auto max-w-screen-4xl px-4 sm:px-20 pt-10 pb-8">
         <div className="flex items-center justify-between w-full lg:py-10 relative">
           <Link href="/">
             <Image
               src="/assets/logo/cleanlogo.png"
               alt="logo_nav_"
-              height={200}
-              width={200}
-              className="h-8 lg:h-14 min-h-10 w-auto object-cover origin-center"
+              height={180}
+              width={180}
+              className="min-h-5 max-h-14 h-7 sm:h-9 xl:h-auto w-auto object-cover origin-center"
             />
           </Link>
-          <ul className="hidden lg:flex justify-center flex-row items-center p-0">
+          <ul className="hidden xl:flex justify-center flex-row items-center">
             {data?.slice(0, 5).map((list) => (
-              <li key={list.id} className="inset-0 px-4 overflow-hidden group">
+              <li key={list.id} className="inset-0  overflow-hidden group">
                 <div className="translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500">
                   <Link
                     href={list.path}
-                    className="text-xl uppercase font-inter font-light text-clean-black-10"
+                    className="h-8 text-sm md:text-xl px-2 md:px-4 uppercase font-inter font-light text-clean-black-10"
                   >
                     {list.name}
                   </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 <div className="translate-y-10 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500">
                   <Link
                     href={list.path}
-                    className="text-xl uppercase font-inter font-light text-clean-black-10"
+                    className="h-8 text-sm md:text-xl px-2 md:px-4 uppercase font-inter font-light text-clean-black-10"
                   >
                     {list.name}
                   </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="lg:hidden" onClick={handleNavBarToggle}>
+          <button className="xl:hidden" onClick={handleNavBarToggle}>
             <FaBars className="h-5 w-5 md:h-7 md:w-7" />
           </button>
         </div>

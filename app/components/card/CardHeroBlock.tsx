@@ -28,9 +28,9 @@ const CardHeroBlock = ({
 }: IcardheroProps) => {
   return (
     <section className="max-w-screen-xl mx-auto py-4 px-6 lg:px-10 lg:my-10">
-      <div className="flex flex-col justify-center items-center md:flex-row md:justify-between">
+      <div className="flex flex-col justify-center items-center xl:flex-row md:justify-between">
         <div className={`${textOrder}`}>
-          <div className="flex flex-col justify-center md:justify-normal md:flex-row items-center">
+          <div className="flex flex-col justify-center lg:justify-normal lg:flex-row items-center py-4">
             <Image
               src={iconPath}
               alt="Cleaning spray icon"

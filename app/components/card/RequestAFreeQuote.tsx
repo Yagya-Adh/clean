@@ -16,11 +16,11 @@ const RequestAFreeQuote = () => {
           p-7
           "
         >
-          <h4 className="text-4xl lg:text-7xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4 lg:py-10">
+          <h4 className="text-4xl sm:text-5xl xl:text-8xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4 lg:py-10">
             <span className="font-light">Request A </span>
             <span className="font-inter font-thin italic"> Free Quote</span>
           </h4>
-          <p className="max-w-60 md:max-w-sm text-center tracking-wider font-light text-clean-black-10 font-inter">
+          <p className="max-w-60 md:max-w-sm text-xs xl:text-xl text-center tracking-wider font-light text-clean-black-10 font-inter">
             Find out how affordable clean can be — Request your free quote
             today!
           </p>

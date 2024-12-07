@@ -37,8 +37,8 @@ const data: IblogData[] = blogData;
 
 const ImageCardGroup = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
+    <section className="max-w-screen-2xl mx-auto px-4 sm:px-20 xl:px-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-10">
         {data?.slice(0, 4).map((list) => (
           <Link
             className="
@@ -53,13 +53,13 @@ const ImageCardGroup = () => {
             key={list.id}
             href={`/blog/${list.id}`}
           >
-            <div className="relative w-full h-[600px]">
+            <div className="relative h-full w-full">
               <Image
                 src={list.cardImage}
                 alt="card_image_"
                 width={800}
                 height={800}
-                className="object-center w-full h-full object-cover rounded-2xl"
+                className="object-center object-cover rounded-3xl h-full w-auto sm:w-full sm:h-full lg:h-[800px] lg:w-[800px]:"
               />
               <div className="absolute bottom-4 right-10">
                 <ArrowBadge />
@@ -69,7 +69,7 @@ const ImageCardGroup = () => {
               className="
               flex 
               flex-col 
-              md:flex-row
+              sm:flex-row
               justify-center 
               sm:justify-between 
               items-center 
@@ -98,7 +98,7 @@ const ImageCardGroup = () => {
                   alt="card_image_"
                   width={50}
                   height={50}
-                  className="object-center object-cover rounded-full"
+                  className="object-center object-cover rounded-full h-auto w-auto"
                 />
                 <h2
                   className="
@@ -118,9 +118,14 @@ const ImageCardGroup = () => {
             </div>
             <h4
               className="
-              font-thin 
+              font-inter
+              font-medium 
+              sm:font-normal
+              md:font-medium
+              lg:font-light
               text-2xl 
-              md:text-4xl 
+              sm:text-4xl 
+              lg:text-6xl
               order-3 
               md:-order-none
               text-center 
