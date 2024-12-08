@@ -5,17 +5,23 @@ const CardBadge = ({ text }: ICardBadge) => {
   return (
     <div
       className="
-      text-black 
+      font-inter
+      font-medium
+      tracking-widest  
       rounded-full 
       bg-clean-smoke-white 
-      px-2
-      md:px-4 
-      py-2
-      md:py-2 
-      text-sm  
-      md:text-xl 
+      text-black 
       text-center
+      text-xs
+      sm:text-sm
+      md:text-lg
+      lg:font-normal 
+      lg:text-xl 
       uppercase
+      px-2.5
+      py-3
+      md:px-4 
+      md:py-2 
     "
     >
       {text}

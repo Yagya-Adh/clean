@@ -45,7 +45,7 @@ const ImageCardGroup = () => {
             flex-col 
             overflow-hidden 
             row-span-1
-            py-10 
+            py-2             
             group
             h-full   
             flex             
@@ -59,7 +59,7 @@ const ImageCardGroup = () => {
                 alt="card_image_"
                 width={800}
                 height={800}
-                className="object-center object-cover rounded-3xl h-full w-auto sm:w-full sm:h-full lg:h-[800px] lg:w-[800px]:"
+                className="object-center object-cover rounded-3xl h-full w-auto sm:w-full sm:h-full md:h-auto md:w-auto lg:h-[800px] lg:w-[800px]:"
               />
               <div className="absolute bottom-4 right-10">
                 <ArrowBadge />
@@ -72,8 +72,7 @@ const ImageCardGroup = () => {
               sm:flex-row
               justify-center 
               sm:justify-between 
-              items-center 
-              py-4
+              items-center               
               relative 
               "
             >
@@ -89,10 +88,12 @@ const ImageCardGroup = () => {
                 "
               >
                 <CardBadge text={list.cardTag} />
-                <span className="py-2 md:ml-4">{list.cardDate}</span>
+                <span className="py-2 md:ml-4 font-inter font-normal text-xs lg:font-normal lg:text-xl tracking-widest">
+                  {list.cardDate}
+                </span>
               </div>
               <div className="border-b w-1/6 border-black hidden lg:block"></div>
-              <div className="flex items-center justify-between md:-order-none order-1">
+              <div className="flex items-center justify-between md:-order-none order-1 py-2.5">
                 <Image
                   src={list.user.image}
                   alt="card_image_"
@@ -102,7 +103,16 @@ const ImageCardGroup = () => {
                 />
                 <h2
                   className="
+                  tracking-widest
+                  font-inter
+                  font-semibold
+                  sm:font-medium
+                  lg:font-normal
                   uppercase 
+                  text-xs
+                  sm:text-sm
+                  md:text-lg
+                  lg:text-xl
                   flex flex-col 
                   items-center 
                   justify-center 
@@ -116,15 +126,17 @@ const ImageCardGroup = () => {
                 </h2>
               </div>
             </div>
-            <h4
+            <p
               className="
               font-inter
-              font-medium 
-              sm:font-normal
-              md:font-medium
+              font-normal 
+            
+              md:font-normal
               lg:font-light
               text-2xl 
               sm:text-4xl 
+              md:text-5xl
+
               lg:text-6xl
               order-3 
               md:-order-none
@@ -134,7 +146,7 @@ const ImageCardGroup = () => {
               "
             >
               {list.cardDescription}
-            </h4>
+            </p>
           </Link>
         ))}
       </div>

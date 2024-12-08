@@ -17,8 +17,8 @@ const FrequentlyAsk = () => {
   };
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10">
-      <div className="flex flex-col items-center py-10">
+    <section className="max-w-screen-4xl mx-auto px-4 lg:px-10">
+      <div className="flex flex-col items-center py-2">
         {data?.slice(0, 6).map((list) => (
           <div
             key={list.id}
@@ -43,21 +43,19 @@ const FrequentlyAsk = () => {
               `}
           >
             <div className="flex flex-row place-items-center justify-between w-full h-full">
-              <h4
-                className="text-xl lg:text-3xl text-clean-black-10 py-4 font-inter font-normal"
+              <h3
+                className="text-lg sm:text-xl lg:text-3xl text-clean-black-10 py-4 font-inter font-normal"
                 onClick={() => handleQuestionToggle(list.id)}
               >
                 {list.question}
-              </h4>
-
+              </h3>
               <span
-                className="text-5xl font-inter font-light text-clean-black-10 cursor-pointer flex justify-center place-items-start"
+                className="text-3xl sm:text-4xl font-inter font-light text-clean-black-10 cursor-pointer flex justify-center place-items-start"
                 onClick={() => handleQuestionToggle(list.id)}
               >
                 {openQuestion === list.id ? "-" : "+"}
               </span>
             </div>
-
             <p className="text-xl text-center md:text-start md:max-w-xl font-inter font-normal text-clean-black-10">
               {openQuestion === list.id && list.answer}
             </p>
