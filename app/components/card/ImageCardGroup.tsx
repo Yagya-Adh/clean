@@ -59,13 +59,13 @@ const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
             key={list.id}
             href={`/blog/${list.id}`}
           >
-            <div className="relative h-full w-full">
+            <div className="relative w-full">
               <Image
                 src={list.cardImage}
                 alt="card_image_"
                 width={800}
                 height={800}
-                className="object-center object-cover rounded-3xl h-full w-auto sm:w-full sm:h-full md:h-auto md:w-auto lg:h-[800px] lg:w-full"
+                className="object-center object-cover rounded-3xl h-full w-auto sm:w-full sm:h-full md:h-auto md:w-auto lg:h-[700px] lg:w-full"
               />
               <div className="absolute bottom-4 right-10">
                 <ArrowBadge />

@@ -27,7 +27,7 @@ const CustomHeader = ({
   variant,
 }: IcustomHeader) =>
   variant === "without-button" ? (
-    <header className="max-w-screen-4xl mx-auto px-4 md:px-10 py-4 lg:py-10">
+    <header className="max-w-screen-4xl mx-auto px-4 md:px-10 py-4 lg:py-0">
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-row items-center animate-fadeInLeft sm:hidden md:flex">
           <CheckedIcon className="h-7 w-6" />
@@ -64,7 +64,7 @@ const CustomHeader = ({
       </div>
     </header>
   ) : variant === "with-button" ? (
-    <header className="max-w-screen-4xl mx-auto px-4 md:px-10 py-4 sm:py-7 lg:py-10">
+    <header className="max-w-screen-4xl mx-auto px-4 md:px-10 py-4 sm:py-7 lg:py-0">
       <div
         className={`flex flex-col justify-center items-center text-clean-black-10       
        ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}

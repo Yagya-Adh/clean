@@ -27,7 +27,7 @@ const CardHeroBlock = ({
   positionCard,
 }: IcardheroProps) => {
   return (
-    <section className="max-w-screen-xl mx-auto py-4 px-6 lg:px-10 lg:my-10">
+    <section className="max-w-screen-xl mx-auto py-4 px-6 lg:px-10 lg:my-4">
       <div className="flex flex-col justify-center items-center xl:flex-row md:justify-between">
         <div className={`${textOrder}`}>
           <div className="flex flex-col justify-center lg:justify-normal lg:flex-row items-center py-4">
