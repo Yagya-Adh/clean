@@ -57,7 +57,7 @@ const FrequentlyAsk = () => {
                 {openQuestion === list.id ? "-" : "+"}
               </span>
             </div>
-            <p className="text-lg text-center md:text-start md:max-w-xl font-inter font-normal text-clean-black-10">
+            <p className="text-sm md:text-lg max-w-82 text-center md:text-start md:max-w-xl font-inter font-normal text-clean-black-10">
               {openQuestion === list.id && list.answer}
             </p>
           </div>
