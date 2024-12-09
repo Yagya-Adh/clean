@@ -28,7 +28,7 @@ const OurTeam = () => {
   };
 
   return (
-    <section className="max-w-screen-2xl px-10 py-4 mx-auto">
+    <section className="max-w-screen-2xl px-10 py-4 mx-auto hidden sm:block">
       <div className="flex flex-col justify-center items-center">
         <div
           ref={scrollContainerRef}

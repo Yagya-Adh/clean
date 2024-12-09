@@ -13,7 +13,7 @@ const data: IcleanerCardData[] = cleanerCardData;
 const CleanCardGroup = () => {
   return (
     <section className="max-w-screen-2xl mx-auto px-4 py-4 pb-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:flex md:justify-center md:items-center flex-wrap xl:flex-nowrap h-full">
+      <div className="grid grid-cols-1 gap-10 sm:flex sm:flex-wrap sm:justify-center sm:items-center xl:flex-nowrap">
         {data?.slice(0, 4).map((list) => (
           <div
             className={`
@@ -27,11 +27,10 @@ const CleanCardGroup = () => {
             md:px-10  
             px-10          
             py-10              
-            md:py-20          
+            md:py-20 
+            lg:py-14         
             shadow-sm 
-            animate-fadeInUp
-            h-full
-            w-full                        
+            animate-fadeInUp           
             ${list.color ? list.color : ""}
             `}
             key={list.id}

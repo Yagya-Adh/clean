@@ -20,7 +20,7 @@ const FooterLeft = () => {
           width={200}
           height={200}
           alt="footer_logo_"
-          className="h-10 sm:h-14 w-full"
+          className="h-10 sm:h-14 w-auto"
         />
       </Link>
       <div className="flex flex-row items-center py-4">

@@ -18,7 +18,7 @@ const FrequentlyAsk = () => {
 
   return (
     <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 py-10">
-      <div className="flex flex-col items-center py-2">
+      <div className="flex flex-col items-center">
         {data?.slice(0, 6).map((list) => (
           <div
             key={list.id}
