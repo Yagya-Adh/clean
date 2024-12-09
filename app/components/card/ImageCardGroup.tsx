@@ -35,7 +35,10 @@ interface IblogData {
 
 const data: IblogData[] = blogData;
 
-const ImageCardGroup = () => {
+interface IImageViewLink {
+  viewLink: "yes" | "no";
+}
+const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
   return (
     <section className="max-w-screen-2xl mx-auto px-4 sm:px-20 xl:px-10">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-10">
@@ -150,9 +153,11 @@ const ImageCardGroup = () => {
           </Link>
         ))}
       </div>
-      <div className="my-4 flex inset-0 justify-center items-center">
-        <Anchor link="/about" text="VIEW ALL" />
-      </div>
+      {viewLink == "yes" && (
+        <div className="my-4 flex inset-0 justify-center items-center">
+          <Anchor link="/blog" text="VIEW ALL" />
+        </div>
+      )}
     </section>
   );
 };

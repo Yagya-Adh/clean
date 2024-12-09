@@ -31,7 +31,7 @@ const BlogPage = () => {
         topic="Our recent articles"
         slug="Simplify your tasks and maintaining the cleanliness."
       />
-      <ImageCardGroup />
+      <ImageCardGroup viewLink="no" />
     </main>
   );
 };

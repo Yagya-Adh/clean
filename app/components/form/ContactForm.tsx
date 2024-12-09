@@ -8,6 +8,7 @@ const ContactForm = () => {
               Name
             </label>
             <input
+              required
               type="text"
               placeholder="e.g. John Doe "
               className="
@@ -27,6 +28,7 @@ const ContactForm = () => {
               Email Address
             </label>
             <input
+              required
               type="text"
               placeholder="e.g. johndoe@email.com"
               className="
@@ -59,7 +61,9 @@ const ContactForm = () => {
             />
           </div>
           <div className="py-2 flex flex-col w-full">
-            <label htmlFor="message">Your Message</label>
+            <label className="text-sm text-clean-black-10/60" htmlFor="message">
+              Your Message
+            </label>
             <textarea
               name="message"
               id="message"
@@ -94,7 +98,7 @@ const ContactForm = () => {
             transition-all
             ease-in-out
             "
-            type="button"
+            type="submit"
           >
             Send Message{" "}
           </button>

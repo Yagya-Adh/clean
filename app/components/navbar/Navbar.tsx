@@ -59,8 +59,9 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
       <div
+        role="button"
+        onClick={handleNavBarToggle}
         className={`
           xl:hidden
           leading-10  

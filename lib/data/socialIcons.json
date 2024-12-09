@@ -1,5 +1,20 @@
 [
-  { "id": 1, "social": "/assets/logo/youtube.png" },
-  { "id": 2, "social": "/assets/logo/instagram.png" },
-  { "id": 3, "social": "/assets/logo/tiktok.png" }
+  {
+    "id": 1,
+    "linkPath": "https://www.youtube.com/",
+    "name": "youtube",
+    "social": "/assets/logo/youtube.png"
+  },
+  {
+    "id": 2,
+    "linkPath": "https://www.instagram.com/",
+    "name": "instagram",
+    "social": "/assets/logo/instagram.png"
+  },
+  {
+    "id": 3,
+    "linkPath": "https://www.tiktok.com/",
+    "name": "tiktok",
+    "social": "/assets/logo/tiktok.png"
+  }
 ]

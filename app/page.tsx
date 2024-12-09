@@ -43,7 +43,7 @@ const Home = () => {
         topic="Our recent articles"
         slug="Simplify your tasks and maintaining the cleanliness."
       />
-      <ImageCardGroup />
+      <ImageCardGroup viewLink="yes" />
       <CustomHeader
         icon="/assets/logo/faq.svg"
         slug="FAQS"

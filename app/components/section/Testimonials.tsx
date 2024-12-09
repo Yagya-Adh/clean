@@ -40,8 +40,8 @@ const Testimonials = () => {
   );
 
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-4 lg:py-20">
-      <div className="flex justify-end py-4">
+    <section className="max-w-screen-2xl mx-auto px-4 py-4 lg:py-20">
+      <div className="flex justify-end my-16">
         <div className="flex items-center">
           <button
             onClick={() => handlePageChange(page - 1)}

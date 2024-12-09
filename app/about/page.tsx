@@ -7,10 +7,10 @@ import ValueNumber from "../components/card/ValueNumber";
 import OurTeam from "../components/slider/OurTeam";
 
 export const metadata: Metadata = {
-  title: "Not Found - Cleaner",
+  title: "About - Cleaner",
   description: "Created by Jamstackers",
   openGraph: {
-    title: "Not Found - Cleaner",
+    title: "About - Cleaner",
     description: "Cleaning service template for your home, office, soon...",
     images: ["/assets/logo/cleanlog.png"],
   },
