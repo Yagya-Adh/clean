@@ -25,7 +25,7 @@ const ContactForm = () => {
     setTimeout(() => {
       setIsLoading(false);
       setIsSubmitted(true);
-    }, 2000); // 2-second delay
+    }, 2000);
   };
 
   if (isSubmitted) {

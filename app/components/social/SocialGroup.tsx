@@ -1,4 +1,3 @@
-import Image from "next/image";
 import socialIcons from "@/lib/data/socialIcons.json";
 import { InstaGramIcom, TiktokIcon, YoutubeIcon } from "@/app/icons";
 import Link from "next/link";
