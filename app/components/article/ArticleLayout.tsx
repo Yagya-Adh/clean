@@ -11,10 +11,10 @@ const ArticleLayout = ({ head, title, describe, variant }: IarticleLayOut) =>
   variant === "article-with-button" ? (
     <div className="text-center text-clean-black-10 sm:text-start">
       <h3 className="uppercase text-sm py-1 font-inter font-medium">{head}</h3>
-      <h2 className="text-2xl md:text-3xl xl:text-5xl py-1 md:py-2 font-inter font-medium">
+      <h2 className="text-2xl sm:text-4xl md:text-6xl py-1 md:py-2 font-inter font-light">
         {title}
       </h2>
-      <p className="text-lg lg:text-xl max-w-xl md:py-4 font-inter font-normal">
+      <p className="text-lg md:text-xl max-w-xl md:py-4 font-inter font-normal tracking-wider">
         {describe}
       </p>
       <PillButton text="Explore" />

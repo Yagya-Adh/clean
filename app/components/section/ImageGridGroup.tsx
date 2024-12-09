@@ -14,7 +14,7 @@ const ImageGridGroup = () => {
       <div className="columns-2 row-auto break-after-avoid  ">
         {data.slice(0, 4).map((list) => (
           <div
-            className="rounded-3xl overflow-hidden mb-5 shadow-lg transition-transform duration-500 ease-in-out sm:max-h-[450px] max-h-[720px]"
+            className="rounded-3xl overflow-hidden mb-5 shadow-lg transition-transform duration-500 ease-in-out max-h-[720px]"
             key={list.id}
           >
             <Image
@@ -23,7 +23,7 @@ const ImageGridGroup = () => {
               height={800}
               layout="responsive"
               alt="grid_group_image"
-              className="object-cover object-center hover:scale-125 transition-all ease-in-out duration-500 sm:h-full sm:w-full h-auto w-auto"
+              className="object-cover object-center hover:scale-125 transition-all ease-in-out duration-500 h-[250px] sm:w-full w-auto lg:h-auto:"
             />
           </div>
         ))}

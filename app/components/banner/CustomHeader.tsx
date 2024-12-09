@@ -52,7 +52,7 @@ const CustomHeader = ({
               sm:max-w-60
               md:max-w-96
               max-w-40
-              font-light 
+              font-normal 
               font-inter
               py-2
               ${isdescribeCapital ? "uppercase" : ""}
