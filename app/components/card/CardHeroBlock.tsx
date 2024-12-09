@@ -38,7 +38,7 @@ const CardHeroBlock = ({
               height={52}
               className="object-center object-cover h-8 sm:h-10 w-auto"
             />
-            <h3 className="ml-5 font-inter font-light text-xl text-clean-black-10 uppercase">
+            <h3 className="ml-5 font-inter text-lg text-clean-black-10 font-normal tracking-widest uppercase">
               {head}
             </h3>
           </div>

@@ -22,8 +22,8 @@ const ProfessionalAccordion = () => {
   };
 
   return (
-    <div className="flex lg:flex-row lg:justify-between flex-col justify-center items-center lg:z-10 relative top-1 lg:-top-64 left-0 py-4">
-      <div className="md:py-10 py-4">
+    <div className="flex lg:flex-row lg:justify-center items-center flex-col justify-center py-10 relative -top-10">
+      <div className="py-4">
         {data.slice(0, 3).map((list) => (
           <div
             className="flex flex-col justify-center items-center lg:items-start lg:justify-normal"
@@ -46,7 +46,7 @@ const ProfessionalAccordion = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center lg:justify-end lg:py-4 w-full">
+      <div className="flex justify-center lg:justify-end w-full h-full">
         {data?.map((item) => (
           <div key={item.id}>
             {opentCheck === item.id && item.image && (
@@ -55,7 +55,7 @@ const ProfessionalAccordion = () => {
                 alt="team_photo"
                 width={400}
                 height={400}
-                className="xl:h-[300] h-auto w-auto object-cover object-center rounded-3xl"
+                className="md:h-[700px] h-auto w-auto object-cover object-center rounded-3xl"
               />
             )}
           </div>

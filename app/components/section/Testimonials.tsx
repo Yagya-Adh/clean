@@ -41,7 +41,7 @@ const Testimonials = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto px-4 py-4 lg:py-20">
-      <div className="flex justify-end py-10">
+      <div className="flex justify-end py-4">
         <div className="flex items-center">
           <button
             onClick={() => handlePageChange(page - 1)}
@@ -57,36 +57,37 @@ const Testimonials = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 lg:gap-10 md:py-10 px-4 h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-28 lg:gap-10 px-4 sm:px-40  lg:px-4 h-full">
         {currentTestimonials.map((list, index) => (
           <div
-            className={`relative rounded-3xl flex flex-col justify-center items-center text-center py-4 px-10 my-10
-              ${list.cardBackground ? list.cardBackground : ""} ${
-              index === 1 ? "lg:h-[500px]  bg-clean-blue-10" : "lg:h-[450px]"
-            }`}
+            className={`relative rounded-3xl flex flex-col justify-center items-center text-center py-10 px-10            
+              ${list.cardBackground ? list.cardBackground : ""} 
+              ${
+                index === 1
+                  ? "h-full sm:h-full  bg-clean-blue-10"
+                  : " sm:h-full"
+              }`}
             key={list.id}
           >
             <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
-              <div className="w-[110px] h-[110px] rounded-full overflow-hidden shadow-lg flex justify-center items-center">
-                <Image
-                  src={list.author.image}
-                  alt="testimonials_author"
-                  width={110}
-                  height={110}
-                  className="object-cover aspect-square"
-                />
-              </div>
+              <Image
+                src={list.author.image}
+                alt="testimonials_author"
+                width={110}
+                height={110}
+                className="object-cover aspect-square w-[110px] h-[110px] rounded-full overflow-hidden shadow-lg flex justify-center items-center"
+              />
             </div>
-            <div>
-              <p className="font-inter font-light text-clean-black-10 text-base lg:text-2xl max-w-xl py-10 px-4 text-center">
+            <div className="flex flex-col justify-center">
+              <p className="font-inter font-normal lg:font-light text-clean-black-10 max-w-52 text-base md:text-xs/4 lg:text-2xl py-4 px-4 text-center">
                 {list.message}
               </p>
-              <h3 className="font-inter font-normal text-clean-black-10 text-base lg:text-base uppercase text-center">
+              <h2 className="font-inter font-medium text-clean-black-10 text-xs lg:text-base md:text-xs uppercase text-center">
                 {list.author.name}
-              </h3>
-              <h4 className="font-inter font-light text-clean-black-10 text-sm lg:text-base uppercase text-center">
+              </h2>
+              <h3 className="font-inter font-normal tracking-widest text-clean-black-10 text-xs sm:text-xs lg:text-base uppercase text-center">
                 {list.author.job}
-              </h4>
+              </h3>
             </div>
           </div>
         ))}

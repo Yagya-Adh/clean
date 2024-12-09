@@ -24,7 +24,7 @@ const About = () => {
         slug="Go-To Cleaners"
         title="ABOUT US"
         describe="we’re passionate about Delivering exceptional cleaning that go beyond expectations."
-        descriptionMaxwidth="max-w-sm"
+        descriptionMaxwidth=""
         isdescribeCapital={true}
         fadeAnimation="animate-fadeInLeft"
         variant="with-button"

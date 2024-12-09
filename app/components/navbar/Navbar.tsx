@@ -62,6 +62,7 @@ const Navbar = () => {
 
       <div
         className={`
+          xl:hidden
           leading-10  
           z-20
           fixed 
@@ -81,7 +82,7 @@ const Navbar = () => {
         {data?.slice(0, 5).map((list) => (
           <Link
             key={list.id}
-            className="text-center inset-0 text-4xl uppercase font-inter font-light text-clean-black-10 px-4"
+            className="text-center inset-0 text-4xl uppercase font-inter font-light text-clean-black-10 px-4 py-4 sm:py-7 tracking-wider"
             href={list.path}
             onClick={handleNavBarToggle}
           >

@@ -9,9 +9,12 @@ interface IserviceTimeLineData {
 const data: IserviceTimeLineData[] = serviceTimeLineData;
 const TimeLinePopulateCard = () => {
   return (
-    <div className="px-4 py-4">
+    <>
       {data?.map((list) => (
-        <div key={list.id} className="bg-white/40 rounded-3xl py-10 px-10 my-4">
+        <div
+          key={list.id}
+          className="bg-white/40 rounded-3xl px-10 py-4 my-4 flex-col justify-center flex items-center"
+        >
           <ArticleLayout
             head={list.cleanType}
             title={list.CleaningTitle}
@@ -20,7 +23,7 @@ const TimeLinePopulateCard = () => {
           />
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

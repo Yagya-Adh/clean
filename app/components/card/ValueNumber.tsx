@@ -11,8 +11,8 @@ const data: IvalueData[] = valueData;
 
 const ValueNumber = () => {
   return (
-    <section className="max-w-screen-3xl mx-auto py-10 lg:py-32">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center py-4">
+    <section className="max-w-screen-3xl mx-auto px-4 py-10 lg:py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
         {data?.slice(0, 3).map((list) => (
           <div
             className="text-center text-clean-black-10 py-5 animate-fadeflipLeftIn"

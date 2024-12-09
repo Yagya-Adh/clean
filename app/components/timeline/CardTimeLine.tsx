@@ -3,14 +3,14 @@ import ScrollTimeLineArticle from "./ScrollTimeLineArticle";
 
 const CardTimeLine = () => {
   return (
-    <section>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:px-10 lg:px-40  lg:py-20 items-start relative ">
-        <aside className="lg:sticky top-0 px-10">
+    <section className="max-w-screen-3xl mx-auto px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10 sm:px-32 lg:py-20 items-start relative w-full">
+        <div className="lg:sticky top-0 px-10">
           <ScrollTimeLineArticle />
-        </aside>
-        <aside>
+        </div>
+        <div>
           <TimeLinePopulateCard />
-        </aside>
+        </div>
       </div>
     </section>
   );
