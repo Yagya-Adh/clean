@@ -1,106 +1,125 @@
+"use client";
+import { useState } from "react";
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsSubmitted(true);
+    }, 2000); // 2-second delay
+  };
+
+  if (isSubmitted) {
+    return (
+      <section className="max-w-screen-xl mx-auto px-10 sm:px-40 md:px-60 lg:px-80">
+        <div className="flex flex-col justify-center items-center bg-black rounded-md py-4 px-10">
+          <p className="font-inter font-normal text-lg text-white">
+            Thank you! Your submission has been received!
+          </p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="max-w-screen-xl mx-auto px-10 sm:px-40 md:px-60 lg:px-80">
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="flex flex-col justify-center items-center animate-fadeInUp">
           <div className="py-2 flex flex-col w-full">
-            <label className="text-sm text-clean-black-10/60" htmlFor="name">
+            <label
+              htmlFor="name"
+              className="text-sm md:text-lg font-inter font-normal text-clean-black-10/40"
+            >
               Name
             </label>
             <input
-              required
               type="text"
-              placeholder="e.g. John Doe "
-              className="
-              px-4 
-              py-3 
-              rounded-xl
-              shadow 
-              border-transparent
-              focus:border 
-              focus:border-black 
-              outline-none
-              "
+              name="name"
+              placeholder="e.g. John Doe"
+              value={formData.name}
+              onChange={handleChange}
+              className="px-4 py-3 rounded-xl shadow border-transparent focus:border-black outline-none"
             />
           </div>
+
           <div className="py-2 flex flex-col w-full">
-            <label className="text-sm text-clean-black-10/60" htmlFor="email">
+            <label
+              htmlFor="email"
+              className="text-sm md:text-lg font-inter font-normal text-clean-black-10/40"
+            >
               Email Address
             </label>
             <input
-              required
-              type="text"
+              type="email"
+              name="email"
               placeholder="e.g. johndoe@email.com"
-              className="
-               px-4 
-              py-3 
-              rounded-xl
-              border-transparent
-              shadow 
-              focus:border 
-              focus:border-black 
-              outline-none"
+              value={formData.email}
+              onChange={handleChange}
+              className="px-4 py-3 rounded-xl shadow border-transparent focus:border-black outline-none"
             />
           </div>
+
           <div className="py-2 flex flex-col w-full">
-            <label className="text-sm text-clean-black-10/60" htmlFor="phone">
+            <label
+              htmlFor="phone"
+              className="text-sm md:text-lg font-inter font-normal text-clean-black-10/40"
+            >
               Phone Number
             </label>
             <input
               type="text"
+              name="phone"
               placeholder="(123) - 456 - 789"
-              className="
-              px-4 
-              py-3 
-              rounded-xl
-              shadow 
-              border-transparent
-              focus:border 
-              focus:border-black 
-              outline-none"
+              value={formData.phone}
+              onChange={handleChange}
+              className="px-4 py-3 rounded-xl shadow border-transparent focus:border-black outline-none"
             />
           </div>
+
           <div className="py-2 flex flex-col w-full">
-            <label className="text-sm text-clean-black-10/60" htmlFor="message">
+            <label
+              htmlFor="message"
+              className="text-sm md:text-lg font-inter font-normal text-clean-black-10/40"
+            >
               Your Message
             </label>
             <textarea
               name="message"
               id="message"
-              placeholder="Write Your Message Here"
-              className="
-              rounded-2xl 
-              py-2 
-              px-3 
-              shadow 
-              border-transparent 
-              focus:border 
-              focus:border-black 
-              outline-none
-              "
               rows={4}
-            ></textarea>
+              placeholder="Write Your Message Here"
+              value={formData.message}
+              onChange={handleChange}
+              className="rounded-2xl py-2 px-3 shadow border-transparent focus:border-black outline-none"
+            />
           </div>
         </div>
         <div className="my-2">
           <button
-            className="
-            px-4 
-            py-3 
-            bg-clean-green-10
-            hover:bg-black 
-            text-black
-            hover:text-white 
-            rounded-xl
-            text-sm 
-            shadow-sm
-            duration-300
-            transition-all
-            ease-in-out
-            "
             type="submit"
+            disabled={isLoading}
+            className="hover:bg-black hover:text-white bg-clean-green-10 px-4 py-3 rounded-xl text-sm  md:text-lg font-inter font-light shadow-sm duration-300 transition-all ease-in-out"
           >
-            Send Message{" "}
+            {isLoading ? "Please wait..." : "Send Message"}
           </button>
         </div>
       </form>
