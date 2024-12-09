@@ -5,14 +5,12 @@ import FooterRight from "./FooterRight";
 
 const Footer = () => {
   return (
-    <footer className="bg-clean-green-10 mt-52 w-full">
-      <div className="max-w-screen-2xl mx-auto">
-        <div className="relative animate-fadeInUp flex flex-col justify-center items-center z-10 w-full">
-          <RequestAFreeQuote />
-        </div>
+    <footer className="bg-clean-green-10 mt-52 relative z-10">
+      <div className="relative -translate-y-52  animate-fadeInUp flex flex-col justify-center items-center w-full">
+        <RequestAFreeQuote />
       </div>
-      <section className="max-w-screen-3xl px-4 lg:px-10 mx-auto  py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 sm:gap-10 h-full py-10 w-full">
+      <section className="max-w-screen-3xl px-4 lg:px-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 sm:gap-10 h-full pb-10 w-full">
           <div>
             <FooterLeft />
           </div>

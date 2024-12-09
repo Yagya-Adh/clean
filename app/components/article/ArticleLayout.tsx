@@ -14,7 +14,7 @@ const ArticleLayout = ({ head, title, describe, variant }: IarticleLayOut) =>
       <h2 className="text-2xl sm:text-4xl md:text-6xl py-1 md:py-2 font-inter font-light">
         {title}
       </h2>
-      <p className="text-lg md:text-xl max-w-xl md:py-4 font-inter font-normal tracking-wider">
+      <p className="text-lg md:text-xl max-w-xl md:py-4 font-inter font-light tracking-wider">
         {describe}
       </p>
       <PillButton text="Explore" />

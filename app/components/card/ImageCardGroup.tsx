@@ -45,7 +45,10 @@ const ImageCardGroup = () => {
             flex-col 
             overflow-hidden 
             row-span-1
-            py-2             
+            py-2   
+            px-4
+            md:px-10             
+            xl:px-0        
             group
             h-full   
             flex             
@@ -129,20 +132,17 @@ const ImageCardGroup = () => {
             <p
               className="
               font-inter
-              font-normal 
-            
-              md:font-normal
+              font-normal             
+              md:font-light
               lg:font-light
               text-2xl 
               sm:text-4xl 
-              md:text-5xl
-
-              lg:text-6xl
-              order-3 
+              max-w-xl
+              xl:text-6xl
               md:-order-none
               text-center 
-              md:text-start
-              md:py-4
+              md:text-start              
+              order-3 
               "
             >
               {list.cardDescription}
