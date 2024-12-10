@@ -82,9 +82,9 @@ const BlogDetails = async ({
     <main className="max-w-screen-xl mx-auto md:px-10">
       <div className="flex flex-col justify-center items-center py-10">
         <CardBadge text={blog.mainTitle} />
-        <p className="py-3 lg:text-5xl capitalize text-center font-inter font-light">
+        <h1 className="py-3 lg:text-5xl capitalize text-center font-inter font-light">
           {blog.cardDescription}
-        </p>
+        </h1>
         <p className="lg:text-2xl text-center max-w-screen-sm font-inter font-light  py-2 ">
           {blog.mainDescription}
         </p>

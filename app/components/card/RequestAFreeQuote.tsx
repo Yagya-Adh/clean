@@ -2,7 +2,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const RequestAFreeQuote = () => {
   return (
-    <div className="bg-footer-card-image bg-no-repeat bg-cover bg-center rounded-3xl p-2 md:p-4 lg:p-10">
+    <div className="bg-footer-card-image bg-no-repeat bg-cover bg-center rounded-3xl p-2 md:p-4 lg:p-10 -translate-y-32">
       <div
         className="
           flex
