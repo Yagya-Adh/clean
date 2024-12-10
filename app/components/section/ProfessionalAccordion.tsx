@@ -22,7 +22,7 @@ const ProfessionalAccordion = () => {
   };
 
   return (
-    <div className="flex lg:flex-row lg:justify-center items-center flex-col justify-center py-10 relative -top-10 left-0">
+    <div className="flex lg:flex-row lg:justify-center lg:items-start items-center flex-col justify-center py-10 relative -top-10 left-0">
       <div className="py-4">
         {data.slice(0, 3).map((list) => (
           <div
@@ -30,10 +30,10 @@ const ProfessionalAccordion = () => {
             key={list.id}
           >
             <div
-              className="flex flex-row items-center py-3 opacity-80 bg-clean-green-10 hover:opacity-100 cursor-pointer"
+              className="flex flex-row items-center opacity-80 bg-clean-green-10 hover:opacity-100 cursor-pointer py-3 md:py-4 lg:py-10"
               onClick={() => handleOpentCheck(list.id)}
             >
-              <CheckedIcon className="w-5 h-5" />
+              <CheckedIcon className="h-5 w-5 lg:w-7 lg:h-7" />
               <h2 className="font-inter font-normal text-sm sm:text-xl text-clean-black-10 uppercase ml-4 tracking-wider">
                 {list.topic}
               </h2>
