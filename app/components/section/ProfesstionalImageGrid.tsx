@@ -3,7 +3,7 @@ import ProfessionalHeader from "./ProfessionalHeader";
 
 const ProfesstionalImageGrid = () => {
   return (
-    <div className="mx-auto max-w-screen-3xl px-4 lg:px-10">
+    <div className="mx-auto max-w-screen-4xl px-4 lg:px-10">
       <ProfessionalHeader />
       <ProfessionalAccordion />
     </div>

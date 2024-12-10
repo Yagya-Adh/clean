@@ -23,7 +23,6 @@ const ContactMain = () => {
         descriptionMaxwidth="max-w-lg"
         variant="without-button"
       />
-
       <FrequentlyAsk />
     </main>
   );

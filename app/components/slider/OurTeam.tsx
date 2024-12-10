@@ -28,7 +28,7 @@ const OurTeam = () => {
   };
 
   return (
-    <section className="max-w-screen-2xl px-10 py-4 mx-auto hidden sm:block">
+    <section className="max-w-screen-5xl px-10 py-4 mx-auto hidden sm:block">
       <div className="flex flex-col justify-center items-center">
         <div
           ref={scrollContainerRef}
@@ -49,10 +49,10 @@ const OurTeam = () => {
               <h2 className="text-3xl lg:text-6xl text-clean-black-10 py-2.5">
                 {list.name}
               </h2>
-              <h3 className="text-clean-black-10 lg:text-lg font-normal uppercase py-4">
+              <h3 className="text-clean-black-10 lg:text-lg 2xl:text-2xl 2xl:font-medium font-normal uppercase py-4">
                 {list.job}
               </h3>
-              <p className="text-clean-black-10/60 lg:text-xl max-w-sm uppercase">
+              <p className="text-clean-black-10/60 lg:text-xl 2xl:text-2xl 2xl:font-medium max-w-sm uppercase">
                 {list.describe}
               </p>
               <div className="flex flex-col items-center justify-center py-4">

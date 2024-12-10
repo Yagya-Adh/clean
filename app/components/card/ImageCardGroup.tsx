@@ -40,7 +40,7 @@ interface IImageViewLink {
 }
 const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 sm:px-20 xl:px-10">
+    <section className="max-w-screen-4xl mx-auto px-4 sm:px-20 xl:px-10">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-10">
         {data?.slice(0, 4).map((list) => (
           <Link
@@ -94,7 +94,7 @@ const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
                 "
               >
                 <CardBadge text={list.cardTag} />
-                <span className="py-2 md:ml-4 font-inter font-normal text-xs lg:font-normal lg:text-xl tracking-widest">
+                <span className="py-2 md:ml-4 font-inter font-normal text-xs lg:font-normal lg:text-xl xl:text-2xl 2xl:text-2xl xl:font-normal tracking-widest">
                   {list.cardDate}
                 </span>
               </div>
@@ -119,6 +119,9 @@ const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
                   sm:text-sm
                   md:text-lg
                   lg:text-xl
+                  xl:text-2xl
+                  2xl:text-2xl
+                  2xl:font-normal
                   flex flex-col 
                   items-center 
                   justify-center 
@@ -146,6 +149,8 @@ const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
               text-center 
               md:text-start              
               order-3 
+              2xl:text-7xl
+              2xl:max-w-screen-2xl
               "
             >
               {list.cardDescription}

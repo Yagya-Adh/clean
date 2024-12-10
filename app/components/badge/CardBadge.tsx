@@ -22,7 +22,8 @@ const CardBadge = ({ text }: ICardBadge) => {
       py-3
       md:px-4 
       md:py-2 
-    "
+      2xl:text-xl
+      "
     >
       {text}
     </div>

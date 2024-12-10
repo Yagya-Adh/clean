@@ -10,7 +10,7 @@ const data: IimageGridGroupData[] = imageGridGroupData;
 
 const ImageGridGroup = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10">
+    <section className="max-w-screen-4xl mx-auto px-4 lg:px-10 2xl:py-20">
       <div className="columns-2 row-auto break-after-avoid  ">
         {data.slice(0, 4).map((list) => (
           <div
@@ -23,7 +23,7 @@ const ImageGridGroup = () => {
               height={800}
               layout="responsive"
               alt="grid_group_image"
-              className="object-cover object-center hover:scale-125 transition-all ease-in-out duration-500 h-[250px] sm:w-full w-auto lg:h-auto:"
+              className="object-cover object-center hover:scale-125 transition-all ease-in-out duration-500 h-[250px] xl:h-full 2xl:h-[900px] sm:w-full w-auto lg:h-auto:"
             />
           </div>
         ))}

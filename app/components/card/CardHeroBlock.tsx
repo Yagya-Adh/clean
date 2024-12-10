@@ -27,7 +27,7 @@ const CardHeroBlock = ({
   positionCard,
 }: IcardheroProps) => {
   return (
-    <section className="max-w-screen-xl mx-auto py-4 px-6 lg:px-10 lg:my-4">
+    <section className="max-w-screen-2xl mx-auto py-4 px-6 lg:px-10 lg:my-4 xl:py-14">
       <div className="flex flex-col justify-center items-center xl:flex-row md:justify-between">
         <div className={`${textOrder}`}>
           <div className="flex flex-col justify-center lg:justify-normal lg:flex-row items-center py-4">
@@ -38,16 +38,16 @@ const CardHeroBlock = ({
               height={52}
               className="object-center object-cover h-8 sm:h-10 w-auto"
             />
-            <h3 className="ml-5 font-inter text-lg text-clean-black-10 font-normal tracking-widest uppercase">
+            <h3 className="ml-5 font-inter text-lg xl:text-xl 2xl:text-3xl text-clean-black-10 font-normal tracking-widest uppercase">
               {head}
             </h3>
           </div>
-          <h5 className="font-inter max-w-screen-xl font-light text-4xl xl:text-8xl text-clean-black-10 py-4">
+          <h5 className="font-inter max-w-screen-xl font-light text-4xl xl:text-8xl 2xl:text-9xl text-clean-black-10 py-4">
             {preTitle}
             {""}
             <span className="font-thin italic">{italicTitle}</span>
           </h5>
-          <p className="font-inter font-light max-w-60 md:max-w-xl text-xl text-clean-black-10 md:text-start text-center ">
+          <p className="font-inter font-light max-w-60 md:max-w-xl text-xl xl:font-normal xl:text-2xl 2xl:text-3xl xl:max-w-screen-sm 2xl:max-w-screen-md text-clean-black-10 md:text-start text-center ">
             {describe}
           </p>
           <div className="flex inset-0 justify-center md:justify-normal">

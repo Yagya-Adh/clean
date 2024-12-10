@@ -8,22 +8,22 @@ interface ITermsCondition {
 const data: ITermsCondition[] = termsData;
 const TermsCondition = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 py-10">
+    <section className="max-w-screen-5xl mx-auto px-4 lg:px-10 py-10">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-7xl font-inter font-light text-black my-10 text-center">
+        <h1 className="text-4xl md:text-7xl 2xl:text-8xl font-inter font-light text-black my-10 text-center">
           Terms & Condition
         </h1>
 
-        <p className="text-lg lg:text-xl max-w-screen-md py-4 text-center lg:text-start">
+        <p className="text-lg 2xl:text-4xl lg:text-xl max-w-screen-md py-4 text-center lg:text-start">
           Kindly review these Terms and Conditions thoroughly prior to utilizing
           our template.
         </p>
-        <p className="text-lg lg:text-xl max-w-screen-md py-4 text-center lg:text-start">
+        <p className="text-lg 2xl:text-4xl lg:text-xl max-w-screen-md py-4 text-center lg:text-start">
           Your access or utilization of the template implies your acceptance of
           these Terms and Conditions.
         </p>
 
-        <p className="text-lg lg:text-xl max-w-screen-md py-4 text-center lg:text-start">
+        <p className="text-lg 2xl:text-4xl lg:text-xl max-w-screen-md py-4 text-center lg:text-start">
           If you disagree with any aspect of these Terms and Conditions, please
           abstain from using the template.
         </p>
@@ -33,14 +33,14 @@ const TermsCondition = () => {
         {data?.map((list) => (
           <div className="flex flex-col justify-center my-7" key={list.id}>
             <div>
-              <h2 className="text-3xl md:text-4xl font-inter font-light">
+              <h2 className="text-3xl 2xl:text-7xl md:text-4xl font-inter font-light">
                 <span>
                   {list.id}
                   {". "}
                 </span>{" "}
                 {list.title}
               </h2>
-              <p className="text-lg md:text-xl tracking-wider max-w-screen-lg font-inter font-light py-4">
+              <p className="text-lg md:text-xl 2xl:text-4xl tracking-wider max-w-screen-lg font-inter font-light py-4">
                 {list.describe}
               </p>
             </div>

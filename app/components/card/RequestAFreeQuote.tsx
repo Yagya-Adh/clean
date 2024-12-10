@@ -13,13 +13,14 @@ const RequestAFreeQuote = () => {
           md:px-14
           sm:p-10
           p-7
+          2xl:p-14
           "
       >
-        <h4 className="text-4xl sm:text-5xl xl:text-8xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4 lg:py-10">
+        <h4 className="text-4xl sm:text-5xl xl:text-8xl 2xl:text-9xl 2xl:max-w-screen-xl max-w-60 md:max-w-screen-xl text-center text-clean-black-10 font-inter py-4 lg:py-10">
           <span className="font-light">Request A </span>
           <span className="font-inter font-thin italic"> Free Quote</span>
         </h4>
-        <p className="max-w-60 md:max-w-sm text-xs xl:text-xl text-center tracking-wider font-light text-clean-black-10 font-inter">
+        <p className="max-w-60 md:max-w-sm text-xs xl:text-xl 2xl:text-4xl 2xl:max-w-screen-md text-center tracking-wider font-light text-clean-black-10 font-inter">
           Find out how affordable clean can be — Request your free quote today!
         </p>
         <form className="py-10 px-4 flex">
@@ -49,6 +50,9 @@ const RequestAFreeQuote = () => {
                 text-white                
                 text-center
                 lg:text-start
+                2xl:py-10
+                2xl:px-20
+                2xl:text-4xl
               "
               placeholder="Enter your email"
             />
@@ -66,9 +70,11 @@ const RequestAFreeQuote = () => {
                 transition-all
                 duration-700
                 ease-linear
+                2xl:px-16
+                2xl:py-8
                 "
             >
-              <GoArrowRight className="size-4" />
+              <GoArrowRight className="size-4 2xl:h-14 2xl:w-14" />
             </button>
           </div>
         </form>

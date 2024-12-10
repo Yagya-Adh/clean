@@ -30,19 +30,19 @@ const CustomHeader = ({
   variant,
 }: IcustomHeader) =>
   variant === "without-button" ? (
-    <header className="max-w-screen-4xl mx-auto px-4 md:px-10 py-4 lg:py-0">
+    <header className="max-w-screen-5xl mx-auto px-4 md:px-10 py-4 lg:py-0 2xl:py-10">
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-row items-center animate-fadeInLeft sm:hidden md:flex">
           {iconsName == "blog" ? (
-            <HappyPlusIcon className="h-7 w-6 xl:h-10 xl:w-10" />
+            <HappyPlusIcon className="h-7 w-6 xl:h-10 xl:w-10 2xl:h-16 2xl:w-16" />
           ) : iconsName == "contact" ? (
-            <LocationIcon className="h-7 w-6 xl:h-10 xl:w-10" />
+            <LocationIcon className="h-7 w-6 xl:h-10 xl:w-10 2xl:h-16 2xl:w-16" />
           ) : iconsName == "other" ? (
-            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-10" />
+            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-10 2xl:h-16 2xl:w-16" />
           ) : (
-            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-10" />
+            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-10 2xl:h-16 2xl:w-16" />
           )}
-          <h2 className="uppercase text-xs sm:text-lg ml-2 tracking-wider font-normal font-inter text-clean-black-10 xl:font-normal xl:tracking-widest">
+          <h2 className="uppercase text-xs sm:text-lg 2xl:text-3xl ml-2 tracking-wider font-normal font-inter text-clean-black-10 xl:font-normal xl:tracking-widest">
             {slug}
           </h2>
         </div>
@@ -50,7 +50,7 @@ const CustomHeader = ({
           <h1
             className={` 
               ${fadeAnimation && fadeAnimation}
-            text-4xl sm:text-6xl xl:text-8xl py-2 font-light font-inter text-clean-black-10`}
+            text-4xl sm:text-6xl xl:text-8xl 2xl:text-9xl py-2 font-light font-inter text-clean-black-10`}
           >
             {title}
           </h1>
@@ -70,6 +70,9 @@ const CustomHeader = ({
               font-normal 
               font-inter
               py-2
+              2xl:py-4
+              2xl:text-3xl
+              2xl:max-w-screen-sm
               ${isdescribeCapital ? "uppercase" : ""}
               ${descriptionMaxwidth ? descriptionMaxwidth : "max-w-72"}`}
           >
@@ -79,7 +82,7 @@ const CustomHeader = ({
       </div>
     </header>
   ) : variant === "with-button" ? (
-    <header className="max-w-screen-4xl mx-auto px-4 md:px-10 py-4 sm:py-7 lg:py-0">
+    <header className="max-w-screen-5xl mx-auto px-4 md:px-10 py-4 sm:py-7 lg:py-0">
       <div
         className={`flex flex-col justify-center items-center text-clean-black-10       
        ${fadeAnimation ? fadeAnimation : "animate-fadeInUp"}
@@ -91,12 +94,12 @@ const CustomHeader = ({
           }`}
         >
           <Image src={icon} alt="header_logo_" width={36} height={36} />
-          <h2 className="font-normal font-inter text-clean-black-10 uppercase lg:text-lg tracking-wider">
+          <h2 className="font-normal font-inter text-clean-black-10 uppercase lg:text-lg tracking-wider 2xl:text-3xl">
             {slug}
           </h2>
         </div>
 
-        <h1 className="text-5xl lg:text-8xl font-light font-inter text-clean-black-10">
+        <h1 className="text-5xl 2xl:text-9xl lg:text-8xl font-light font-inter text-clean-black-10">
           {title}
         </h1>
         <p
@@ -113,7 +116,10 @@ const CustomHeader = ({
               tracking-widest  
               sm:my-4
               md:text-lg
-              md:max-w-md              
+              md:max-w-md  
+              2xl:text-3xl
+              2xl:max-w-screen-md    
+              2xl:py-4        
               ${isdescribeCapital ? "uppercase" : ""}
               ${descriptionMaxwidth && descriptionMaxwidth}`}
         >

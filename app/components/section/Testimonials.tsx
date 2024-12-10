@@ -40,7 +40,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 py-4 lg:py-10">
+    <section className="max-w-screen-2xl mx-auto px-4 py-4 lg:py-10 xl:py-20">
       <div className="flex justify-end my-16">
         <div className="flex items-center">
           <button
@@ -60,7 +60,7 @@ const Testimonials = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-28 lg:gap-10 px-4 sm:px-40  lg:px-4 h-full">
         {currentTestimonials.map((list, index) => (
           <div
-            className={`relative rounded-3xl flex flex-col justify-center items-center text-center py-10 px-10            
+            className={`relative rounded-2xl lg:rounded-3xl xl:rounded-4xl flex flex-col justify-center items-center text-center py-10 px-10            
               ${list.cardBackground ? list.cardBackground : ""} 
               ${
                 index === 1
@@ -79,13 +79,13 @@ const Testimonials = () => {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p className="font-inter font-normal lg:font-light text-clean-black-10 max-w-52 text-base md:text-xs/4 lg:text-2xl py-4 px-4 text-center">
+              <p className="font-inter font-normal lg:font-light xl:text-2xl 2xl:text-4xl 2xl:font-normal xl:max-w-72 text-clean-black-10 max-w-52 text-base md:text-xs/4 lg:text-2xl py-4 px-4 text-center">
                 {list.message}
               </p>
-              <h2 className="font-inter font-medium text-clean-black-10 text-xs lg:text-base md:text-xs uppercase text-center">
+              <h2 className="font-inter font-medium xl:text-2xl 2xl:text-3xl text-clean-black-10 text-xs lg:text-base md:text-xs uppercase text-center">
                 {list.author.name}
               </h2>
-              <h3 className="font-inter font-normal tracking-widest text-clean-black-10 text-xs sm:text-xs lg:text-base uppercase text-center">
+              <h3 className="font-inter font-normal tracking-widest text-clean-black-10 xl:text-xl 2xl:text-2xl text-xs sm:text-xs lg:text-base uppercase text-center">
                 {list.author.job}
               </h3>
             </div>
@@ -96,9 +96,8 @@ const Testimonials = () => {
         {Array.from({ length: totalPages }).map((_, index) => (
           <button
             type="button"
-            className={`rounded-full p-2 mx-0.5 ${
-              index === page ? "bg-clean-black-10" : "bg-clean-gray-10"
-            }`}
+            className={`rounded-full p-2 mx-0.5 
+              ${index === page ? "bg-clean-black-10" : "bg-clean-gray-10"}`}
             key={index}
             onClick={() => handlePageChange(index)}
           />
