@@ -34,15 +34,15 @@ const CustomHeader = ({
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-row items-center animate-fadeInLeft sm:hidden md:flex">
           {iconsName == "blog" ? (
-            <HappyPlusIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+            <HappyPlusIcon className="h-7 w-6 xl:h-10 xl:w-10" />
           ) : iconsName == "contact" ? (
-            <LocationIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+            <LocationIcon className="h-7 w-6 xl:h-10 xl:w-10" />
           ) : iconsName == "other" ? (
-            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-10" />
           ) : (
-            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-10" />
           )}
-          <h2 className="uppercase text-xs sm:text-lg ml-2 tracking-wider font-normal font-inter text-clean-black-10 xl:font-light xl:tracking-widest">
+          <h2 className="uppercase text-xs sm:text-lg ml-2 tracking-wider font-normal font-inter text-clean-black-10 xl:font-normal xl:tracking-widest">
             {slug}
           </h2>
         </div>
