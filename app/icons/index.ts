@@ -7,3 +7,4 @@ export { default as MinusIcon } from "./MinusIcon";
 export { default as InstaGramIcom } from "./InstaGramIcom";
 export { default as TiktokIcon } from "./TiktokIcon";
 export { default as YoutubeIcon } from "./YoutubeIcon";
+export { default as HappyPlusIcon } from "./HappyPlusIcon";

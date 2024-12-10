@@ -12,6 +12,7 @@ const ContactMain = () => {
         describe="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         descriptionMaxwidth="max-w-72"
         variant="without-button"
+        iconsName="contact"
       />
       <ContactForm />
       <CustomHeader

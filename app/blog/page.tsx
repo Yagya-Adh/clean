@@ -24,6 +24,7 @@ const BlogPage = () => {
         isdescribeCapital={true}
         fadeAnimation="animate-fadeInUp"
         variant="without-button"
+        iconsName="blog"
       />
       <SectionBanner
         variant="blog"

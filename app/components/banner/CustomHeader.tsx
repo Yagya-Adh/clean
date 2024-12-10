@@ -1,12 +1,14 @@
 import Image from "next/image";
 import PillButton from "../button/PillButton";
-import { CheckedIcon } from "@/app/icons";
+import { CheckedIcon, HappyPlusIcon } from "@/app/icons";
+import LocationIcon from "@/app/icons/LocationIcon";
 
 interface IcustomHeader {
   title: string;
   slug: string;
   describe: string;
   icon: string;
+  iconsName?: "blog" | "contact" | "other";
   descriptionMaxwidth: string | "max-w-sm" | "max-w-xl";
   isdescribeCapital?: boolean;
   fadeAnimation?:
@@ -21,6 +23,7 @@ const CustomHeader = ({
   slug,
   describe,
   icon,
+  iconsName,
   descriptionMaxwidth,
   isdescribeCapital,
   fadeAnimation,
@@ -30,8 +33,16 @@ const CustomHeader = ({
     <header className="max-w-screen-4xl mx-auto px-4 md:px-10 py-4 lg:py-0">
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-row items-center animate-fadeInLeft sm:hidden md:flex">
-          <CheckedIcon className="h-7 w-6" />
-          <h2 className="uppercase text-xs sm:text-lg ml-2 tracking-wider font-normal font-inter text-clean-black-10">
+          {iconsName == "blog" ? (
+            <HappyPlusIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+          ) : iconsName == "contact" ? (
+            <LocationIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+          ) : iconsName == "other" ? (
+            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+          ) : (
+            <CheckedIcon className="h-7 w-6 xl:h-10 xl:w-8" />
+          )}
+          <h2 className="uppercase text-xs sm:text-lg ml-2 tracking-wider font-normal font-inter text-clean-black-10 xl:font-light xl:tracking-widest">
             {slug}
           </h2>
         </div>
@@ -48,7 +59,11 @@ const CustomHeader = ({
               text-clean-black-10             
               animate-fadeInRight
               tracking-wider
-              text-base                          
+              xl:tracking-widest
+              xl:max-w-xl
+              xl:py-2
+              text-base
+              xl:text-xl                          
               sm:max-w-60
               md:max-w-96
               max-w-40
