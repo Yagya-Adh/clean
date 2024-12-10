@@ -22,7 +22,7 @@ const ProfessionalAccordion = () => {
   };
 
   return (
-    <div className="flex lg:flex-row lg:justify-center items-center flex-col justify-center py-10 relative -top-10">
+    <div className="flex lg:flex-row lg:justify-center items-center flex-col justify-center py-10 relative -top-10 left-0">
       <div className="py-4">
         {data.slice(0, 3).map((list) => (
           <div
@@ -55,7 +55,7 @@ const ProfessionalAccordion = () => {
                 alt="team_photo"
                 width={400}
                 height={400}
-                className="md:h-[700px] h-auto w-auto object-cover object-center rounded-3xl"
+                className="sm:h-[480px] xl:h-[800px] xl:w-[800px] h-auto w-auto object-cover object-center rounded-3xl"
               />
             )}
           </div>
