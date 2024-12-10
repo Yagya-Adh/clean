@@ -36,13 +36,13 @@ const CustomHeader = ({
           </h2>
         </div>
         <div className="text-center flex flex-col justify-center items-center">
-          <h3
+          <h1
             className={` 
               ${fadeAnimation && fadeAnimation}
             text-4xl sm:text-6xl xl:text-8xl py-2 font-light font-inter text-clean-black-10`}
           >
             {title}
-          </h3>
+          </h1>
           <p
             className={`
               text-clean-black-10             
@@ -81,9 +81,9 @@ const CustomHeader = ({
           </h2>
         </div>
 
-        <h3 className="text-5xl lg:text-8xl font-light font-inter text-clean-black-10">
+        <h1 className="text-5xl lg:text-8xl font-light font-inter text-clean-black-10">
           {title}
-        </h3>
+        </h1>
         <p
           className={`
               text-clean-black-10
