@@ -40,7 +40,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 py-4 lg:py-10 xl:py-20">
+    <section className="max-w-screen-3xl mx-auto px-4 py-4 lg:py-10 xl:py-20">
       <div className="flex justify-end my-16">
         <div className="flex items-center">
           <button
@@ -79,7 +79,7 @@ const Testimonials = () => {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p className="font-inter font-normal lg:font-light xl:text-2xl 2xl:text-4xl 2xl:font-normal xl:max-w-72 text-clean-black-10 max-w-52 text-base md:text-xs/4 lg:text-2xl py-4 px-4 text-center">
+              <p className="font-inter font-normal lg:font-light xl:text-2xl 2xl:max-w-82 2xl:text-3xl 2xl:font-light xl:max-w-72 text-clean-black-10 max-w-52 text-base md:text-xs/4 lg:text-2xl py-4 px-4 text-center">
                 {list.message}
               </p>
               <h2 className="font-inter font-medium xl:text-2xl 2xl:text-3xl text-clean-black-10 text-xs lg:text-base md:text-xs uppercase text-center">

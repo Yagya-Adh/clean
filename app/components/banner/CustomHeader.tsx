@@ -71,8 +71,8 @@ const CustomHeader = ({
               font-inter
               py-2
               2xl:py-4
-              2xl:text-3xl
-              2xl:max-w-screen-sm
+              2xl:text-2xl
+              2xl:max-w-screen-72
               ${isdescribeCapital ? "uppercase" : ""}
               ${descriptionMaxwidth ? descriptionMaxwidth : "max-w-72"}`}
           >

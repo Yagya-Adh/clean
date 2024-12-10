@@ -40,7 +40,7 @@ interface IImageViewLink {
 }
 const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
   return (
-    <section className="max-w-screen-4xl mx-auto px-4 sm:px-20 xl:px-10">
+    <section className="max-w-screen-4xl mx-auto px-4 sm:px-20 xl:px-10 2xl:py-40">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-10">
         {data?.slice(0, 4).map((list) => (
           <Link

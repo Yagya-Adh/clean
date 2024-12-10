@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="translate-y-4 transform group-hover:-translate-y-16 ease-in-out transition-all duration-500">
                   <Link
                     href={list.path}
-                    className="h-8 text-sm md:text-xl px-2 md:px-4 uppercase font-inter font-light 2xl:text-3xl text-clean-black-10"
+                    className="h-8 text-sm md:text-xl px-2 md:px-4 uppercase font-inter font-light 2xl:text-2xl text-clean-black-10"
                   >
                     {list.name}
                   </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 <div className="translate-y-10 transform group-hover:-translate-y-4 ease-in-out transition-all duration-500">
                   <Link
                     href={list.path}
-                    className="h-8 text-sm md:text-xl px-2 md:px-4 uppercase font-inter font-light 2xl:text-3xl text-clean-black-10"
+                    className="h-8 text-sm md:text-xl px-2 md:px-4 uppercase font-inter font-light 2xl:text-2xl text-clean-black-10"
                   >
                     {list.name}
                   </Link>

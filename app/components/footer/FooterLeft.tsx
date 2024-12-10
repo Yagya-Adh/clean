@@ -45,7 +45,7 @@ const FooterLeft = () => {
           </div>
         ))}
       </div>
-      <p className="text-lg lg:text-2xl 2xl:text-4xl 2xl:max-w-sm font-inter font-normal max-w-60 py-2 2xl:py-4 lg:max-w-60 text-clean-black-10">
+      <p className="text-lg lg:text-2xl 2xl:text-2xl 2xl:max-w-72 font-inter font-normal max-w-60 py-2 2xl:py-4 lg:max-w-60 text-clean-black-10">
         Efficient Cleaning, Exceptional Results.
       </p>
     </div>

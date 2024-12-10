@@ -21,10 +21,10 @@ const PillButton = ({ text }: IbuttonProps) => {
       "
     >
       <div className="overflow-hidden group">
-        <div className="translate-y-3 2xl:translate-y-4 group-hover:-translate-y-16 2xl:text-4xl 2xl:px-6 ease-in-out transition-all duration-500 font-inter font-normal">
+        <div className="translate-y-3 2xl:translate-y-4 group-hover:-translate-y-16 2xl:text-3xl 2xl:px-6 ease-in-out transition-all duration-500 font-inter font-normal">
           {text}
         </div>
-        <div className="translate-y-11 rounded-t-full group-hover:-translate-y-4 2xl:text-4xl 2xl:px-6 ease-in-out transition-all duration-500 font-inter font-normal">
+        <div className="translate-y-11 rounded-t-full group-hover:-translate-y-4 2xl:text-3xl 2xl:px-6 ease-in-out transition-all duration-500 font-inter font-normal">
           {text}
         </div>
       </div>

@@ -24,7 +24,7 @@ const PrivacyPolicySection = () => {
         <h1 className="text-4xl md:text-7xl 2xl:text-8xl font-inter font-light text-black my-10 text-center">
           Privacy Policy
         </h1>
-        <p className="text-lg lg:text-lg 2xl:text-3xl tracking-wider 2xl:max-w-screen-lg max-w-screen-md py-4 text-center lg:text-start">
+        <p className="text-lg lg:text-lg 2xl:text-3xl tracking-wider font-inter font-light 2xl:tracking-widest 2xl:max-w-screen-lg max-w-screen-md py-4 text-center lg:text-start">
           Our dedication lies in safeguarding the confidentiality and safety of
           the personal information belonging to our users. This Privacy Policy
           delineates the categories of data we gather, our utilization of this
@@ -33,7 +33,7 @@ const PrivacyPolicySection = () => {
           for the collection and utilization of your data in accordance with the
           details provided in this policy.
         </p>
-        <p className="text-lg lg:text-lg 2xl:text-3xl tracking-wider 2xl:max-w-screen-lg max-w-screen-md py-4 text-center lg:text-start">
+        <p className="text-lg lg:text-lg 2xl:text-3xl tracking-wider font-inter font-light 2xl:tracking-widest 2xl:max-w-screen-lg max-w-screen-md py-4 text-center lg:text-start">
           Our dedication lies in safeguarding the confidentiality and safety of
           the personal information belonging to our users. This Privacy Policy
           delineates the categories of data we gather, our utilization of this
@@ -43,7 +43,7 @@ const PrivacyPolicySection = () => {
           details provided in this policy.
         </p>
 
-        <p className="text-lg lg:text-lg 2xl:text-3xl tracking-wider 2xl:max-w-screen-lg max-w-screen-md py-4 text-center lg:text-start">
+        <p className="text-lg lg:text-lg 2xl:text-3xl tracking-wider font-inter font-light 2xl:tracking-widest 2xl:max-w-screen-lg max-w-screen-md py-4 text-center lg:text-start">
           Our dedication lies in safeguarding the confidentiality and safety of
           the personal information belonging to our users. This Privacy Policy
           delineates the categories of data we gather, our utilization of this
@@ -53,7 +53,6 @@ const PrivacyPolicySection = () => {
           details provided in this policy.
         </p>
       </div>
-
       <div className="py-10 px-4 md:px-6 flex flex-col mx-auto max-w-screen-lg">
         {data?.map((list) => (
           <div className="flex flex-col" key={list.id}>
@@ -70,7 +69,7 @@ const PrivacyPolicySection = () => {
               {list.innerPoint?.map((item) => (
                 <li
                   key={item.id}
-                  className="items-start py-2 text-lg 2xl:text-3xl font-inter font-light tracking-wide"
+                  className="items-start py-2 text-lg 2xl:text-3xl font-inter font-light tracking-wider"
                 >
                   <span className="font-bold font-inter 2xl:text-4xl text-3xl">
                     {"."}{" "}

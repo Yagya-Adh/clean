@@ -34,12 +34,12 @@ const ProfessionalAccordion = () => {
               onClick={() => handleOpentCheck(list.id)}
             >
               <CheckedIcon className="h-5 w-5 lg:w-7 lg:h-7 xl:h-10 xl:w-10" />
-              <h2 className="font-inter font-normal text-sm sm:text-xl xl:text-2xl 2xl:text-3xl text-clean-black-10 uppercase ml-4 tracking-wider">
+              <h2 className="font-inter font-normal text-sm sm:text-xl xl:text-2xl 2xl:text-3xl 2xl:max-w-screen-md text-clean-black-10 uppercase ml-4 tracking-wider">
                 {list.topic}
               </h2>
             </div>
             {opentCheck === list.id && (
-              <p className="font-inter font-light text-clean-black-10 text-xl max-w-xl lg:text-2xl xl:text-3xl xl:max-w-xl">
+              <p className="font-inter font-light text-clean-black-10 text-xl max-w-xl lg:text-2xl 2xl:max-w-screen-lg 2xl:text-3xl xl:max-w-xl">
                 {list.describe}
               </p>
             )}
