@@ -25,7 +25,7 @@ const FooterRight = () => {
           </h3>
           {list.innerItem?.map((inner) => (
             <Link href={inner.linkPath} key={inner.id}>
-              <div className="text-center overflow-hidden h-10 sm:h-12 group md:my-2">
+              <div className="text-center overflow-hidden h-10 sm:h-12 group xl:my-2">
                 <div className="tracking-wide 2xl:tracking-normal translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-xs  lg:text-sm xl:text-2xl font-normal font-inter h-10">
                   {inner.item}
                 </div>
