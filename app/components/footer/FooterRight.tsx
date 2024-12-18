@@ -20,16 +20,16 @@ const FooterRight = () => {
           className="flex flex-col justify-end w-full items-center 2xl:py-0"
           key={list.id}
         >
-          <h3 className="text-clean-black-10 text-xs sm:text-sm 2xl:text-xl text-text-center font-medium sm:font-normal font-inter tracking-widest">
+          <h3 className="text-clean-black-10 text-xs 2xl:text-xl text-text-center font-medium sm:font-normal font-inter tracking-widest">
             {list.title}
           </h3>
           {list.innerItem?.map((inner) => (
             <Link href={inner.linkPath} key={inner.id}>
               <div className="text-center overflow-hidden h-10 sm:h-12 group xl:my-2">
-                <div className="tracking-wide 2xl:tracking-normal translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-xs  lg:text-sm xl:text-2xl font-normal font-inter h-10">
+                <div className="tracking-wide 2xl:tracking-normal translate-y-4 group-hover:-translate-y-16 ease-in-out transition-all duration-500 text-clean-black-10 text-sm xl:text-2xl font-normal font-inter h-10">
                   {inner.item}
                 </div>
-                <div className="tracking-wide 2xl:tracking-normal translate-y-9 group-hover:-translate-y-6 ease-in-out transition-all duration-500 text-clean-black-10 text-xs  lg:text-sm xl:text-xl 2xl:font-normal 2xl:max-w-xl font-normal font-inter h-10">
+                <div className="tracking-wide 2xl:tracking-normal translate-y-9 group-hover:-translate-y-6 ease-in-out transition-all duration-500 text-clean-black-10 text-sm xl:text-xl 2xl:font-normal 2xl:max-w-xl font-normal font-inter h-10">
                   {inner.item}
                 </div>
               </div>

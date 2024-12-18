@@ -31,8 +31,7 @@ const FrequentlyAsk = () => {
             animate-fadeInUp 
             bg-white   
             w-full  
-            sm:w-1/2  
-            md:w-1/2                     
+            md:w-3/4                     
             px-7
             py-4
             my-4
