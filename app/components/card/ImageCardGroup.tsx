@@ -40,7 +40,7 @@ interface IImageViewLink {
 }
 const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
   return (
-    <section className="max-w-screen-4xl mx-auto px-4 sm:px-20 xl:px-10 2xl:py-40">
+    <section className="max-w-screen-xl mx-auto px-4 md:py-10">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-10">
         {data?.slice(0, 4).map((list) => (
           <Link
@@ -65,7 +65,7 @@ const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
                 alt="card_image_"
                 width={800}
                 height={800}
-                className="object-center object-cover rounded-3xl h-full w-auto sm:w-full sm:h-full md:h-auto md:w-auto lg:h-[700px] lg:w-full"
+                className="object-center object-cover rounded-3xl w-full h-[34rem]"
               />
               <div className="absolute bottom-4 right-10">
                 <ArrowBadge />
@@ -111,17 +111,11 @@ const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
                   className="
                   tracking-widest
                   font-inter
-                  font-semibold
-                  sm:font-medium
+                  font-semibold                   
                   lg:font-normal
                   uppercase 
-                  text-xs
-                  sm:text-sm
-                  md:text-lg
-                  lg:text-xl
-                  xl:text-2xl
-                  2xl:text-2xl
-                  2xl:font-normal
+                  text-xs                  
+                  md:text-lg                 
                   flex flex-col 
                   items-center 
                   justify-center 
@@ -139,18 +133,13 @@ const ImageCardGroup = ({ viewLink }: IImageViewLink) => {
               className="
               font-inter
               font-normal             
-              md:font-light
-              lg:font-light
-              text-2xl 
-              sm:text-4xl 
-              max-w-xl
-              xl:text-6xl
-              md:-order-none
+              md:font-light               
+              text-2xl                            
+              lg:text-4xl
               text-center 
               md:text-start              
-              order-3 
-              2xl:text-7xl
-              2xl:max-w-screen-2xl
+              md:-order-none
+              order-3                
               "
             >
               {list.cardDescription}

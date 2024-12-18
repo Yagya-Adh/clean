@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import navbarData from "@/lib/data/navbarData.json";
-import { useState } from "react";
 
 interface InavabarData {
   id: number;
@@ -21,8 +21,8 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="mx-auto max-w-screen-4xl px-4 sm:px-20 pt-10 pb-8 lg:pb-0">
-        <div className="flex items-center justify-between w-full lg:py-10 relative">
+      <div className="mx-auto max-w-screen-4xl px-4 sm:px-20 pb-8 lg:pb-0">
+        <div className="flex items-center justify-between w-full py-4 lg:py-10 relative">
           <Link href="/">
             <Image
               src="/assets/logo/cleanlogo.png"
@@ -78,12 +78,14 @@ const Navbar = () => {
           transition-transform 
           duration-500 
           ease-in-out 
-          ${navOpen ? "translate-y-10" : "-translate-y-full"}`}
+          ${
+            navOpen ? "translate-y-10 md:translate-y-14" : "-translate-y-full"
+          }`}
       >
         {data?.slice(0, 5).map((list) => (
           <Link
             key={list.id}
-            className="text-center inset-0 text-4xl uppercase font-inter font-light text-clean-black-10 px-4 py-4 sm:py-7 tracking-wider"
+            className="text-center inset-0 text-4xl uppercase font-inter font-light text-clean-black-10 px-4 py-2.5 tracking-wider"
             href={list.path}
             onClick={handleNavBarToggle}
           >

@@ -14,7 +14,7 @@ interface IfooterRightData {
 const data: IfooterRightData[] = footerRightData;
 const FooterRight = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-6 2xl:gap-20 md:gap-4 text-center md:text-start md:place-items-start lg:py-0 py-4">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-6 2xl:gap-20 md:gap-2 text-center md:text-start md:place-items-start lg:py-0 py-4">
       {data?.slice(0, 3).map((list) => (
         <div
           className="flex flex-col justify-end w-full items-center 2xl:py-0"

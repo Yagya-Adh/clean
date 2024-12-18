@@ -6,21 +6,20 @@ interface IvalueData {
   hasSup: string;
   valueType: string;
 }
-
 const data: IvalueData[] = valueData;
 
 const ValueNumber = () => {
   return (
-    <section className="max-w-screen-4xl mx-auto px-4 py-10 lg:py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
+    <section className="hidden md:block max-w-screen-lg mx-auto px-4 py-10">
+      <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 items-center">
         {data?.slice(0, 3).map((list) => (
           <div
             className="text-center text-clean-black-10 py-5 2xl:py-20 animate-fadeflipLeftIn"
             key={list.id}
           >
-            <h3 className="font-inter text-7xl py-2 sm:text-6xl md:text-6xl xl:text-9xl 2xl:text-[192px] font-normal">
+            <h3 className="font-inter py-2 text-7xl font-normal">
               {list.valueAmount}
-              <sup className="text-6xl md:text-4xl xl:text-7xl 2xl:text-8xl font-bold">
+              <sup className="text-4xl font-bold">
                 {list.hasSup !== "" ? list.hasSup : ""}
               </sup>
             </h3>

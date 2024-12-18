@@ -3,7 +3,7 @@ import { SprayIcon } from "@/app/icons";
 const MainHeroBanner = () => {
   return (
     <section className="max-w-screen-5xl mx-auto px-4 md:px-10 lg:px-20 py-4 h-full">
-      <div className="rounded-4xl bg-hero-main bg-no-repeat bg-cover p-6  lg:py-80 max-w-full flex flex-col justify-center">
+      <div className="rounded-4xl bg-hero-main bg-no-repeat bg-cover p-6 lg:py-80 max-w-full flex flex-col justify-center">
         <div className="relative lg:-top-64 left-0 flex flex-col justify-center items-center text-center font-inter z-10 border border-white/15 backdrop:blur-3xl rounded-3xl p-10 md:p-4 2xl:py-16 md:w-1/2 mx-auto bg-white/15 backdrop-blur-2xl">
           <div className="flex flex-row justify-center items-center mt-4 w-full">
             <SprayIcon className="w-8 h-10" />

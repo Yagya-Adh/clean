@@ -12,7 +12,7 @@ const SectionBanner = ({
   variant,
 }: IsectionBannerProps) =>
   variant == "blog" ? (
-    <section className="max-w-screen-4xl mx-auto px-4 lg:px-10 py-4 sm:py-10 md:py-7 lg:py-10 xl:py-20">
+    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10 py-4 sm:py-10 md:py-7 lg:py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-20 md:gap-10 lg:gap-40 text-center items-center sm:text-start lg:flex sm:justify-between">
         <h2 className="text-4xl sm:text-3xl lg:text-7xl font-light text-center max-w-xl font-inter text-clean-black-10">
           {heading}
